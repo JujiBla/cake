@@ -23,4 +23,14 @@ public class EnemyController : MonoBehaviour
             PlHealthController.instance.DamagePlayer();
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+
+            FindFirstObjectByType<PlayerController>().Jump();
+        }
+    }
 }
