@@ -24,6 +24,10 @@ public class UIController : MonoBehaviour
 
     public GameObject gameOverScreen;
 
+    public GameObject pauseScreen;
+
+    public string mainMenuScene;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +37,10 @@ public class UIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseUnpause();
+        }
     }
 
     public void UpdateHealthDisplay(int health, int maxHealth)
@@ -79,11 +86,42 @@ public class UIController : MonoBehaviour
         //Debug.Log("Restarting");
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Get active scene name. also adds unity scene manager on top
-    
+
+        Time.timeScale = 1f;
     }
 
     public void UpdateCollectibles(int amount)
     {
         collectibleText.text = amount.ToString();
+    }
+
+    public void PauseUnpause()
+    {
+        if(pauseScreen.activeSelf == false)
+        {
+            pauseScreen.SetActive(true);
+
+            Time.timeScale = 0f;
+        }
+        else
+        { 
+            pauseScreen.SetActive(false);
+
+            Time.timeScale = 1f;
+        }
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(mainMenuScene);
+
+        Time.timeScale = 1f;
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+
+        Debug.Log("I Quit");
     }
 }
