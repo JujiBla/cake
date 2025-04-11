@@ -8294,6 +8294,7 @@ MonoBehaviour:
   moveSpeed: 3
   timeAtPoints: 1
   anim: {fileID: 1820033254}
+  theEC: {fileID: 1853531136}
 --- !u!114 &1853531136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8306,6 +8307,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d6459475b91eb43bf262af92aaa2b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 1820033254}
+  isDefeated: 0
+  waitToDestroy: 0.5
 --- !u!61 &1853531137
 BoxCollider2D:
   m_ObjectHideFlags: 0

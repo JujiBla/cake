@@ -4,23 +4,42 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    public Animator anim;
+
+    [HideInInspector]
+    public bool isDefeated;
+
+    public float waitToDestroy;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        // anim = GetComponent<Animator>(); <my animator is on the sprite, so this doesnt work like the tutorial - but this way you can find something thats on the same obj
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (isDefeated == true)
+        {
+            waitToDestroy -= Time.deltaTime;
+
+            if (waitToDestroy <= 0)
+            {
+                Destroy(gameObject);
+            }
+        }
+
     }
 
     private void OnCollisionEnter2D(Collision2D other) //collsion2d is an event thats created when 2 collider hit each other
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            PlHealthController.instance.DamagePlayer();
+            if(isDefeated == false)
+            { 
+                PlHealthController.instance.DamagePlayer();
+            }
         }
     }
 
@@ -28,9 +47,13 @@ public class EnemyController : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
 
             FindFirstObjectByType<PlayerController>().Jump();
+
+            anim.SetTrigger("defeated");
+            isDefeated = true;
+
         }
     }
 }

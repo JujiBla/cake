@@ -14,6 +14,8 @@ public class EnemyPatrol : MonoBehaviour
 
     public Animator anim;
 
+    public EnemyController theEC;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,32 +34,35 @@ public class EnemyPatrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, patrolPoints[currentPoint].position, moveSpeed * Time.deltaTime);
-    
-        if(Vector3.Distance(transform.position, patrolPoints[currentPoint].position) < .001f)
-        {
-            waitCounter -= Time.deltaTime;
-
-            anim.SetBool("isMoving", false);
-
-            if(waitCounter <= 0)
+            if(theEC.isDefeated == false)
             { 
-                currentPoint++;
-                if(currentPoint >= patrolPoints.Length)
-                {
-                    currentPoint = 0;
-                }
+            transform.position = Vector3.MoveTowards(transform.position, patrolPoints[currentPoint].position, moveSpeed * Time.deltaTime);
+    
+            if(Vector3.Distance(transform.position, patrolPoints[currentPoint].position) < .001f)
+            {
+                waitCounter -= Time.deltaTime;
 
-                waitCounter = timeAtPoints;
+                anim.SetBool("isMoving", false);
 
-                anim.SetBool("isMoving", true);
+                if(waitCounter <= 0)
+                { 
+                    currentPoint++;
+                    if(currentPoint >= patrolPoints.Length)
+                    {
+                        currentPoint = 0;
+                    }
 
-                if(transform.position.x < patrolPoints[currentPoint].position.x)
-                {
-                    transform.localScale = new Vector3(-1f, 1f, 1f);
-                }else
-                {
-                    transform.localScale = Vector3.one;
+                    waitCounter = timeAtPoints;
+
+                    anim.SetBool("isMoving", true);
+
+                    if(transform.position.x < patrolPoints[currentPoint].position.x)
+                    {
+                        transform.localScale = new Vector3(-1f, 1f, 1f);
+                    }else
+                    {
+                        transform.localScale = Vector3.one;
+                    }
                 }
             }
         }
