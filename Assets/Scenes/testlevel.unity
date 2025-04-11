@@ -8215,6 +8215,7 @@ GameObject:
   - component: {fileID: 1853531133}
   - component: {fileID: 1853531134}
   - component: {fileID: 1853531135}
+  - component: {fileID: 1853531136}
   m_Layer: 0
   m_Name: Enemy - Rock
   m_TagString: Untagged
@@ -8292,6 +8293,18 @@ MonoBehaviour:
   moveSpeed: 3
   timeAtPoints: 1
   anim: {fileID: 1820033254}
+--- !u!114 &1853531136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853531132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d6459475b91eb43bf262af92aaa2b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1890134473
 GameObject:
   m_ObjectHideFlags: 0

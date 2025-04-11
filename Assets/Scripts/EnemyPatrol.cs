@@ -42,7 +42,6 @@ public class EnemyPatrol : MonoBehaviour
 
             if(waitCounter <= 0)
             { 
-
                 currentPoint++;
                 if(currentPoint >= patrolPoints.Length)
                 {
@@ -52,6 +51,14 @@ public class EnemyPatrol : MonoBehaviour
                 waitCounter = timeAtPoints;
 
                 anim.SetBool("isMoving", true);
+
+                if(transform.position.x < patrolPoints[currentPoint].position.x)
+                {
+                    transform.localScale = new Vector3(-1f, 1f, 1f);
+                }else
+                {
+                    transform.localScale = Vector3.one;
+                }
             }
         }
     }
