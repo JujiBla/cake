@@ -53,6 +53,7 @@ public class LifeController : MonoBehaviour
 
         Instantiate(deathEffect, thePlayer.transform.position, deathEffect.transform.rotation);
 
+        AudioManager.instance.PlaySFXPitched(11);
     }
 
     public IEnumerator RespawnCo()  //coroutine, needs to have a delay, makes player spawn after a certain amount of time
@@ -65,7 +66,9 @@ public class LifeController : MonoBehaviour
 
         thePlayer.gameObject.SetActive(true);
 
-        Instantiate(respawnEffect, thePlayer.transform.position, Quaternion.identity); //rotations are handled as quaternions, they have 4 axies, quaternion.identity gives it 0 rotation
+        Instantiate(respawnEffect, thePlayer.transform.position, Quaternion.identity); 
+        //rotations are handled as quaternions, they have 4 axies, quaternion.identity gives it
+        //0 rotation
     }
 
     public IEnumerator GameOverCo()
@@ -83,6 +86,8 @@ public class LifeController : MonoBehaviour
         currentLives++;
 
         UpdateDisplay();
+
+        AudioManager.instance.PlaySFX(8);
     }
 
     public void UpdateDisplay()

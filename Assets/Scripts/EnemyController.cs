@@ -27,6 +27,8 @@ public class EnemyController : MonoBehaviour
             if (waitToDestroy <= 0)
             {
                 Destroy(gameObject);
+
+                AudioManager.instance.PlaySFX(5);
             }
         }
 
@@ -47,12 +49,12 @@ public class EnemyController : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            //Destroy(gameObject);
-
             FindFirstObjectByType<PlayerController>().Jump();
 
             anim.SetTrigger("defeated");
             isDefeated = true;
+
+            AudioManager.instance.PlaySFX(6);
 
         }
     }

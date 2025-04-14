@@ -19,6 +19,8 @@ public class CollectiblePickup : MonoBehaviour
                 Destroy(gameObject);
 
                 Instantiate(pickupEffect, transform.position, Quaternion.identity);
+
+                AudioManager.instance.PlaySFXPitched(9);
             }
         }
     }

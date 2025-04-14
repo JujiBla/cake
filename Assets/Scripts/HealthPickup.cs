@@ -27,7 +27,10 @@ public class HealthPickup : MonoBehaviour
 
 
                 Destroy(gameObject);
-                Instantiate(pickupEffect, transform.position, transform.rotation);     //brings a copy of an object into the world
+                Instantiate(pickupEffect, transform.position, transform.rotation);
+                //brings a copy of an object into the world
+
+                AudioManager.instance.PlaySFXPitched(10);
             }
         }
     }

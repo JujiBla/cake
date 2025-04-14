@@ -73,7 +73,7 @@ public class PlHealthController : MonoBehaviour
                 //gameObject.SetActive(false); //gameObject = the game object this script is attached to
 
                 LifeController.instance.Respawn();
-
+                               
             } else
             {
                 invincibilityCounter = invincibilityLength;
@@ -81,6 +81,8 @@ public class PlHealthController : MonoBehaviour
                 theSR.color = fadeColor;
 
                 thePlayer.KnockBack();
+
+                AudioManager.instance.PlaySFXPitched(13);
             }
 
                 UIController.instance.UpdateHealthDisplay(currentHealth, maxHealth);

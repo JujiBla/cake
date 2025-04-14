@@ -98,6 +98,8 @@ public class PlayerController : MonoBehaviour
     public void Jump() //made jump into a function > everytime you have the same line of code in more than one place, make it a function! If you want to add a sound or sparkle effect to the jump you don't have to add it at every instance where the line is used, you can add it here instead
     {
         theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+
+        AudioManager.instance.PlaySFXPitched(14);
     }
 
     public void KnockBack()
