@@ -28,10 +28,14 @@ public class UIController : MonoBehaviour
 
     public string mainMenuScene;
 
+    public Image fadeScreen;
+    public float fadeSpeed;
+    public bool fadingToBlack, fadingFromBlack;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        FadeFromBlack();
     }
 
     // Update is called once per frame
@@ -40,6 +44,24 @@ public class UIController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             PauseUnpause();
+        }
+
+        if(fadingFromBlack)
+        {
+            fadeScreen.color = new Color(
+                fadeScreen.color.r,
+                fadeScreen.color.g,
+                fadeScreen.color.b,
+                Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
+        }
+
+        if (fadingToBlack)
+        {
+            fadeScreen.color = new Color(
+                fadeScreen.color.r,
+                fadeScreen.color.g,
+                fadeScreen.color.b,
+                Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
         }
     }
 
@@ -123,5 +145,17 @@ public class UIController : MonoBehaviour
         Application.Quit();
 
         Debug.Log("I Quit");
+    }
+
+    public void FadeFromBlack()
+    {
+        fadingToBlack = false;
+        fadingFromBlack = true;
+    }
+
+    public void FadeToBlack()
+    {
+        fadingToBlack = true;
+        fadingFromBlack = false;
     }
 }

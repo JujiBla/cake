@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4f760fac4272249a740685827a2a7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: 1
+  amount: 3
   pickupEffect: {fileID: 115617498718226344, guid: 7a52749e431ccce4f8832c2c3119e8a7, type: 3}
 --- !u!95 &7564703152165353012
 Animator:
