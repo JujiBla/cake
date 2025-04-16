@@ -10,8 +10,10 @@ public class BossBattleController : MonoBehaviour
 
     public Transform camPoint;
     private CamController cameraController;
-
     public float cameraMoveSpeed;
+
+    public Transform theBoss;
+    public float bossGrowSpeed = 2f;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,14 @@ public class BossBattleController : MonoBehaviour
             cameraController.transform.position = Vector3.MoveTowards(cameraController.transform.position,
                 camPoint.position,
                 cameraMoveSpeed * Time.deltaTime);
+
+            if(theBoss.localScale != Vector3.one)
+            {
+                theBoss.localScale = Vector3.MoveTowards(
+                    theBoss.localScale,
+                    Vector3.one,
+                    bossGrowSpeed * Time.deltaTime);
+            }
         }
     }
 
