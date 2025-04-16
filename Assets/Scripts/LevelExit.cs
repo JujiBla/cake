@@ -45,6 +45,8 @@ public class LevelExit : MonoBehaviour
 
         yield return new WaitForSeconds(fadeTime);
 
+        InfoTracker.instance.GetInfo();
+
         SceneManager.LoadScene(nextLevel);
     }
 

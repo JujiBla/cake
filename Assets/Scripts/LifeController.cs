@@ -14,7 +14,7 @@ public class LifeController : MonoBehaviour
 
     public float respawnDelay = 2f;
 
-    public int currentLives = 3;
+    public int currentLives = 3; //why do we still have this if currentlive gets overwritten from infotracker? line 26
 
     public GameObject deathEffect, respawnEffect;
 
@@ -22,6 +22,8 @@ public class LifeController : MonoBehaviour
     void Start()
     {
         thePlayer = FindFirstObjectByType<PlayerController>();
+
+        currentLives = InfoTracker.instance.currentLives;
 
         UpdateDisplay();
     }
