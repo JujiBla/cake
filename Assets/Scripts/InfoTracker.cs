@@ -13,8 +13,14 @@ public class InfoTracker : MonoBehaviour
         {
             instance = this;
 
-            transform.SetParent(null); //"dont destroy on load" doesnt work on childs
+            transform.SetParent(null);      //"dont destroy on load" doesnt work on childs
             DontDestroyOnLoad(gameObject);
+
+            if(PlayerPrefs.HasKey("lives")) //checks if anything is in the player prefs, gives out zero when nothing is there
+            { 
+                currentLives = PlayerPrefs.GetInt("lives");
+                currentFruit = PlayerPrefs.GetInt("fruit");
+            }
         } else
         {
             Destroy(gameObject);
@@ -34,5 +40,11 @@ public class InfoTracker : MonoBehaviour
         {
             currentFruit = CollectiblesManager.instance.collectibleCount;
         }
+    }
+
+    public void SaveInfo()
+    {
+        PlayerPrefs.SetInt("lives", currentLives);
+        PlayerPrefs.SetInt("fruit", currentFruit);
     }
 }
