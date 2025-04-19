@@ -39,6 +39,8 @@ public class BossBattleController : MonoBehaviour
 
     public GameObject deathEffect;
 
+    private PlayerController thePlayer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +49,8 @@ public class BossBattleController : MonoBehaviour
         shootStartCounter = waitToStartShooting;
 
         blockers.transform.SetParent(null);
+
+        thePlayer = FindFirstObjectByType<PlayerController>();
     }
 
     // Update is called once per frame
@@ -111,7 +115,8 @@ public class BossBattleController : MonoBehaviour
 
             if(isWeak == false)
             {
-                theBoss.transform.position = Vector3.MoveTowards(
+                
+                    theBoss.transform.position = Vector3.MoveTowards(
                     theBoss.transform.position,
                     bossMovePoints[currentMovePoint].position,
                     bossMoveSpeed * Time.deltaTime);
@@ -129,6 +134,25 @@ public class BossBattleController : MonoBehaviour
 
         }
 
+        if(currentPhase >= 3)
+        {
+            bossActive = false;
+
+            Vector3 targetPosition = thePlayer.transform.position;
+            targetPosition.z = cameraController.transform.position.z;
+            targetPosition.y = cameraController.transform.position.y;
+            cameraController.transform.position = Vector3.MoveTowards(cameraController.transform.position,
+            targetPosition,
+            cameraMoveSpeed * Time.deltaTime);
+
+           if(cameraController.transform.position.x == thePlayer.transform.position.x && thePlayer.transform.position.y <= cameraController.transform.position.y)
+           {
+                gameObject.SetActive(false);
+                blockers.SetActive(false);
+
+                cameraController.enabled = true;  //bison said to use cinemashine to make the camera move back to the player smoothly
+           }
+        }
     }
 
     public void ActivateBattle()
@@ -185,7 +209,7 @@ public class BossBattleController : MonoBehaviour
                 {
                     bossAnim.SetTrigger("hit");
 
-                    FindFirstObjectByType<PlayerController>().Jump();
+                    thePlayer.Jump();
 
                     MoveToNextPhase();
                 }
@@ -224,10 +248,7 @@ public class BossBattleController : MonoBehaviour
         {
             //end the battle
 
-            gameObject.SetActive(false);
-            blockers.SetActive(false);
-
-            cameraController.enabled = true;
+           
 
             Instantiate(deathEffect, theBoss.position, Quaternion.identity);
 
