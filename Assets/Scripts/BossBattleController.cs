@@ -28,12 +28,25 @@ public class BossBattleController : MonoBehaviour
     private float shootStartCounter, shotCounter;
     private int currentShot;
 
+    public Animator bossAnim;
+    private bool isWeak;
+
+    public Transform[] bossMovePoints;
+    private int currentMovePoint;
+    public float bossMoveSpeed;
+
+    private int currentPhase;
+
+    public GameObject deathEffect;
+
     // Start is called before the first frame update
     void Start()
     {
         cameraController = FindFirstObjectByType<CamController>();
 
         shootStartCounter = waitToStartShooting;
+
+        blockers.transform.SetParent(null);
     }
 
     // Update is called once per frame
@@ -96,6 +109,24 @@ public class BossBattleController : MonoBehaviour
                 }
             }
 
+            if(isWeak == false)
+            {
+                theBoss.transform.position = Vector3.MoveTowards(
+                    theBoss.transform.position,
+                    bossMovePoints[currentMovePoint].position,
+                    bossMoveSpeed * Time.deltaTime);
+
+                if(theBoss.transform.position == bossMovePoints[currentMovePoint].position)
+                {
+                    currentMovePoint++;
+
+                    if(currentMovePoint >= bossMovePoints.Length)
+                    {
+                        currentMovePoint = 0;
+                    }
+                }
+            }
+
         }
 
     }
@@ -107,13 +138,16 @@ public class BossBattleController : MonoBehaviour
         blockers.SetActive(true);
 
         cameraController.enabled = false;
+
+        AudioManager.instance.PlayBossMusic();
     }
 
     void FireShot()
     {
         //Debug.Log("Fires shot at " + Time.time);
 
-        Instantiate(projectileToFire, projectilePoints[currentShot].position, 
+        Instantiate(projectileToFire, 
+            projectilePoints[currentShot].position, 
             projectilePoints[currentShot].rotation);
 
         projectilePoints[currentShot].gameObject.SetActive(false);
@@ -122,7 +156,84 @@ public class BossBattleController : MonoBehaviour
         if(currentShot >= projectilePoints.Length)
         {
             shotCounter = 0f;
+
+            MakeWeak();
         }
 
+        AudioManager.instance.PlaySFX(2);
+
+    }
+
+    void MakeWeak()
+    {
+        bossAnim.SetTrigger("isWeak");
+        isWeak = true;
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            //Debug.Log("Player Hit");
+
+            if(isWeak == false)
+            {
+                PlHealthController.instance.DamagePlayer();
+            } else
+            {
+                if(other.transform.position.y > theBoss.position.y) //remove if boss is supposed to be damaged from all sides
+                {
+                    bossAnim.SetTrigger("hit");
+
+                    FindFirstObjectByType<PlayerController>().Jump();
+
+                    MoveToNextPhase();
+                }
+                                
+            }
+        }
+    }
+
+    void MoveToNextPhase()
+    {
+        currentPhase++;
+
+        if(currentPhase < 3)
+        {
+            isWeak = false;
+
+            waitToStartShooting *= .5f;
+            timeBetweenShots *= .75f;
+            bossMoveSpeed *= 1.5f;
+
+            shootStartCounter = waitToStartShooting;
+
+            projectileLauncher.localScale = Vector3.zero;
+
+            foreach(Transform point in projectilePoints)
+            {
+                point.gameObject.SetActive(true);
+            }
+
+            currentShot = 0;
+
+            AudioManager.instance.PlaySFX(1);
+
+
+        } else
+        {
+            //end the battle
+
+            gameObject.SetActive(false);
+            blockers.SetActive(false);
+
+            cameraController.enabled = true;
+
+            Instantiate(deathEffect, theBoss.position, Quaternion.identity);
+
+            AudioManager.instance.PlaySFX(0);
+
+            AudioManager.instance.PlayLevelMusic(FindFirstObjectByType<LevelMusicPlayer>().trackToPlay);
+        }
     }
 }
