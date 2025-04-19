@@ -134,7 +134,7 @@ public class BossBattleController : MonoBehaviour
 
         }
 
-        if(currentPhase >= 3)
+        if(currentPhase >= 3) //did this with Mr. Bla. Quote: "Bison will hate this" :D
         {
             bossActive = false;
 

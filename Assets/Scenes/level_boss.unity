@@ -1022,8 +1022,8 @@ MonoBehaviour:
   - {fileID: 1044729507}
   - {fileID: 1986750694}
   - {fileID: 488285268}
-  waitToStartShooting: 0.1
-  timeBetweenShots: 0.1
+  waitToStartShooting: 3
+  timeBetweenShots: 1
   bossAnim: {fileID: 1160864171}
   bossMovePoints:
   - {fileID: 1175733124}
