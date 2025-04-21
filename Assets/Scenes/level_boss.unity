@@ -5411,6 +5411,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6058571754774955177}
     m_Modifications:
+    - target: {fileID: 4207976730357428406, guid: 0cdf1c16f05ce654787b196c18ad4ede, type: 3}
+      propertyPath: nextLevel
+      value: victory
+      objectReference: {fileID: 0}
     - target: {fileID: 4619383332182182136, guid: 0cdf1c16f05ce654787b196c18ad4ede, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.04
@@ -6171,6 +6175,10 @@ PrefabInstance:
     - target: {fileID: 4059565617435340861, guid: e447dacc9afe8784c9bac2d4c549e814, type: 3}
       propertyPath: maxDistance
       value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4352396892930174828, guid: e447dacc9afe8784c9bac2d4c549e814, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4468415080652848345, guid: e447dacc9afe8784c9bac2d4c549e814, type: 3}
       propertyPath: m_LocalPosition.x

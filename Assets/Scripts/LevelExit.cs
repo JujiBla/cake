@@ -48,6 +48,11 @@ public class LevelExit : MonoBehaviour
         InfoTracker.instance.GetInfo();
         InfoTracker.instance.SaveInfo();
 
+        //if(nextLevel != "Victory")  
+        //{
+        //    PlayerPrefs.SetString("currentLevel", nextLevel);
+        //}
+        //When ending the game through victory screen, playerprefs are not updated, with continue in main menu you get back to boss not vitory
         PlayerPrefs.SetString("currentLevel", nextLevel);
 
         SceneManager.LoadScene(nextLevel);
