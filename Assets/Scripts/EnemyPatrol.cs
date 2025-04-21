@@ -69,8 +69,6 @@ public class EnemyPatrol : MonoBehaviour
                 }
             }
 
-
-
             if(shouldChasePlayer == false || (shouldChasePlayer == true && isChasing == false) ) // || = or
             {                
                 transform.position = Vector3.MoveTowards(transform.position, patrolPoints[currentPoint].position, moveSpeed * Time.deltaTime);

@@ -109,4 +109,13 @@ public class PlayerController : MonoBehaviour
 
         knockbackCounter = knockbackLength;
     }
+
+    public void BouncePlayer(float bounceAmount)
+    {
+        theRB.velocity = new Vector2(theRB.velocity.x, bounceAmount);
+
+        canDoubleJump = true;
+
+        anim.SetBool("isGrounded", true);
+    }
 }
