@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ParentPlayerToPlatform : MonoBehaviour
 {
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
@@ -14,6 +15,19 @@ public class ParentPlayerToPlatform : MonoBehaviour
             //Interpolation Interpolate makes player move very slow on moving platform
             //none works great but gives jittery camera movement
         }
+        
+     
+
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") && Input.GetKey(KeyCode.S))
+        {
+            //Debug.Log("falling through platform");
+
+            GetComponent<Collider2D>().isTrigger = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -23,6 +37,8 @@ public class ParentPlayerToPlatform : MonoBehaviour
             other.transform.SetParent(null);
 
             other.GetComponent<Rigidbody2D>().interpolation = RigidbodyInterpolation2D.Interpolate;
+
+            GetComponent<Collider2D>().isTrigger = false;
         }
     }
 }
