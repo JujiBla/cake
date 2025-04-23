@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BouncePlayer : MonoBehaviour
 {
-    public float bounceAmaount;
+    public float bounceAmount;
 
     public Animator anim;
 
@@ -14,7 +14,7 @@ public class BouncePlayer : MonoBehaviour
         {
             anim.SetTrigger("bounce");
 
-            other.GetComponent<PlayerController>().BouncePlayer(bounceAmaount);
+            other.GetComponent<PlayerController>().BouncePlayer(bounceAmount);
         }
     }
 }

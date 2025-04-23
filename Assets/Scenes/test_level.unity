@@ -4948,12 +4948,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6100160556701308159, guid: fb00ea40ae775b445b1bc65eda21ed87, type: 3}
+      propertyPath: bounceAmount
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100160556701308159, guid: fb00ea40ae775b445b1bc65eda21ed87, type: 3}
       propertyPath: bounceAmaount
-      value: 35
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8537816024842349867, guid: fb00ea40ae775b445b1bc65eda21ed87, type: 3}
       propertyPath: m_Name
       value: Bouncer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700557069698967991, guid: fb00ea40ae775b445b1bc65eda21ed87, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6962428
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700557069698967991, guid: fb00ea40ae775b445b1bc65eda21ed87, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.544894
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
