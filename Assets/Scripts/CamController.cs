@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CamController : MonoBehaviour
 {
-    public Transform target;
+    //public Transform target;
 
     public bool freezeVertical, freezeHorizontal;
     private Vector3 positionStore;
@@ -14,9 +14,21 @@ public class CamController : MonoBehaviour
     private float halfWidth, halfHeight;
     public Camera theCam;
 
+    private Vector3 targetPoint = Vector3.zero;
+
+    public PlayerController player;
+
+    public float moveSpeed;
+
+    public float lookAheadDistance = 5f, lookAheadSpeed = 3f;
+
+    private float lookOffset;
+
     // Start is called before the first frame update
     void Start()
     {
+        targetPoint = new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z); 
+
         positionStore = transform.position;
 
         clampMax.SetParent(null);
@@ -27,9 +39,11 @@ public class CamController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
+        //targetPoint.x = player.transform.position.x;
+        targetPoint.y = player.transform.position.y;       
+
 
         if (freezeVertical == true)
         {
@@ -49,15 +63,31 @@ public class CamController : MonoBehaviour
 
         }
 
-        if(ParallaxBackground.instance != null)
-        { 
+        if(player.theRB.velocity.x > 0f)
+        {
+            lookOffset = Mathf.Lerp(lookOffset, lookAheadDistance, lookAheadSpeed * Time.deltaTime);
+        }
+
+        if (player.theRB.velocity.x < 0f)
+        {
+            lookOffset = Mathf.Lerp(lookOffset, -lookAheadDistance, lookAheadSpeed * Time.deltaTime);
+        }
+
+        targetPoint.x = player.transform.position.x + lookOffset;
+                
+        //transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
+        transform.position = Vector3.Lerp(transform.position, targetPoint, moveSpeed * Time.deltaTime);
+        
+        if (ParallaxBackground.instance != null)
+        {
             ParallaxBackground.instance.MoveBackground();
         }
+
     }
 
     private void OnDrawGizmos() //Gizmos are things drawn in the scene view (grid, camera outline) you cant seein game
     {
-        if(clampPosition == true)
+        if (clampPosition == true)
         {
             Gizmos.color = Color.cyan;
             Gizmos.DrawLine(clampMin.position, new Vector3(clampMin.position.x, clampMax.position.y, 0f));

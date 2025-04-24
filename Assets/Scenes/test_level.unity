@@ -122,6 +122,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &736600148 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3134439356041666397, guid: 071f2c3acf8fa8d44bb58e7187537d65, type: 3}
+  m_PrefabInstance: {fileID: 3564502405364700738}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4046aa6d0dfcbea4e81bdd377d379cd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &777353754
 GameObject:
   m_ObjectHideFlags: 0
@@ -4653,6 +4664,26 @@ PrefabInstance:
     - target: {fileID: 6058571754655836655, guid: 071f2c3acf8fa8d44bb58e7187537d65, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6876375796326406916, guid: 071f2c3acf8fa8d44bb58e7187537d65, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 736600148}
+    - target: {fileID: 6876375796326406916, guid: 071f2c3acf8fa8d44bb58e7187537d65, type: 3}
+      propertyPath: moveSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6876375796326406916, guid: 071f2c3acf8fa8d44bb58e7187537d65, type: 3}
+      propertyPath: clampPosition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6876375796326406916, guid: 071f2c3acf8fa8d44bb58e7187537d65, type: 3}
+      propertyPath: lookAheadSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6876375796326406916, guid: 071f2c3acf8fa8d44bb58e7187537d65, type: 3}
+      propertyPath: lookAheadDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
