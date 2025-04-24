@@ -31,7 +31,10 @@ public class ParallaxBackground : MonoBehaviour
 
     public void MoveBackground()
     {
-        sky.position = new Vector3(theCam.position.x, sky.position.y, sky.position.z);
+        sky.position = new Vector3(
+            theCam.position.x * parallaxSpeed * .8f, 
+            sky.position.y, 
+            sky.position.z);
 
         treeline.position = new Vector3(
             theCam.position.x * parallaxSpeed,
