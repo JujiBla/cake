@@ -39,7 +39,7 @@ public class BossBattleController : MonoBehaviour
 
     public GameObject deathEffect;
 
-    private PlayerController thePlayer;
+    //private PlayerController thePlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -50,7 +50,7 @@ public class BossBattleController : MonoBehaviour
 
         blockers.transform.SetParent(null);
 
-        thePlayer = FindFirstObjectByType<PlayerController>();
+    //    thePlayer = FindFirstObjectByType<PlayerController>();
     }
 
     // Update is called once per frame
@@ -134,25 +134,25 @@ public class BossBattleController : MonoBehaviour
 
         }
 
-        if(currentPhase >= 3) //did this with Mr. Bla. Quote: "Bison will hate this" :D
-        {
-            bossActive = false;
+        //if(currentPhase >= 3) //did this with Mr. Bla. Quote: "Bison will hate this" :D
+        //{
+        //    bossActive = false;
 
-            Vector3 targetPosition = thePlayer.transform.position;
-            targetPosition.z = cameraController.transform.position.z;
-            targetPosition.y = cameraController.transform.position.y;
-            cameraController.transform.position = Vector3.MoveTowards(cameraController.transform.position,
-            targetPosition,
-            cameraMoveSpeed * Time.deltaTime);
+        //    Vector3 targetPosition = thePlayer.transform.position;
+        //    targetPosition.z = cameraController.transform.position.z;
+        //    targetPosition.y = cameraController.transform.position.y;
+        //    cameraController.transform.position = Vector3.MoveTowards(cameraController.transform.position,
+        //    targetPosition,
+        //    cameraMoveSpeed * Time.deltaTime);
 
-           if(cameraController.transform.position.x == thePlayer.transform.position.x && thePlayer.transform.position.y <= cameraController.transform.position.y)
-           {
-                gameObject.SetActive(false);
-                blockers.SetActive(false);
+        //   if(cameraController.transform.position.x == thePlayer.transform.position.x && thePlayer.transform.position.y <= cameraController.transform.position.y)
+        //   {
+        //        gameObject.SetActive(false);
+        //        blockers.SetActive(false);
 
-                cameraController.enabled = true;  //bison said to use cinemashine to make the camera move back to the player smoothly
-           }
-        }
+        //        cameraController.enabled = true;  //bison said to use cinemashine to make the camera move back to the player smoothly
+        //   }
+        //}
     }
 
     public void ActivateBattle()
@@ -209,7 +209,8 @@ public class BossBattleController : MonoBehaviour
                 {
                     bossAnim.SetTrigger("hit");
 
-                    thePlayer.Jump();
+                    FindFirstObjectByType<PlayerController>().Jump();
+                    //thePlayer.Jump();
 
                     MoveToNextPhase();
                 }
@@ -248,7 +249,10 @@ public class BossBattleController : MonoBehaviour
         {
             //end the battle
 
-           
+            gameObject.SetActive(false);
+            blockers.SetActive(false);
+
+            cameraController.enabled = true;
 
             Instantiate(deathEffect, theBoss.position, Quaternion.identity);
 

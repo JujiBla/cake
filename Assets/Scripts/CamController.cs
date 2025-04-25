@@ -76,14 +76,7 @@ public class CamController : MonoBehaviour
             transform.position = new Vector3(positionStore.x, transform.position.y, transform.position.z);
         }
 
-        if (clampPosition == true)
-        {
-            transform.position = new Vector3(
-                Mathf.Clamp(transform.position.x, clampMin.position.x + halfWidth, clampMax.position.x - halfWidth),
-                Mathf.Clamp(transform.position.y, clampMin.position.y + halfHeight, clampMax.position.y - halfHeight),
-                transform.position.z);
-
-        }
+        
 
         if(player.theRB.velocity.x > 0f)
         {
@@ -99,7 +92,16 @@ public class CamController : MonoBehaviour
                 
         //transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
         transform.position = Vector3.Lerp(transform.position, targetPoint, moveSpeed * Time.deltaTime);
-        
+
+        if (clampPosition == true)
+        {
+            transform.position = new Vector3(
+                Mathf.Clamp(transform.position.x, clampMin.position.x + halfWidth, clampMax.position.x - halfWidth),
+                Mathf.Clamp(transform.position.y, clampMin.position.y + halfHeight, clampMax.position.y - halfHeight),
+                transform.position.z);
+
+        }
+
         if (ParallaxBackground.instance != null)
         {
             ParallaxBackground.instance.MoveBackground();
