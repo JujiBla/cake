@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public float runSpeed;
     private float activeSpeed; //float - number with decimals
 
-    private bool isGrounded; //bool - true or false
+    public bool isGrounded; //bool - true or false
     public Transform groundCheckPoint;
     public float groundCheckRadius;
     public LayerMask whatIsGround;

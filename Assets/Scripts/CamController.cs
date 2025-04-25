@@ -24,6 +24,9 @@ public class CamController : MonoBehaviour
 
     private float lookOffset;
 
+    private bool isFalling;
+    public float maxVertOffset = 5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,8 +45,27 @@ public class CamController : MonoBehaviour
     void LateUpdate()
     {
         //targetPoint.x = player.transform.position.x;
-        targetPoint.y = player.transform.position.y;       
+        //targetPoint.y = player.transform.position.y;       
 
+        if(player.isGrounded)
+        {
+            targetPoint.y = player.transform.position.y;
+        }
+
+        if(transform.position.y - player.transform.position.y > maxVertOffset)
+        {
+            isFalling = true;
+        }
+
+        if(isFalling)
+        {
+            targetPoint.y = player.transform.position.y;
+
+            if(player.isGrounded)
+            {
+                isFalling = false;
+            }
+        }
 
         if (freezeVertical == true)
         {
