@@ -1037,6 +1037,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Info Tracker
       objectReference: {fileID: 0}
+    - target: {fileID: 4246439083646042141, guid: 37b9458a3e7b3cd4fb1312ec6a0d698d, type: 3}
+      propertyPath: currentLives
+      value: 999
+      objectReference: {fileID: 0}
     - target: {fileID: 7613124406136220458, guid: 37b9458a3e7b3cd4fb1312ec6a0d698d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.400349

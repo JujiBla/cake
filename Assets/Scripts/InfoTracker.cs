@@ -18,7 +18,6 @@ public class InfoTracker : MonoBehaviour
 
             if(PlayerPrefs.HasKey("lives")) //checks if anything is in the player prefs, gives out zero when nothing is there
             { 
-                currentLives = PlayerPrefs.GetInt("lives");
                 currentFruit = PlayerPrefs.GetInt("fruit");
             }
         } else
@@ -27,14 +26,10 @@ public class InfoTracker : MonoBehaviour
         }
     }
 
-    public int currentLives, currentFruit;
+    public int currentFruit;
 
     public void GetInfo()
     {
-        if(LifeController.instance != null)
-        {
-            currentLives = LifeController.instance.currentLives;
-        }
 
         if(CollectiblesManager.instance != null)
         {
@@ -44,7 +39,7 @@ public class InfoTracker : MonoBehaviour
 
     public void SaveInfo()
     {
-        PlayerPrefs.SetInt("lives", currentLives);
+        //PlayerPrefs.SetInt("lives", currentLives);
         PlayerPrefs.SetInt("fruit", currentFruit);
     }
 }

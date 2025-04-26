@@ -12,8 +12,6 @@ public class CollectiblesManager : MonoBehaviour
 
     public int collectibleCount;
 
-    public int extraLifeThreshold;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -35,17 +33,6 @@ public class CollectiblesManager : MonoBehaviour
     {
         collectibleCount += amount;
         
-        if (collectibleCount >= extraLifeThreshold)
-        {
-            collectibleCount -= extraLifeThreshold;
-
-            if (LifeController.instance != null)
-            { 
-                LifeController.instance.AddLife();
-            }
-
-        }
-
         if(UIController.instance != null)
         {
             UIController.instance.UpdateCollectibles(collectibleCount);

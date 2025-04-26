@@ -69,9 +69,7 @@ public class PlHealthController : MonoBehaviour
             if(currentHealth <= 0)
             {
                 currentHealth = 0;
-
-                //gameObject.SetActive(false); //gameObject = the game object this script is attached to
-
+                                
                 LifeController.instance.Respawn();
                                
             } else

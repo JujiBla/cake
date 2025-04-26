@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public string firstLevel;
-
-    public int startingLives = 3, startingFruit = 0;
+    
+    public int startingFruit = 0;
 
     public GameObject continueButton;
 
@@ -41,8 +41,7 @@ public class MainMenu : MonoBehaviour
     }
 
     public void StartGame()
-    {
-        InfoTracker.instance.currentLives = startingLives;
+    {       
         InfoTracker.instance.currentFruit = startingFruit;
 
         InfoTracker.instance.SaveInfo();

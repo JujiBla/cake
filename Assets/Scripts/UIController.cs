@@ -20,7 +20,7 @@ public class UIController : MonoBehaviour
 
     public Sprite heartFull, heartEmpty;
 
-    public TMP_Text livesText, collectibleText;              //adds using TMPro at the top
+    public TMP_Text collectibleText;        //adds using TMPro at the top
 
     public GameObject gameOverScreen;
 
@@ -72,11 +72,6 @@ public class UIController : MonoBehaviour
         {
             heartIcons[i].enabled = true; //.enabled turnes images on/off in unity inspector
 
-            /*if(health <= i)
-            {
-                heartIcons[i].enabled = false;
-            }*/
-
             if(health > i)
             {
                 heartIcons[i].sprite = heartFull;
@@ -91,11 +86,6 @@ public class UIController : MonoBehaviour
             }
         }
         
-    }
-
-    public void UpdateLivesDisplay(int currentLives)
-    {
-        livesText.text = currentLives.ToString();
     }
 
     public void ShowGameOver()

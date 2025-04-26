@@ -45,6 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnDelay: 2
-  currentLives: 3
+  currentLives: 999
   deathEffect: {fileID: 449252573237963073, guid: dbfbb464a2963514a8a7fed1f318d27c, type: 3}
   respawnEffect: {fileID: 4062212440046408051, guid: d4667e48f1632de4c87c8c331c17da8b, type: 3}

@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f0577f0a9ae81747922e8eaf9e88bb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLives: 3
+  currentLives: 999
   currentFruit: 0
