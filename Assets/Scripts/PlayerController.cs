@@ -118,4 +118,10 @@ public class PlayerController : MonoBehaviour
 
         anim.SetBool("isGrounded", true);
     }
+
+    public void ActivateScreenShake()
+    {
+        Debug.Log("We shaking boys");
+
+    }
 }

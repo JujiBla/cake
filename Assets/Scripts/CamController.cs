@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class CamController : MonoBehaviour
 {
-    //public Transform target;
-
     public bool freezeVertical, freezeHorizontal;
     private Vector3 positionStore;
 
@@ -26,6 +24,8 @@ public class CamController : MonoBehaviour
 
     private bool isFalling;
     public float maxVertOffset = 5f;
+
+//    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -121,5 +121,11 @@ public class CamController : MonoBehaviour
             Gizmos.DrawLine(clampMax.position, new Vector3(clampMax.position.x, clampMin.position.y, 0f));
         }
     }
+
+    //public void ActivateScreenShake()
+    //{
+    //    Debug.Log("We shaking boys");
+
+    //}
 
 }

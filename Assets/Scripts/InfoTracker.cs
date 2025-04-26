@@ -39,7 +39,6 @@ public class InfoTracker : MonoBehaviour
 
     public void SaveInfo()
     {
-        //PlayerPrefs.SetInt("lives", currentLives);
-        PlayerPrefs.SetInt("fruit", currentFruit);
+         PlayerPrefs.SetInt("fruit", currentFruit);
     }
 }
