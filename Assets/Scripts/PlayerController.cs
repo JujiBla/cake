@@ -21,6 +21,10 @@ public class PlayerController : MonoBehaviour
     public float knockbackLength, knockbackSpeed;
     private float knockbackCounter;
 
+    public CapsuleCollider2D playerCollider;
+    public PhysicsMaterial2D groundedMaterial;
+    public PhysicsMaterial2D airMaterial;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,9 +39,18 @@ public class PlayerController : MonoBehaviour
 
             isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, whatIsGround);
 
+            if (isGrounded && playerCollider.sharedMaterial != groundedMaterial)
+            {
+                playerCollider.sharedMaterial = groundedMaterial;
+            }
+            else if (!isGrounded && playerCollider.sharedMaterial != airMaterial)
+            {
+                playerCollider.sharedMaterial = airMaterial;
+            }
+
             //theRB.velocity = new Vector2( Input.GetAxisRaw("Horizontal") * moveSpeed, theRB.velocity.y);
 
-            if(knockbackCounter <= 0)
+            if (knockbackCounter <= 0)
             { 
 
                 activeSpeed = moveSpeed;

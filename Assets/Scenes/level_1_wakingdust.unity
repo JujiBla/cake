@@ -8083,6 +8083,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1609425401012720788, guid: b35256ea88af1db469901b40256a8744, type: 3}
+      propertyPath: airMaterial
+      value: 
+      objectReference: {fileID: 6200000, guid: d8a7164c262766f47853bb95da216ef2, type: 2}
+    - target: {fileID: 1609425401012720788, guid: b35256ea88af1db469901b40256a8744, type: 3}
+      propertyPath: playerCollider
+      value: 
+      objectReference: {fileID: 4407352902050874387}
+    - target: {fileID: 1609425401012720788, guid: b35256ea88af1db469901b40256a8744, type: 3}
+      propertyPath: groundedMaterial
+      value: 
+      objectReference: {fileID: 6200000, guid: 1eefcdaf5ed11e242a52009f40e6c3b3, type: 2}
     - target: {fileID: 3893689686017444975, guid: b35256ea88af1db469901b40256a8744, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -8111,6 +8123,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4046aa6d0dfcbea4e81bdd377d379cd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!70 &4407352902050874387 stripped
+CapsuleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 7999367256495143110, guid: b35256ea88af1db469901b40256a8744, type: 3}
+  m_PrefabInstance: {fileID: 4407352902050874382}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5047727602280195087
 PrefabInstance:
   m_ObjectHideFlags: 0
