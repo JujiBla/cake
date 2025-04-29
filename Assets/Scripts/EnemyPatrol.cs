@@ -65,6 +65,17 @@ public class EnemyPatrol : MonoBehaviour
                     if (Vector3.Distance(transform.position, thePlayer.transform.position) > distanceToChasePlayer) 
                     {
                         isChasing = false;
+
+                        if (transform.position.x < patrolPoints[currentPoint].position.x)
+                        {
+                            transform.localScale = new Vector3(-1f, 1f, 1f);
+                        }
+                        else
+                        {
+                            transform.localScale = Vector3.one;
+                        }
+
+
                     }
                 }
             }
