@@ -20,7 +20,7 @@ public class DropBlock : MonoBehaviour
     private float fallCounter, raiseCounter;
 
     public Animator anim;
-
+     
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +40,7 @@ public class DropBlock : MonoBehaviour
     {
         if(activated == false && transform.position == startPoint)
         {
-            if (Mathf.Abs(transform.position.x - player.position.x) <= activationRange) //Mathf.abs removes - when player is to the right of obj
+            if (Mathf.Abs(transform.position.x - player.position.x) <= activationRange && player.position.y < transform.position.y) //Mathf.abs removes - when player is to the right of obj
             {
                 activated = true;
 
@@ -99,4 +99,5 @@ public class DropBlock : MonoBehaviour
             PlHealthController.instance.DamagePlayer();
         }
     }
+
 }
