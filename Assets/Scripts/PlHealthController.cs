@@ -38,8 +38,7 @@ public class PlHealthController : MonoBehaviour
     {
         if(invincibilityCounter > 0)
         {
-            invincibilityCounter -= Time.deltaTime; //deltatime - how long it takes for one frame to run
-        
+            invincibilityCounter -= Time.deltaTime; 
             if(invincibilityCounter <= 0)
             {
                 theSR.color = normalColor;

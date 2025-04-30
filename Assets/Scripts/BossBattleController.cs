@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossBattleController : MonoBehaviour
 {
@@ -129,6 +130,7 @@ public class BossBattleController : MonoBehaviour
                     }
                 }
             }
+                      
 
         }
 
