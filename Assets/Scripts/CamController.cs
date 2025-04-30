@@ -22,7 +22,7 @@ public class CamController : MonoBehaviour
 
     private float lookOffset;
 
-    private bool isFalling;
+    private bool isFalling, isJumping;
     public float maxVertOffset = 5f;
 
 //    private Animator anim;
@@ -44,15 +44,23 @@ public class CamController : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        //targetPoint.x = player.transform.position.x;
-        //targetPoint.y = player.transform.position.y;       
 
-        if(player.isGrounded)
+        if (transform.position.y - player.transform.position.y < maxVertOffset)
         {
-            targetPoint.y = player.transform.position.y;
+            isJumping = true;
         }
 
-        if(transform.position.y - player.transform.position.y > maxVertOffset)
+        if (isJumping)
+        {
+            targetPoint.y = player.transform.position.y;
+
+            if (player.isGrounded)
+            {
+                isJumping = false;
+            }
+        }
+
+        if (transform.position.y - player.transform.position.y > maxVertOffset)
         {
             isFalling = true;
         }
@@ -76,8 +84,6 @@ public class CamController : MonoBehaviour
             transform.position = new Vector3(positionStore.x, transform.position.y, transform.position.z);
         }
 
-        
-
         if(player.theRB.velocity.x > 0f)
         {
             lookOffset = Mathf.Lerp(lookOffset, lookAheadDistance, lookAheadSpeed * Time.deltaTime);
@@ -90,7 +96,6 @@ public class CamController : MonoBehaviour
 
         targetPoint.x = player.transform.position.x + lookOffset;
                 
-        //transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
         transform.position = Vector3.Lerp(transform.position, targetPoint, moveSpeed * Time.deltaTime);
 
         if (clampPosition == true)
@@ -121,11 +126,5 @@ public class CamController : MonoBehaviour
             Gizmos.DrawLine(clampMax.position, new Vector3(clampMax.position.x, clampMin.position.y, 0f));
         }
     }
-
-    //public void ActivateScreenShake()
-    //{
-    //    Debug.Log("We shaking boys");
-
-    //}
 
 }
