@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class DropBlock : MonoBehaviour
 {
@@ -20,7 +21,15 @@ public class DropBlock : MonoBehaviour
     private float fallCounter, raiseCounter;
 
     public Animator anim;
-     
+
+    private float t; // interpolation timer;
+
+    public float fallDuration = 0.5f;
+    public float raiseDuration = 0.5f;
+
+    private bool isFalling;
+    private bool isRaising;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +49,7 @@ public class DropBlock : MonoBehaviour
     {
         if(activated == false && transform.position == startPoint)
         {
+            isRaising = false;
             if (Mathf.Abs(transform.position.x - player.position.x) <= activationRange && player.position.y < transform.position.y) //Mathf.abs removes - when player is to the right of obj
             {
                 activated = true;
@@ -50,18 +60,33 @@ public class DropBlock : MonoBehaviour
 
         if(activated == true)
         {
-            if(fallCounter > 0)
+            if (fallCounter > 0)
             {
                 fallCounter -= Time.deltaTime;
-            } 
+            }
             else
-            {                
-                transform.position = Vector3.MoveTowards(transform.position, dropPoint.position, fallSpeed * Time.deltaTime);
-        
-                if(transform.position == dropPoint.position)
+            {
+                if (!isFalling)
                 {
+                    isFalling = true;
+                    t = 0;
+                }
+
+                if (t < 1)
+                {
+                    
+                    t += Time.deltaTime / fallDuration;
+                    float easedT = Mathf.SmoothStep(0, 1, t);
+                    transform.position = Vector3.Lerp(startPoint, dropPoint.position, easedT);
+                }
+                else
+                {
+                    transform.position = dropPoint.position;
                     ActivateHit();
-                }                
+                    isFalling = false;
+
+
+                }
             }
         } 
         else
@@ -69,12 +94,31 @@ public class DropBlock : MonoBehaviour
             if (raiseCounter > 0)
             {
                 raiseCounter -= Time.deltaTime;
+                
             }
             else
-            {            
+            {
                 if (transform.position != startPoint)
                 {
-                    transform.position = Vector3.MoveTowards(transform.position, startPoint, raiseSpeed * Time.deltaTime);
+                    
+                    if (isRaising == false)
+
+                    {
+                        isRaising = true;
+                        t = 0;
+                    }
+
+                    if (t < 1)
+                    {
+                        t += Time.deltaTime / raiseDuration;
+                        float easedT = Mathf.SmoothStep(0, 1, t);
+                        transform.position = Vector3.Lerp(dropPoint.position, startPoint, easedT);
+                    }
+                    else
+                    {
+                        transform.position = startPoint;
+                        isRaising = false;
+                    }
                 }
             }
         }
