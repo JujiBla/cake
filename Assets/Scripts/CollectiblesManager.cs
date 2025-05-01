@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class CollectiblesManager : MonoBehaviour
@@ -11,6 +12,8 @@ public class CollectiblesManager : MonoBehaviour
     }
 
     public int collectibleCount;
+    public List<int> collectedSinceLastCheckpoint;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +24,16 @@ public class CollectiblesManager : MonoBehaviour
         {
             UIController.instance.UpdateCollectibles(collectibleCount);
         }
+
+        CollectiblePickup[] collectedPickups = Object.FindObjectsOfType<CollectiblePickup>(true);
+        for (int i = 0; i < collectedPickups.Count(); i++)
+        {
+            CollectiblePickup pickup = collectedPickups[i];
+
+            pickup.index = i;
+        }
+        collectedSinceLastCheckpoint = new List<int>();
+
     }
 
     // Update is called once per frame

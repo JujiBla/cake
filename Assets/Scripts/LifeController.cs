@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class LifeController : MonoBehaviour
@@ -33,7 +34,7 @@ public class LifeController : MonoBehaviour
         thePlayer.gameObject.SetActive(false);
         thePlayer.theRB.velocity = Vector2.zero; //if player falls from cliff, it can gain a lot of momentum, if they spawn with that momentum the can potentialy go through the ground
 
-         StartCoroutine(RespawnCo());
+        StartCoroutine(RespawnCo());
 
         Instantiate(deathEffect, thePlayer.transform.position, deathEffect.transform.rotation);
 
@@ -43,16 +44,34 @@ public class LifeController : MonoBehaviour
     public IEnumerator RespawnCo()  //coroutine, needs to have a delay, makes player spawn after a certain amount of time
     {
         yield return new WaitForSeconds(respawnDelay);      //yield = wait until return information
-        
+
         thePlayer.transform.position = FindFirstObjectByType<CheckpointManager>().respawnPosition;
 
         PlHealthController.instance.AddHealth(PlHealthController.instance.maxHealth);
 
         thePlayer.gameObject.SetActive(true);
 
-        Instantiate(respawnEffect, thePlayer.transform.position, Quaternion.identity); 
+        Instantiate(respawnEffect, thePlayer.transform.position, Quaternion.identity);
         //rotations are handled as quaternions, they have 4 axies, quaternion.identity gives it
         //0 rotation
+
+        InfoTracker.instance.currentFruit = PlayerPrefs.GetInt("fruit");
+        if (CollectiblesManager.instance != null)    //checks if collMan is there, can cause problems if not
+        {
+            CollectiblesManager.instance.collectibleCount = 0;
+            CollectiblesManager.instance.GetCollectible(InfoTracker.instance.currentFruit);
+
+        }
+
+        CollectiblePickup[] collectedPickups = Object.FindObjectsOfType<CollectiblePickup>(true);
+        for (int i = 0; i < collectedPickups.Count(); i++)                              
+        {
+            if (CollectiblesManager.instance.collectedSinceLastCheckpoint.Contains(i))
+            {
+                CollectiblePickup pickup = collectedPickups[i];
+                pickup.gameObject.SetActive(true);
+            }
+        }
     }
- 
+
 }

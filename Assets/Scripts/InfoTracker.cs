@@ -16,7 +16,7 @@ public class InfoTracker : MonoBehaviour
             transform.SetParent(null);      //"dont destroy on load" doesnt work on childs
             DontDestroyOnLoad(gameObject);
 
-            if(PlayerPrefs.HasKey("lives")) //checks if anything is in the player prefs, gives out zero when nothing is there
+            if(PlayerPrefs.HasKey("fruit")) //checks if anything is in the player prefs, gives out zero when nothing is there
             { 
                 currentFruit = PlayerPrefs.GetInt("fruit");
             }

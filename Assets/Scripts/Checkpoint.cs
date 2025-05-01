@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Checkpoint : MonoBehaviour
 {
@@ -15,12 +17,17 @@ public class Checkpoint : MonoBehaviour
         if (other.CompareTag("Player") && isActive == false)  //&& = both need to be true
         {
             cpMan.SetActiveCheckpoint(this);
-            
+
             anim.SetBool("flagActive", true);
 
             isActive = true;
 
             AudioManager.instance.PlaySFX(3);
+
+            InfoTracker.instance.GetInfo();
+            InfoTracker.instance.SaveInfo();
+
+            CollectiblesManager.instance.collectedSinceLastCheckpoint.Clear();
         }
     }
 

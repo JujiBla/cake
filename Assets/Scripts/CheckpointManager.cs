@@ -20,6 +20,7 @@ public class CheckpointManager : MonoBehaviour
         }
 
         respawnPosition = FindFirstObjectByType<PlayerController>().transform.position;
+
     }
 
     // Update is called once per frame

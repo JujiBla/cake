@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollectiblePickup : MonoBehaviour
 {
     public int amount = 1;
+    public int index = -1;
 
     public GameObject pickupEffect;
         
@@ -16,7 +17,9 @@ public class CollectiblePickup : MonoBehaviour
             {
                 CollectiblesManager.instance.GetCollectible(amount);
 
-                Destroy(gameObject);
+                gameObject.SetActive(false);
+
+                CollectiblesManager.instance.collectedSinceLastCheckpoint.Add(index);
 
                 Instantiate(pickupEffect, transform.position, Quaternion.identity);
 
