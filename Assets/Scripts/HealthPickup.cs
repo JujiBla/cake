@@ -10,6 +10,9 @@ public class HealthPickup : MonoBehaviour
 
     public GameObject pickupEffect;
 
+    public int amountHP = 1;
+    public int indexHP = -1;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -22,11 +25,14 @@ public class HealthPickup : MonoBehaviour
                 }
                 else
                 {
+                    
                     PlHealthController.instance.AddHealth(healthToAdd);
                 }
 
+                gameObject.SetActive(false);
 
-                Destroy(gameObject);
+                CollectiblesManager.instance.collectedHPSinceLastCheckpoint.Add(indexHP);
+
                 Instantiate(pickupEffect, transform.position, transform.rotation);
                 //brings a copy of an object into the world
 

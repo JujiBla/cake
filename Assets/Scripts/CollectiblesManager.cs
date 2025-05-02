@@ -13,7 +13,7 @@ public class CollectiblesManager : MonoBehaviour
 
     public int collectibleCount;
     public List<int> collectedSinceLastCheckpoint;
-
+    public List<int> collectedHPSinceLastCheckpoint;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +34,16 @@ public class CollectiblesManager : MonoBehaviour
         }
         collectedSinceLastCheckpoint = new List<int>();
 
+        HealthPickup[] collectedHPPickups = Object.FindObjectsOfType<HealthPickup>(true);
+        for (int i = 0; i < collectedHPPickups.Count(); i++)
+        {
+            
+            HealthPickup pickupHP = collectedHPPickups[i];
+            Debug.Log("mistigermist2");
+            pickupHP.indexHP = i;
+            Debug.Log("mistigermist");
+        }
+        collectedHPSinceLastCheckpoint = new List<int>();
     }
 
     // Update is called once per frame

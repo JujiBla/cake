@@ -60,7 +60,6 @@ public class LifeController : MonoBehaviour
         {
             CollectiblesManager.instance.collectibleCount = 0;
             CollectiblesManager.instance.GetCollectible(InfoTracker.instance.currentFruit);
-
         }
 
         CollectiblePickup[] collectedPickups = Object.FindObjectsOfType<CollectiblePickup>(true);
@@ -70,6 +69,16 @@ public class LifeController : MonoBehaviour
             {
                 CollectiblePickup pickup = collectedPickups[i];
                 pickup.gameObject.SetActive(true);
+            }
+        }
+
+        HealthPickup[] collectedHPPickups = Object.FindObjectsOfType<HealthPickup>(true);
+        for (int i = 0; i < collectedHPPickups.Count(); i++)
+        {
+            if (CollectiblesManager.instance.collectedHPSinceLastCheckpoint.Contains(i))
+            {
+                HealthPickup pickupHP = collectedHPPickups[i];
+                pickupHP.gameObject.SetActive(true);
             }
         }
     }
