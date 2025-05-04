@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -25,10 +26,13 @@ public class PlayerController : MonoBehaviour
     public PhysicsMaterial2D groundedMaterial;
     public PhysicsMaterial2D airMaterial;
 
-    // Start is called before the first frame update
+     // Start is called before the first frame update
     void Start()
     {
-        
+        Scene scene = SceneManager.GetActiveScene();
+
+        PlayerPrefs.SetString("currentLevel", scene.name);
+        Debug.Log("Active Scene is '" + scene.name + "'.");
     }
 
     // Update is called once per frame
@@ -48,8 +52,6 @@ public class PlayerController : MonoBehaviour
                 playerCollider.sharedMaterial = airMaterial;
             }
 
-            //theRB.velocity = new Vector2( Input.GetAxisRaw("Horizontal") * moveSpeed, theRB.velocity.y);
-
             if (knockbackCounter <= 0)
             { 
 
@@ -66,7 +68,6 @@ public class PlayerController : MonoBehaviour
                 {
                     if(isGrounded == true)
                     {
-                        //theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
                         Jump();
                         canDoubleJump = true;
 
@@ -76,7 +77,6 @@ public class PlayerController : MonoBehaviour
                     {
                         if(canDoubleJump == true)
                         {
-                            //theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
                             Jump();
                             canDoubleJump = false;
 
