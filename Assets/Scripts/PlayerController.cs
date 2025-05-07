@@ -32,7 +32,6 @@ public class PlayerController : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene();
 
         PlayerPrefs.SetString("currentLevel", scene.name);
-        Debug.Log("Active Scene is '" + scene.name + "'.");
     }
 
     // Update is called once per frame
