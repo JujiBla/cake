@@ -12845,6 +12845,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6058571755587036712}
     m_Modifications:
+    - target: {fileID: 1491996651152335861, guid: b35256ea88af1db469901b40256a8744, type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1515678789828865298, guid: b35256ea88af1db469901b40256a8744, type: 3}
       propertyPath: m_Name
       value: Player
@@ -13135,6 +13139,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6058571755587036712}
     m_Modifications:
+    - target: {fileID: 1915654860409870406, guid: a95495af34d753642b31dd6c538b40f2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2572488804645782438, guid: a95495af34d753642b31dd6c538b40f2, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -13214,6 +13222,14 @@ PrefabInstance:
     - target: {fileID: 2572488804645782438, guid: a95495af34d753642b31dd6c538b40f2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4556163085833711718, guid: a95495af34d753642b31dd6c538b40f2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 116
+      objectReference: {fileID: 0}
+    - target: {fileID: 4556163085833711718, guid: a95495af34d753642b31dd6c538b40f2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 104
       objectReference: {fileID: 0}
     - target: {fileID: 7252346792536989295, guid: a95495af34d753642b31dd6c538b40f2, type: 3}
       propertyPath: m_Name

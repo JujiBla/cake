@@ -339,6 +339,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1648899677}
     m_Modifications:
+    - target: {fileID: 202722674946825811, guid: fd1f781eb63f7ba4fae341c338b066a0, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 202722674946825811, guid: fd1f781eb63f7ba4fae341c338b066a0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 202722674946825811, guid: fd1f781eb63f7ba4fae341c338b066a0, type: 3}
+      propertyPath: m_FillCenter
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3152707949086156551, guid: fd1f781eb63f7ba4fae341c338b066a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -366,6 +378,10 @@ PrefabInstance:
     - target: {fileID: 3152707949086156551, guid: fd1f781eb63f7ba4fae341c338b066a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782255148295589285, guid: fd1f781eb63f7ba4fae341c338b066a0, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5283469226262425082, guid: fd1f781eb63f7ba4fae341c338b066a0, type: 3}
       propertyPath: m_text

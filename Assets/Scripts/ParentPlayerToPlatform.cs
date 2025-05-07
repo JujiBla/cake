@@ -14,18 +14,13 @@ public class ParentPlayerToPlatform : MonoBehaviour
             other.GetComponent<Rigidbody2D>().interpolation = RigidbodyInterpolation2D.None;
             //Interpolation Interpolate makes player move very slow on moving platform
             //none works great but gives jittery camera movement
-        }
-        
-     
-
+        }   
     }
 
     private void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Player") && Input.GetKey(KeyCode.S))
         {
-            //Debug.Log("falling through platform");
-
             GetComponent<Collider2D>().isTrigger = true;
         }
     }
