@@ -61,6 +61,33 @@ public class LifeController : MonoBehaviour
             CollectiblesManager.instance.collectibleCount = 0;
             CollectiblesManager.instance.GetCollectible(InfoTracker.instance.currentFruit);
         }
-    }
+
+        CollectiblePickup[] collectedPickups = Object.FindObjectsOfType<CollectiblePickup>(true);
+        for (int i = 0; i < collectedPickups.Count(); i++)
+        {
+            if (CollectiblesManager.instance.collectedSinceLastCheckpoint.Contains(i))
+            {
+                CollectiblePickup pickup = collectedPickups[i];
+                pickup.gameObject.SetActive(true);
+            }
+        }
+        CollectiblesManager.instance.collectedSinceLastCheckpoint.Clear();
+
+        EnemyController[] killedEnemies = Object.FindObjectsOfType<EnemyController>(true);
+        
+        for (int i = 0; i < killedEnemies.Count(); i++)
+        {            
+            if (SaveStateManager.instance.killedSinceLastCheckpoint.Contains(i))
+            {
+                EnemyController killedEnemy = killedEnemies[i];
+
+                killedEnemy.isDefeated = false;
+                killedEnemy.hasBouncedPlayer = false;
+                killedEnemy.GetComponent<Collider2D>().enabled = true;
+                killedEnemy.gameObject.SetActive(true);
+            }
+        }
+        SaveStateManager.instance.killedSinceLastCheckpoint.Clear();
+        }
 
 }

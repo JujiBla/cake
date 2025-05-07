@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 6868553763150350564}
   - component: {fileID: 4934276215044603947}
   - component: {fileID: 5977352919262976157}
-  - component: {fileID: 2138692219932153720}
+  - component: {fileID: 4626885741558440423}
   - component: {fileID: 7555734519228462517}
   m_Layer: 0
   m_Name: Enemy - Bird
@@ -243,8 +243,11 @@ MonoBehaviour:
   anim: {fileID: 6999826335296354128}
   isDefeated: 0
   waitToDestroy: 0.5
---- !u!58 &2138692219932153720
-CircleCollider2D:
+  amount: 1
+  index: -1
+  hasBouncedPlayer: 0
+--- !u!70 &4626885741558440423
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -275,9 +278,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.23, y: 0.12}
-  serializedVersion: 2
-  m_Radius: 0.53
+  m_Offset: {x: 0.26714516, y: 0.048572063}
+  m_Size: {x: 1.0342903, y: 1.1314344}
+  m_Direction: 0
 --- !u!61 &7555734519228462517
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class InfoTracker : MonoBehaviour
 {
-
     public static InfoTracker instance;
 
     private void Awake()

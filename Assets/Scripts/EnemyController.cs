@@ -5,11 +5,17 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public Animator anim;
-
-    [HideInInspector]
+       
     public bool isDefeated;
 
     public float waitToDestroy;
+    private float currentWaitToDestroy;
+
+    public int amount = 1;
+    public int index = -1;
+
+    [HideInInspector]
+    public bool hasBouncedPlayer = false;
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +24,6 @@ public class EnemyController : MonoBehaviour
         {
             anim = GetComponent<Animator>();
         }
-
-        // anim = GetComponent<Animator>(); my animator is on the sprite, so this doesnt work like the tutorial - but this way you can find something thats on the same obj
     }
 
     // Update is called once per frame
@@ -27,11 +31,13 @@ public class EnemyController : MonoBehaviour
     {
         if (isDefeated == true)
         {
-            waitToDestroy -= Time.deltaTime;
+            currentWaitToDestroy -= Time.deltaTime;
 
-            if (waitToDestroy <= 0)
+            if (currentWaitToDestroy <= 0)
             {
-                Destroy(gameObject);
+                gameObject.SetActive(false);
+
+                SaveStateManager.instance.killedSinceLastCheckpoint.Add(index);
 
                 AudioManager.instance.PlaySFX(5);
             }
@@ -39,7 +45,7 @@ public class EnemyController : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D other) //collsion2d is an event thats created when 2 collider hit each other
+    private void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.CompareTag("Player"))
         {
@@ -52,12 +58,16 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Player") && !hasBouncedPlayer)
         {
             FindFirstObjectByType<PlayerController>().Jump();
+            hasBouncedPlayer = true;
 
             anim.SetTrigger("defeated");
+
             isDefeated = true;
+            GetComponent<Collider2D>().enabled = false;
+            currentWaitToDestroy = waitToDestroy;
 
             AudioManager.instance.PlaySFX(6);
 

@@ -28,6 +28,7 @@ public class Checkpoint : MonoBehaviour
             InfoTracker.instance.SaveInfo();
 
             CollectiblesManager.instance.collectedSinceLastCheckpoint.Clear();
+            SaveStateManager.instance.killedSinceLastCheckpoint.Clear();
         }
     }
 
