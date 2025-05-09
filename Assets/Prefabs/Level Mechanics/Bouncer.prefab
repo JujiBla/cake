@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e247d5ee4bc4d44395e07a79d186e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceAmaount: 25
+  bounceAmount: 30
   anim: {fileID: 7371310503498674278}
 --- !u!61 &8700557069698967991
 BoxCollider2D:
