@@ -50,7 +50,7 @@ public class DropBlock : MonoBehaviour
         if(activated == false && transform.position == startPoint)
         {
             isRaising = false;
-            if (Mathf.Abs(transform.position.x - player.position.x) <= activationRange && player.position.y < transform.position.y) //Mathf.abs removes - when player is to the right of obj
+            if (Mathf.Abs(transform.position.x - player.position.x) <= activationRange && player.position.y < transform.position.y && player.position.y >= dropPoint.position.y - 1 ) //Mathf.abs removes - when player is to the right of obj
             {
                 activated = true;
 
