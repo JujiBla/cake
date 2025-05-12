@@ -14,7 +14,7 @@ public class Checkpoint : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && isActive == false)  //&& = both need to be true
+        if (other.CompareTag("Player") && isActive == false) 
         {
             cpMan.SetActiveCheckpoint(this);
 

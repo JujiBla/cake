@@ -9,9 +9,9 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D theRB;
     public float jumpForce;
     public float runSpeed;
-    private float activeSpeed; //float - number with decimals
+    private float activeSpeed; 
 
-    public bool isGrounded; //bool - true or false
+    public bool isGrounded; 
     public Transform groundCheckPoint;
     public float groundCheckRadius;
     public LayerMask whatIsGround;
@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
                     activeSpeed = runSpeed;
                 }
 
-                theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * activeSpeed, theRB.velocity.y); //movement of RB left to right, horizontal from input manager
+                theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * activeSpeed, theRB.velocity.y); 
 
 
                 if (Input.GetButtonDown("Jump"))
@@ -100,13 +100,13 @@ public class PlayerController : MonoBehaviour
             }
 
             //handles animation
-            anim.SetFloat("speed", Mathf.Abs(theRB.velocity.x)); //Mathf.Abs ignores negtive prefix (-5 becomes 5), makes run animation play when going left
+            anim.SetFloat("speed", Mathf.Abs(theRB.velocity.x)); 
             anim.SetBool("isGrounded", isGrounded);
             anim.SetFloat("ySpeed", theRB.velocity.y);
         }
     }
 
-    public void Jump() //made jump into a function > everytime you have the same line of code in more than one place, make it a function! If you want to add a sound or sparkle effect to the jump you don't have to add it at every instance where the line is used, you can add it here instead
+    public void Jump() 
     {
         theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
 

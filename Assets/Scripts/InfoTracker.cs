@@ -6,6 +6,8 @@ public class InfoTracker : MonoBehaviour
 {
     public static InfoTracker instance;
 
+    public int levelStartFruit;
+
     private void Awake()
     {
         if(instance == null)
@@ -19,6 +21,7 @@ public class InfoTracker : MonoBehaviour
             { 
                 currentFruit = PlayerPrefs.GetInt("fruit");
             }
+
         } else
         {
             Destroy(gameObject);
@@ -39,5 +42,10 @@ public class InfoTracker : MonoBehaviour
     public void SaveInfo()
     {
          PlayerPrefs.SetInt("fruit", currentFruit);
+    }
+
+    public void OnLevelStart()
+    {
+        levelStartFruit = currentFruit;
     }
 }

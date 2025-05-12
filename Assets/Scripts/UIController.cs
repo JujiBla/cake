@@ -95,11 +95,11 @@ public class UIController : MonoBehaviour
 
     public void Restart()
     {
-        //Debug.Log("Restarting");
-
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Get active scene name. also adds unity scene manager on top
 
         Time.timeScale = 1f;
+
+        InfoTracker.instance.currentFruit = InfoTracker.instance.levelStartFruit;
     }
 
     public void UpdateCollectibles(int amount)

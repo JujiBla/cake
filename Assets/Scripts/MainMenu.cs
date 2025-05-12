@@ -59,5 +59,6 @@ public class MainMenu : MonoBehaviour
     public void Continue()
     {
         SceneManager.LoadScene(PlayerPrefs.GetString("currentLevel"));
+        InfoTracker.instance.currentFruit = InfoTracker.instance.levelStartFruit;
     }
 }

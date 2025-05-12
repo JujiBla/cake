@@ -8033,6 +8033,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6423917448845403030, guid: b2ce61f693f4f454c9eaca15b078b37d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7681835411293725874, guid: b2ce61f693f4f454c9eaca15b078b37d, type: 3}
       propertyPath: m_Name
       value: Checkpoint Manager
