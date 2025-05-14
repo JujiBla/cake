@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LifeController : MonoBehaviour
 {
@@ -52,8 +53,6 @@ public class LifeController : MonoBehaviour
         thePlayer.gameObject.SetActive(true);
 
         Instantiate(respawnEffect, thePlayer.transform.position, Quaternion.identity);
-        //rotations are handled as quaternions, they have 4 axies, quaternion.identity gives it
-        //0 rotation
 
         InfoTracker.instance.currentFruit = PlayerPrefs.GetInt("fruit");
         if (CollectiblesManager.instance != null)    //checks if collMan is there, can cause problems if not
@@ -88,6 +87,18 @@ public class LifeController : MonoBehaviour
             }
         }
         SaveStateManager.instance.killedSinceLastCheckpoint.Clear();
+
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+
+        if (sceneName == "level_boss")
+        {
+            SceneManager.LoadScene(sceneName);
         }
+
+    }
+
+
+
 
 }
