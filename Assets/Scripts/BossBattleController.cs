@@ -149,8 +149,6 @@ public class BossBattleController : MonoBehaviour
 
     void FireShot()
     {
-        //Debug.Log("Fires shot at " + Time.time);
-
         Instantiate(projectileToFire, 
             projectilePoints[currentShot].position, 
             projectilePoints[currentShot].rotation);
@@ -164,9 +162,7 @@ public class BossBattleController : MonoBehaviour
 
             MakeWeak();
         }
-
         AudioManager.instance.PlaySFX(2);
-
     }
 
     void MakeWeak()

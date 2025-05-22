@@ -26,7 +26,10 @@ public class PlayerController : MonoBehaviour
     public PhysicsMaterial2D groundedMaterial;
     public PhysicsMaterial2D airMaterial;
 
-     // Start is called before the first frame update
+    //[HideInInspector]
+    public bool canMove = true;
+
+    // Start is called before the first frame update
     void Start()
     {
         Scene scene = SceneManager.GetActiveScene();
@@ -37,7 +40,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Time.timeScale > 0f)
+        if (Time.timeScale > 0f)
         { 
 
             isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, whatIsGround);
@@ -56,44 +59,51 @@ public class PlayerController : MonoBehaviour
             }
 
             if (knockbackCounter <= 0)
-            { 
-
-                activeSpeed = moveSpeed;
-                if(Input.GetKey(KeyCode.LeftShift))
-                {
-                    activeSpeed = runSpeed;
-                }
-
-                theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * activeSpeed, theRB.velocity.y); 
-
-
-                if (Input.GetButtonDown("Jump"))
-                {
-                    if(isGrounded == true)
+            {
+                if (canMove)
+                { 
+                    activeSpeed = moveSpeed;
+                    if(Input.GetKey(KeyCode.LeftShift))
                     {
-                        Jump();
-                        canDoubleJump = true;
-
-                        anim.SetBool("doubleJump", false);
+                        activeSpeed = runSpeed;
                     }
-                    else if (canDoubleJump == true)
-                    { 
-                        Jump();
-                        canDoubleJump = false;
 
-                        anim.SetTrigger("doDoubleJump");     
+                    theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * activeSpeed, theRB.velocity.y); 
+
+
+                    if (Input.GetButtonDown("Jump"))
+                    {
+                        if(isGrounded == true)
+                        {
+                            Jump();
+                            canDoubleJump = true;
+
+                            anim.SetBool("doubleJump", false);
+                        }
+                        else if (canDoubleJump == true)
+                        { 
+                            Jump();
+                            canDoubleJump = false;
+
+                            anim.SetTrigger("doDoubleJump");     
+                        }
+                    }
+
+                    if(theRB.velocity.x > 0)
+                    {
+                        transform.localScale = Vector3.one;
+                    }
+                    if(theRB.velocity.x < 0)
+                    {
+                        transform.localScale = new Vector3(-1f, 1f, 1f);
                     }
                 }
-
-                if(theRB.velocity.x > 0)
+                else
                 {
-                    transform.localScale = Vector3.one;
+                   theRB.velocity = new Vector2(0, theRB.velocity.x);
                 }
-                if(theRB.velocity.x < 0)
-                {
-                    transform.localScale = new Vector3(-1f, 1f, 1f);
-                }
-            }else
+            }
+            else
             {
                 knockbackCounter -= Time.deltaTime;
 
@@ -103,7 +113,7 @@ public class PlayerController : MonoBehaviour
             //handles animation
             anim.SetFloat("speed", Mathf.Abs(theRB.velocity.x)); 
             anim.SetBool("isGrounded", isGrounded);
-            anim.SetFloat("ySpeed", theRB.velocity.y);
+            anim.SetFloat("ySpeed", theRB.velocity.y);                       
         }
     }
 
