@@ -41,6 +41,10 @@ public class PlayerController : MonoBehaviour
         { 
 
             isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, whatIsGround);
+            if (isGrounded)
+            {
+                canDoubleJump = true;
+            }
 
             if (isGrounded && playerCollider.sharedMaterial != groundedMaterial)
             {
@@ -72,15 +76,12 @@ public class PlayerController : MonoBehaviour
 
                         anim.SetBool("doubleJump", false);
                     }
-                    else
-                    {
-                        if(canDoubleJump == true)
-                        {
-                            Jump();
-                            canDoubleJump = false;
+                    else if (canDoubleJump == true)
+                    { 
+                        Jump();
+                        canDoubleJump = false;
 
-                            anim.SetTrigger("doDoubleJump");
-                        }
+                        anim.SetTrigger("doDoubleJump");     
                     }
                 }
 
