@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.timeScale > 0f)
+        if (Time.timeScale > 0f && !inputLocked)
         {
 
             isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, whatIsGround);
@@ -132,4 +132,22 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("isGrounded", true);
     }
 
+    private bool inputLocked = false;
+
+    public void LockInput()
+    {
+        inputLocked = true;
+        theRB.velocity = Vector2.zero; // Optional: stop movement immediately
+        anim.SetFloat("speed", 0);
+    }
+
+    public void UnlockInput()
+    {
+        inputLocked = false;
+    }
+
+    public bool IsInputLocked()
+    {
+        return inputLocked;
+    }
 }

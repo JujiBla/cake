@@ -25,7 +25,9 @@ public class CamController : MonoBehaviour
     private bool isFalling, isJumping;
     public float maxVertOffset = 5f;
 
-//    private Animator anim;
+    private bool justLoaded = true;
+
+    //    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +41,7 @@ public class CamController : MonoBehaviour
 
         halfHeight = theCam.orthographicSize;
         halfWidth = theCam.orthographicSize * theCam.aspect;
+
     }
 
     // Update is called once per frame
@@ -95,8 +98,16 @@ public class CamController : MonoBehaviour
         }
 
         targetPoint.x = player.transform.position.x + lookOffset;
-                
-        transform.position = Vector3.Lerp(transform.position, targetPoint, moveSpeed * Time.deltaTime);
+
+        if (justLoaded) //camera stands still after intro cutscene, before it was moving a tiny bit
+        {
+            transform.position = targetPoint;
+            justLoaded = false;
+        }
+        else
+        {
+            transform.position = Vector3.Lerp(transform.position, targetPoint, moveSpeed * Time.deltaTime);
+        }
 
         if (clampPosition == true)
         {
