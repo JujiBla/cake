@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f80484940af4fea45848e03ba5372e25
+guid: 1ed41ab86d3bb984097f578dc96e356c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -49,7 +49,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
-  spriteBorder: {x: 0, y: 0, z: 128, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_0
+      name: Dialogue_FindLumo_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,20 +131,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1efa93e7060a5e749a1a5222c2ec2ef2
-      internalID: -21753300
+      spriteID: eceb24d256ea8b3449c3f5b02055ad0d
+      internalID: -191814395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_1
+      name: Dialogue_FindLumo_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6a71ad93d1cd1749b9920eef08a4450
-      internalID: 567872032
+      spriteID: 72bb052add0f07d439385b58ae7f0e0c
+      internalID: -557659981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_2
+      name: Dialogue_FindLumo_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a479bc153d3e2244791abfb67c27955d
-      internalID: 1541411973
+      spriteID: 50e00b91e8032e64198a0c971c85b7a4
+      internalID: -1999703509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_3
+      name: Dialogue_FindLumo_3
       rect:
         serializedVersion: 2
         x: 96
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e79d6641034a67146a69601ed29ea348
-      internalID: 1627177653
+      spriteID: a620e8403d5602d48a36eb073a0e40d9
+      internalID: -62581518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_4
+      name: Dialogue_FindLumo_4
       rect:
         serializedVersion: 2
         x: 128
@@ -221,8 +221,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b1947050557c414ea31289e9f38acb1
-      internalID: -2018497989
+      spriteID: a6de77ad38c292d4cad87e5f2d7bea63
+      internalID: 340053791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_FindLumo_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503b225d24835f445953d0cea0c5a5d8
+      internalID: -144512000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_FindLumo_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4f91deac46d6841874e5b7c50d6a01
+      internalID: 225492320
       vertices: []
       indices: 
       edges: []
@@ -231,18 +273,20 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Walk_0: -21753300
-      Walk_1: 567872032
-      Walk_2: 1541411973
-      Walk_3: 1627177653
-      Walk_4: -2018497989
+      Dialogue_FindLumo_0: -191814395
+      Dialogue_FindLumo_1: -557659981
+      Dialogue_FindLumo_2: -1999703509
+      Dialogue_FindLumo_3: -62581518
+      Dialogue_FindLumo_4: 340053791
+      Dialogue_FindLumo_5: -144512000
+      Dialogue_FindLumo_6: 225492320
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

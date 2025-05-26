@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f80484940af4fea45848e03ba5372e25
+guid: ff33033bdc0606a49b0236778ec8a549
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -49,7 +49,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
-  spriteBorder: {x: 0, y: 0, z: 128, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_0
+      name: Dialogue_WhereIsLumo_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,20 +131,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1efa93e7060a5e749a1a5222c2ec2ef2
-      internalID: -21753300
+      spriteID: 0a107b4e7b5516549834ee0727f13272
+      internalID: -1265270968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_1
+      name: Dialogue_WhereIsLumo_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6a71ad93d1cd1749b9920eef08a4450
-      internalID: 567872032
+      spriteID: 1e53e5a105963aa469644b693b2dcd6a
+      internalID: -1515158928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_2
+      name: Dialogue_WhereIsLumo_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a479bc153d3e2244791abfb67c27955d
-      internalID: 1541411973
+      spriteID: f74adba04cd03964c872378a614a55b9
+      internalID: -871553651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_3
+      name: Dialogue_WhereIsLumo_3
       rect:
         serializedVersion: 2
         x: 96
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e79d6641034a67146a69601ed29ea348
-      internalID: 1627177653
+      spriteID: 231c29519a1879644bcee6963d376869
+      internalID: 1076096516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_4
+      name: Dialogue_WhereIsLumo_4
       rect:
         serializedVersion: 2
         x: 128
@@ -221,8 +221,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b1947050557c414ea31289e9f38acb1
-      internalID: -2018497989
+      spriteID: 6fcbcceba616dd748a16a486861dfe60
+      internalID: -1626699308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_WhereIsLumo_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31389027f2de9f1429fab15b2f64999c
+      internalID: -1788366320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_WhereIsLumo_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6c42a8d8ca7c846b732a01060f0a35
+      internalID: 921824176
       vertices: []
       indices: 
       edges: []
@@ -231,18 +273,20 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Walk_0: -21753300
-      Walk_1: 567872032
-      Walk_2: 1541411973
-      Walk_3: 1627177653
-      Walk_4: -2018497989
+      Dialogue_WhereIsLumo_0: -1265270968
+      Dialogue_WhereIsLumo_1: -1515158928
+      Dialogue_WhereIsLumo_2: -871553651
+      Dialogue_WhereIsLumo_3: 1076096516
+      Dialogue_WhereIsLumo_4: -1626699308
+      Dialogue_WhereIsLumo_5: -1788366320
+      Dialogue_WhereIsLumo_6: 921824176
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

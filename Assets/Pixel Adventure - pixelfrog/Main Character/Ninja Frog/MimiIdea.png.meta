@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f80484940af4fea45848e03ba5372e25
+guid: f7a4aa5b98574d64187a881abeaffba8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_0
+      name: MimiIdea_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,20 +131,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1efa93e7060a5e749a1a5222c2ec2ef2
-      internalID: -21753300
+      spriteID: 647276cf01421cc47ab3ca3fe40f7cb9
+      internalID: -357939997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_1
+      name: MimiIdea_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6a71ad93d1cd1749b9920eef08a4450
-      internalID: 567872032
+      spriteID: 64d1fbb1aaf268f408df8286e57c746b
+      internalID: 455700762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_2
+      name: MimiIdea_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a479bc153d3e2244791abfb67c27955d
-      internalID: 1541411973
+      spriteID: c0343a1112197634e99d7606c31684c4
+      internalID: 1011848295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_3
+      name: MimiIdea_3
       rect:
         serializedVersion: 2
         x: 96
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e79d6641034a67146a69601ed29ea348
-      internalID: 1627177653
+      spriteID: c97cd2b6a4cc3b2428abf7cb1022b9dd
+      internalID: 1712033533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_4
+      name: MimiIdea_4
       rect:
         serializedVersion: 2
         x: 128
@@ -221,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b1947050557c414ea31289e9f38acb1
-      internalID: -2018497989
+      spriteID: 73ffc35a12a4d894bb0b1fc6246b16d2
+      internalID: -1845022521
       vertices: []
       indices: 
       edges: []
@@ -238,11 +238,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Walk_0: -21753300
-      Walk_1: 567872032
-      Walk_2: 1541411973
-      Walk_3: 1627177653
-      Walk_4: -2018497989
+      MimiIdea_0: -357939997
+      MimiIdea_1: 455700762
+      MimiIdea_2: 1011848295
+      MimiIdea_3: 1712033533
+      MimiIdea_4: -1845022521
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
