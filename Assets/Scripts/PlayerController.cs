@@ -9,9 +9,9 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D theRB;
     public float jumpForce;
     public float runSpeed;
-    private float activeSpeed; 
+    private float activeSpeed;
 
-    public bool isGrounded; 
+    public bool isGrounded;
     public Transform groundCheckPoint;
     public float groundCheckRadius;
     public LayerMask whatIsGround;
@@ -26,9 +26,6 @@ public class PlayerController : MonoBehaviour
     public PhysicsMaterial2D groundedMaterial;
     public PhysicsMaterial2D airMaterial;
 
-    //[HideInInspector]
-    public bool canMove = true;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +38,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         if (Time.timeScale > 0f)
-        { 
+        {
 
             isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, whatIsGround);
             if (isGrounded)
@@ -60,64 +57,58 @@ public class PlayerController : MonoBehaviour
 
             if (knockbackCounter <= 0)
             {
-                if (canMove)
-                { 
-                    activeSpeed = moveSpeed;
-                    if(Input.GetKey(KeyCode.LeftShift))
+
+                activeSpeed = moveSpeed;
+                if (Input.GetKey(KeyCode.LeftShift))
+                {
+                    activeSpeed = runSpeed;
+                }
+
+                theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * activeSpeed, theRB.velocity.y);
+
+
+                if (Input.GetButtonDown("Jump"))
+                {
+                    if (isGrounded == true)
                     {
-                        activeSpeed = runSpeed;
+                        Jump();
+                        canDoubleJump = true;
+
+                        anim.SetBool("doubleJump", false);
                     }
-
-                    theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * activeSpeed, theRB.velocity.y); 
-
-
-                    if (Input.GetButtonDown("Jump"))
+                    else if (canDoubleJump == true)
                     {
-                        if(isGrounded == true)
-                        {
-                            Jump();
-                            canDoubleJump = true;
+                        Jump();
+                        canDoubleJump = false;
 
-                            anim.SetBool("doubleJump", false);
-                        }
-                        else if (canDoubleJump == true)
-                        { 
-                            Jump();
-                            canDoubleJump = false;
-
-                            anim.SetTrigger("doDoubleJump");     
-                        }
-                    }
-
-                    if(theRB.velocity.x > 0)
-                    {
-                        transform.localScale = Vector3.one;
-                    }
-                    if(theRB.velocity.x < 0)
-                    {
-                        transform.localScale = new Vector3(-1f, 1f, 1f);
+                        anim.SetTrigger("doDoubleJump");
                     }
                 }
-                else
+
+                if (theRB.velocity.x > 0)
                 {
-                   theRB.velocity = new Vector2(0, theRB.velocity.x);
+                    transform.localScale = Vector3.one;
+                }
+                if (theRB.velocity.x < 0)
+                {
+                    transform.localScale = new Vector3(-1f, 1f, 1f);
                 }
             }
             else
             {
                 knockbackCounter -= Time.deltaTime;
 
-                theRB.velocity = new Vector2( knockbackSpeed * -transform.localScale.x, theRB.velocity.y);
+                theRB.velocity = new Vector2(knockbackSpeed * -transform.localScale.x, theRB.velocity.y);
             }
 
             //handles animation
-            anim.SetFloat("speed", Mathf.Abs(theRB.velocity.x)); 
+            anim.SetFloat("speed", Mathf.Abs(theRB.velocity.x));
             anim.SetBool("isGrounded", isGrounded);
-            anim.SetFloat("ySpeed", theRB.velocity.y);                       
+            anim.SetFloat("ySpeed", theRB.velocity.y);
         }
     }
 
-    public void Jump() 
+    public void Jump()
     {
         theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
 

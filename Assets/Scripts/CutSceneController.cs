@@ -47,7 +47,7 @@ public class CutSceneController : MonoBehaviour
     public void ActivateIntro()
     {
         isSleeping = true;
-        thePlayer.canMove = false;
+        //thePlayer.canMove = false;
         cameraController.enabled = false;
         playerAnim.SetTrigger("isSleeping");
     }
