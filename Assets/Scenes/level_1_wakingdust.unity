@@ -13405,6 +13405,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 4407352902050874384}
+    - target: {fileID: 1828719662976364748, guid: b30063b3cb612394390e7db9ed67a52a, type: 3}
+      propertyPath: lookDownOffset
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3418396797800801779, guid: b30063b3cb612394390e7db9ed67a52a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

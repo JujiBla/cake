@@ -20,14 +20,16 @@ public class CamController : MonoBehaviour
 
     public float lookAheadDistance = 5f, lookAheadSpeed = 3f;
 
-    private float lookOffset;
+    private float lookOffsetX;
+    private float lookOffsetY;
 
     private bool isFalling, isJumping;
     public float maxVertOffset = 5f;
 
     private bool justLoaded = true;
 
-    //    private Animator anim;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -82,22 +84,46 @@ public class CamController : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, positionStore.y, transform.position.z);
         }
-        if (freezeHorizontal == true) //bool can only be true or false, == true not needed, but makes it more readable
+        if (freezeHorizontal == true)
         {
             transform.position = new Vector3(positionStore.x, transform.position.y, transform.position.z);
         }
 
-        if(player.theRB.velocity.x > 0f)
+
+        if (player.theRB.velocity.x == 0f && player.theRB.velocity.y == 0f)
         {
-            lookOffset = Mathf.Lerp(lookOffset, lookAheadDistance, lookAheadSpeed * Time.deltaTime);
+            if (Input.GetKey(KeyCode.S))
+            {
+                lookOffsetY = Mathf.Lerp(lookOffsetY, -lookAheadDistance, lookAheadSpeed * Time.deltaTime);
+                targetPoint.y = player.transform.position.y + lookOffsetY;
+            }
+            else if (Input.GetKey(KeyCode.W))
+            {
+                lookOffsetY = Mathf.Lerp(lookOffsetY, lookAheadDistance, lookAheadSpeed * Time.deltaTime);
+                targetPoint.y = player.transform.position.y + lookOffsetY;
+            }
+            else
+            {
+                lookOffsetY = 0;
+            }
+        }
+        else
+        {
+            lookOffsetY = 0;
+
+            if (player.theRB.velocity.x > 0f)
+            {
+                lookOffsetX = Mathf.Lerp(lookOffsetX, lookAheadDistance, lookAheadSpeed * Time.deltaTime);
+            }
+            else if (player.theRB.velocity.x < 0f)
+            {
+                lookOffsetX = Mathf.Lerp(lookOffsetX, -lookAheadDistance, lookAheadSpeed * Time.deltaTime);
+            }
+            targetPoint.x = player.transform.position.x + lookOffsetX;
         }
 
-        if (player.theRB.velocity.x < 0f)
-        {
-            lookOffset = Mathf.Lerp(lookOffset, -lookAheadDistance, lookAheadSpeed * Time.deltaTime);
-        }
 
-        targetPoint.x = player.transform.position.x + lookOffset;
+
 
         if (justLoaded) //camera stands still after intro cutscene, before it was moving a tiny bit
         {
