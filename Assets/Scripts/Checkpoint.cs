@@ -9,8 +9,16 @@ public class Checkpoint : MonoBehaviour
     private bool isActive;
     public Animator anim;
 
+    private GameObject lightObject;
+
     [HideInInspector]
     public CheckpointManager cpMan;
+
+    private void Awake()
+    {
+        lightObject = transform.Find("Light").gameObject;
+        lightObject.SetActive(false);
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -19,6 +27,7 @@ public class Checkpoint : MonoBehaviour
             cpMan.SetActiveCheckpoint(this);
 
             anim.SetBool("flagActive", true);
+            lightObject.SetActive(true);
 
             isActive = true;
 
@@ -36,5 +45,6 @@ public class Checkpoint : MonoBehaviour
     {
         anim.SetBool("flagActive", false);
         isActive = false;
+        lightObject.SetActive(false);
     }
 }

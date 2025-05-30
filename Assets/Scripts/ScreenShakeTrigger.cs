@@ -18,8 +18,7 @@ public class ScreenShakeTrigger : MonoBehaviour
 
             if (ScreenShake.Instance != null)
             {
-                StartCoroutine(ScreenShake.Instance.Shake(shakeDuration, shakeMagnitude));
-                
+                 StartCoroutine(ScreenShake.Instance.Shake(shakeDuration, shakeMagnitude));                               
             }
         }
     }

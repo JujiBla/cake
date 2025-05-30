@@ -125,7 +125,7 @@ public class CamController : MonoBehaviour
 
     }
 
-    private void OnDrawGizmos() //Gizmos are things drawn in the scene view (grid, camera outline) you cant seein game
+    private void OnDrawGizmos() //Gizmos are things drawn in the scene view (grid, camera outline) you cant see in game
     {
         if (clampPosition == true)
         {

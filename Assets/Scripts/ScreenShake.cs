@@ -5,6 +5,8 @@ using UnityEngine;
 public class ScreenShake : MonoBehaviour
 {
     public static ScreenShake Instance;
+
+
     private void Awake()
     {
         Instance = this;
@@ -15,6 +17,10 @@ public class ScreenShake : MonoBehaviour
         Vector3 originalPos = transform.localPosition;
 
         float timePassed = 0.0f;
+
+        
+
+
 
         while (timePassed < duration)
         {
