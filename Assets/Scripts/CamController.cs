@@ -80,14 +80,14 @@ public class CamController : MonoBehaviour
             }
         }
 
-        if (freezeVertical == true)
-        {
-            transform.position = new Vector3(transform.position.x, positionStore.y, transform.position.z);
-        }
-        if (freezeHorizontal == true)
-        {
-            transform.position = new Vector3(positionStore.x, transform.position.y, transform.position.z);
-        }
+        //if (freezeVertical == true)
+        //{
+        //    transform.position = new Vector3(transform.position.x, positionStore.y, transform.position.z);
+        //}
+        //if (freezeHorizontal == true)
+        //{
+        //    transform.position = new Vector3(positionStore.x, transform.position.y, transform.position.z);
+        //}
 
 
         if (player.theRB.velocity.x == 0f && player.theRB.velocity.y == 0f)
@@ -127,13 +127,18 @@ public class CamController : MonoBehaviour
 
         if (justLoaded) //camera stands still after intro cutscene, before it was moving a tiny bit
         {
+
             transform.position = targetPoint;
             justLoaded = false;
+            print("just loaded, force position " + transform.position);
         }
         else
         {
             transform.position = Vector3.Lerp(transform.position, targetPoint, moveSpeed * Time.deltaTime);
+            print("no longer just loaded, force position " + transform.position + ", wanted target " + targetPoint + ", halfwidth " + halfWidth + ", halfheight " + halfHeight);
         }
+
+
 
         if (clampPosition == true)
         {
@@ -143,6 +148,9 @@ public class CamController : MonoBehaviour
                 transform.position.z);
 
         }
+        //print("target " + targetPoint + ", clampmin " + clampMin.position + ", clampmax " + clampMax.position + ", transform" + transform.position);
+
+
 
         if (ParallaxBackground.instance != null)
         {

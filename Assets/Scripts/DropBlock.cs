@@ -12,6 +12,7 @@ public class DropBlock : MonoBehaviour
     public float fallSpeed, raiseSpeed;
 
     public Transform dropPoint;
+    public Vector3 dropPosition;
 
     private bool activated;
 
@@ -112,12 +113,12 @@ public class DropBlock : MonoBehaviour
                     {
                         t += Time.deltaTime / raiseDuration;
                         float easedT = Mathf.SmoothStep(0, 1, t);
-                        transform.position = Vector3.Lerp(dropPoint.position, startPoint, easedT);
+                        transform.position = Vector3.Lerp(dropPosition, startPoint, easedT);
                     }
                     else
                     {
                         transform.position = startPoint;
-                        isRaising = false;
+                        isRaising = false;                
                     }
                 }
             }
@@ -127,10 +128,10 @@ public class DropBlock : MonoBehaviour
     void ActivateHit()
     {
         activated = false;
-
+        isFalling = false;
         fallCounter = waitToFall;
         raiseCounter = waitToRaise;
-
+        dropPosition = transform.position;
         anim.SetTrigger("hit");
     }
 

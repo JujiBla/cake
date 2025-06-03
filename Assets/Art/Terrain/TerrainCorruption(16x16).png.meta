@@ -1,0 +1,4364 @@
+fileFormatVersion: 2
+guid: 2ab86280f21c8c843bcdf1ad94b9059f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c104c75c125954aa0358aec14b74bb
+      internalID: 289004662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afaa7cd7abbaa2a418409fc488b511d3
+      internalID: 1489874141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74eba3b7d8165c74d8e3215486183331
+      internalID: 1358715167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_3
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88e021c69691424498eca56ed04c715a
+      internalID: -1470201927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_4
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a33094058f475f24ab73a6707fdf9419
+      internalID: 672511791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_5
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586b03b4329ded74aa0db03c277b4caa
+      internalID: -656153758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_6
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd4908f6b06989409362f25fea34e3a
+      internalID: 1852155421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_7
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd8c5ea4b69c51479456c5748579b89
+      internalID: -98226823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_8
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6bfce04fd26fe4c99ca5007fa4ab2d
+      internalID: 1102755578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_9
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3f938ad2a447c428a5898bff186d57
+      internalID: 791720329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_10
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb6072df21439540b2f44e64b437b87
+      internalID: 850036137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_11
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ba22fb57da0934ea8db0d58f15650b
+      internalID: -2041664040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_12
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b2893555eab62479a814d7b5b52f85
+      internalID: 1128589375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_13
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944477c8b405dbe4ea777621e61f03f2
+      internalID: -1297470394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_14
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f158448a9880bc54aa85fa9923f4bad4
+      internalID: 384484906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_15
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62dfe3273c9ae014299833302d88d1d0
+      internalID: 2051128269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 221
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48142477e78d8843b781a87b10434ab
+      internalID: -605875744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_17
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 221
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89c7b6a264b4084db90bb9e33021389
+      internalID: -134331370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_18
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 221
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b497dded5530ae14eabae7fad4f21c34
+      internalID: -1744335743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_19
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 221
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10097b992aca184489e702a1656a9dc1
+      internalID: 1155282921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_20
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 221
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0da6bc734e2c843a4ee4cc7acc91cd
+      internalID: 696818187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_21
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 221
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac63f3202418b3d489ef1b9393a7414e
+      internalID: -582774399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_22
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 221
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca2fda8637340e47a25d6246cdd02fb
+      internalID: 471466328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_23
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 221
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f3c3f932c84574cab13546a7bd8135
+      internalID: -1137499492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_24
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 221
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060ce06e4f8a0004e890e01c130aa5d9
+      internalID: 461238323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_25
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 221
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a798f29c08a2c4e4ea9a1236374103cd
+      internalID: 597887783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_26
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 221
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024a6e69a1cdb734794a39010fcdd69f
+      internalID: -284709679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_27
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 221
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454217f9f375cd24bbf3686b24e67c6a
+      internalID: 2002224246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_28
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 221
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7160dfdd22f31434f873bde0e84b275c
+      internalID: 874145852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_29
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 221
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a528dbcd01c55564592f98e7eeb7e519
+      internalID: 588740781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_30
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 221
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2933755924b98c04393a87421cacc1ac
+      internalID: -186677858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_31
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 221
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e98adf577774424e9480692847e3893
+      internalID: 1619821837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_32
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 203
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19e705c1327d87428e5c8233d2d8f19
+      internalID: -1139472596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_33
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 203
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4150bff6427f604fbf5d7fd5aadf5df
+      internalID: -570057881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_34
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 203
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d63871675af2f49bc9e30bf775793a
+      internalID: 1127610386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_35
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 203
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7d488cdc4f4a9458b2c786dfe1cb42
+      internalID: -761220727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_36
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 203
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f897088613c174b9f8cce51169ec8e
+      internalID: -754276920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_37
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 203
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169018b351948dc458744c6e15576b87
+      internalID: 233725736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_38
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 203
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7fbda68dd84cb41ba6ceb7a6fe9576
+      internalID: -1795281460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_39
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 203
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef780c43aeaf55045b88db72491cafef
+      internalID: -502804991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_40
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 203
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab601d2fb10d71489dbb39fdd66f8a5
+      internalID: 1403715351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_41
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 203
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70964cee8c476654d95da205f03574bc
+      internalID: 824376557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_42
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 203
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee86b4539ca8bc49b15b65bfe5f36d7
+      internalID: 2107492371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_43
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 203
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e71cdc9fabaa642b47b82e37f58f0d
+      internalID: 209727845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_44
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 203
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d597713774e6775439b4e421ea5d4d1b
+      internalID: 1453999455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_45
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 203
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ab922e286a2944384014094e4ee75e
+      internalID: -81752083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_46
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 203
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b39d1c25be897834298784aad415615b
+      internalID: -1890307501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_47
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 203
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71408c2ff0bda64185fd70debc155ed
+      internalID: -1176515853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_48
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582b128c5e201f14ca67bd503bc490e8
+      internalID: 744415787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_49
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169217edbe340164c9d143ef01028085
+      internalID: -995417798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_50
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546362abdda2f5a4cab331408489bf32
+      internalID: -733611576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_51
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e700f66deb1fb844b2c852aaab1474a
+      internalID: -484133132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_52
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfbd24ae725d1f439e44c67527e1633
+      internalID: -466705375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_53
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd15abadf7caaa34fabecfea89957699
+      internalID: -1797563595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_54
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b5e2dcdb328444aa82c5c4aec8e901
+      internalID: -2139201988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_55
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7499675351c87464dbb235d4e128e630
+      internalID: 892901905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_56
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce68dd263c653004eb8b664d97469fa1
+      internalID: 1940183632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_57
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb14228dbdb377a488759b301ef783b7
+      internalID: -2131075972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_58
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f8ae37c61b29442a458c07b2723deb
+      internalID: 2116782655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_59
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552cb56e85343ee42ba99660c7895056
+      internalID: 1013738727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_60
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70eefc3129bd4d94683a7efd570f0829
+      internalID: 1995996386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_61
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48058b99cf8bfca47947ca7d82dd6ec3
+      internalID: 1388032411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_62
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3edd9b84fcfcc42b04cc077f923a1c
+      internalID: -814409752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_63
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468016ffc4e06f94fb0f3314e687c04a
+      internalID: -654214667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_64
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7571d468ae4a3a245b0af5885ddae1df
+      internalID: 890293517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_65
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1bb780240691c44fa252dfcf88a2d7b
+      internalID: -393675535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_66
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c84278517feb3043ad650582ce83088
+      internalID: -1680897573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_67
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebd8eef20f30c04692b7ce4957e2a58
+      internalID: -558239384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_68
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01637b20ffca00b4bb2103d5272eea7a
+      internalID: 609628682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_69
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8e7264fcebfc5449579f8ed1a81ac7
+      internalID: 1013459933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_70
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ddd225158caf54ebf423a85a616e34
+      internalID: -959332721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_71
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d49e59c9bb33144f87c9297c9c733e0
+      internalID: 188999874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_72
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ea3b42f0954a14ab56fe832ae6d7d8
+      internalID: -229695864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_73
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab15cccbdb563124ea926c97ba697dc3
+      internalID: -1269347614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_74
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a00f54505d15040944b794ef8a8b15
+      internalID: 1841957797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_75
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673730c13571edb4185017fcc04349be
+      internalID: -1545707228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_76
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24b4c885f98ea948974190eaa824e9c
+      internalID: 650628136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_77
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1360d84ba57d98b4181e7449129c502a
+      internalID: 1113541395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_78
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609907c5bf660de4cb4262e2740c7fa6
+      internalID: -942962578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_79
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295b303d9de3e4b458a4f87f8e032b31
+      internalID: -590795006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_80
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa1a4ef17123a748b724467bca2d7b0
+      internalID: -457709071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_81
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a60c24836d142944b019678b8a5e5ed
+      internalID: 1437860598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_82
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427b231a883afd04b960d752fa588cb6
+      internalID: 252734436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_83
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b524aa1596a324a428b46002e2248a30
+      internalID: 2028197474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_84
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe5556c9964dfc47b8b32e733059e80
+      internalID: 80413578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_85
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e0c2ae75f5ba840842aa8d951944b4
+      internalID: 876582827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_86
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac42d13750abbcb42ab147f74aae0a75
+      internalID: 549859905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_87
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668fae098c89ad745a937a8a8d9719da
+      internalID: 1395311063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_88
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e475920ffda94c4782ea18f0e6fd139
+      internalID: -1470206793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_89
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360b4e3b63683564893980fd349e4c83
+      internalID: 570333282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_90
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613ca544701155e41afc8d0a8de74dae
+      internalID: -96827700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_91
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5a57ad0190af84483b5d50f30f53b5
+      internalID: 2130013990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_92
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc323c5d137ec3468a81df44f457e6b
+      internalID: -1140684602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_93
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b545d40a2dc114e88e35239735ba67
+      internalID: 1541286922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_94
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae0673e5ee9a70418525231db0b7aa2
+      internalID: -2072474359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_95
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c18af965702ca41a95700389fd20eb
+      internalID: 470979597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_96
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648bbfad972fc794e8439e552f765371
+      internalID: 491758771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_97
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d182c2f7e4ddfdb48ae8e1c6b688b9db
+      internalID: 264304620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_98
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2cf01c69f4dfa642ae106d0869989b8
+      internalID: -218507739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_99
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 021af7014544b6940b678df73e3d1da2
+      internalID: -612112089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_100
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39846cd334b0df74db2f98f107a6c9da
+      internalID: 214230069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_101
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229f2e5c7e57fed4d9d55467e27daf96
+      internalID: 859638906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_102
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8970a6e0bb76322489b2ccaff00458d9
+      internalID: 464745404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_103
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903dbc53cfe3bae48a260b2362e0bcf0
+      internalID: 1802880799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_104
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d23cca02f2f0c4c947bac3ce7ae6af
+      internalID: -889437811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_105
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6f41ef55c6b014c89a2a9b6ad26808
+      internalID: -1451422189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_106
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884780b4a1551d8468d312c4409885b4
+      internalID: -1577014696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_107
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4fb459e8fd0b94b8af7a5dd25170aa
+      internalID: -1590656130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_108
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384af84671d5cbe4f9575966909aaaee
+      internalID: -824170838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_109
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b6d9a3f9128214a9f4bb8f3793c373
+      internalID: 807083387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_110
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a11f659ec8f857469558d19e30f6eee
+      internalID: -713385393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_111
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad9b7b0998bb074c8883893e4f7dd6b
+      internalID: 125682771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_112
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18122b9179a4954a8fd692aed036c87
+      internalID: -1805705335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_113
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7dd5efa09e29a9449e3166bf28a7b82
+      internalID: -888338483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_114
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d392d14352c6140bf0031e7ee269db
+      internalID: -1361981644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_115
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597174971890b544485a8f795685084f
+      internalID: -1379205215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_116
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8119ec2410e3145b4640da10069480
+      internalID: 2106350289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_117
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44303a052c895547ad3b19444fc1d00
+      internalID: -807970063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_118
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f726af47c19f8534a95ae38c0b6d5e28
+      internalID: -1004751147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_119
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4760d8d92337a45836307ff6c7128a
+      internalID: 1922101213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_120
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d06edde7400734ea6bd6ea9b3fa3d8
+      internalID: -1923605049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_121
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b967c58df1608a2429f82446adc0985e
+      internalID: -554068624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_122
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83750c85c5a710c4ca48a4679a39a251
+      internalID: 1212922769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_123
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253a9277eb0f4a4498d2b8e8fd71d7b1
+      internalID: -549265930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_124
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6181856dc19ed64aa302945cd3cf6a5
+      internalID: 773996215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_125
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21f86ee1d83bee4f967a8c583ac158a
+      internalID: 1829737676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_126
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b219a001177d038419644a6d31a3c06a
+      internalID: -520461960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_127
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 113
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3dce2160a53664d96428df7a87dc22
+      internalID: -692972314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_128
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bd069cf1cfd374aa5c0b82324ad604
+      internalID: -1777217515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_129
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8981f46e767888e4eb37f4d12b73be12
+      internalID: -1405822789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_130
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04bf36a48504a7e41b34c4ee4bc54eb6
+      internalID: 214064321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_131
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef94a1fb1c8e9fe46bab2581faae31c3
+      internalID: 35469126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_132
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a65986e73be3664aaccd11c95bf5396
+      internalID: 1853924135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_133
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1631fbb28a4feaf4888df258e335bb3a
+      internalID: 1037701323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_134
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830075cdbaeafa04cac8c174acd46967
+      internalID: 924835573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_135
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c53655d52d05084c8e4c344cef0dbb6
+      internalID: -1756258766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_136
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc29f9bd28c10b429601659be8a3959
+      internalID: -1181580113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_137
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d37de7e47b04f4a89261c8c9d8bdaa
+      internalID: -585347377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_138
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd39dae30b9b745418c1c62837041f86
+      internalID: 1213207357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_139
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b262ce94c25e960468499eb1b22acdd4
+      internalID: -1011399802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_140
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256f0a564cf437844b9a83b90e3d2b21
+      internalID: 1796175578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_141
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af67c75a32d97ee4885c86da65d93af5
+      internalID: 357590407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_142
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3396382ebe5ba445a584564d3f5a479
+      internalID: 388010363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_143
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82341692a4f82e14a908dc91b2c7a769
+      internalID: 882929131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_144
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abef59fe8cbd6534abe7e17d9f0fd019
+      internalID: 307413457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_145
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0500a30d16c9bf541aefd83787f9ed54
+      internalID: -344182380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_146
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9cc6077732c3c429e05779cebdf126
+      internalID: -604089833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_147
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7fac31f12b3c94cbbcee867f7e35c5
+      internalID: 872404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_148
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd186014334405a498e3a0344b24bf04
+      internalID: -1583850783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_149
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9e472b2d1866346ba9691e39052b5e
+      internalID: 119830735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_150
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6518a21c7743bac459e5db3c8e11b3c0
+      internalID: 1945421544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_151
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450606f8f59c48d428d02a3ccd530a2e
+      internalID: 1832408293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_152
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a73627a55784f54d9ecbd932b57caf3
+      internalID: -1468968346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_153
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4230ca81d388b4f9f699fd24977265
+      internalID: 432967825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_154
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420d1f2028586fe408890b5accee0605
+      internalID: 2042535306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_155
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38af48a1550fbae4c81e76dbafc0acd9
+      internalID: 688179316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_156
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cbf35829d9f44e439494a86c740f5cf
+      internalID: -1122206643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_157
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dadf3f629b7c1147b8cacedef6ae28e
+      internalID: -73580625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_158
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e145ccdf14e945c46a689c25a05be2d6
+      internalID: -1185142381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_159
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846e184236a068441a2cf7c61154c14a
+      internalID: -766222201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_160
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7cb24e36ed32ae4b90b110b93157bb2
+      internalID: -254481060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_161
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1071b4d8da0f449814b46848801517
+      internalID: 1503877282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_162
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a09a9994e87e84bbfe2dcfcbf47f79
+      internalID: 1610675346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_163
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512cc641faeb966409e38e0675fcf0f5
+      internalID: -1019333783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_164
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2491a2181fdda409bb244dfaf5142c
+      internalID: -1266976142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_165
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9af2fbe815bf174784a0acdc9b2e62d
+      internalID: 1685922160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_166
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2a77211da1f884092f957f9810bf25
+      internalID: 2123159947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_167
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dca2681f26b1ba41b31695d5771907f
+      internalID: -1095599586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_168
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2d715419c3d1547845b7f15177a913
+      internalID: 726814593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_169
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5f9598cfa83834b8b39fb9b3488b9c
+      internalID: -1785789242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_170
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5012e26349cb3c45aabee887475608d
+      internalID: 209896114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_171
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899343e65af808f498e7f7e67019b189
+      internalID: 774515639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_172
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526da05aec4309f43a5bd756c47d2c41
+      internalID: -450631796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_173
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155ed78f1ea4ce44b817a78bb68973f9
+      internalID: -1955349008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_174
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c26bc4018b240a4289912859ae8891a
+      internalID: -1248337820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_175
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74af6dc256724c44b32d8f5b7d57a47
+      internalID: -687882306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_176
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ab64eb45783964fa8dfb89ccf48874
+      internalID: -1178739305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_177
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4baf5ae3cbb3384094116a8dcc373a3
+      internalID: -122131129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_178
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95362fcd15cafea40ad9c14ac77e45f9
+      internalID: 977684712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_179
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1993acd42149924fa567cf2e0e7d9ca
+      internalID: 917411600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_180
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10002907dfa896b43a18b7b4887e7237
+      internalID: 662622719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_181
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a682adf4dbe596a438d32603dcf327b7
+      internalID: 777698781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_182
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e650b773aa2993f4c90c3256113c94d3
+      internalID: -33555903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_183
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 501a23f5e24692848b5b467623121842
+      internalID: -1741367827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_184
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec084e27859eb94bb4ec835af95e736
+      internalID: -1261100166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_185
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da1a195087a9f9429de97b2d348e008
+      internalID: 1296000394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_186
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d5eb11bbbeeff40a478eb3c3b846e7
+      internalID: -907224667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_187
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29faadbc36022944fb6cd526b92fda65
+      internalID: 722683993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_188
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abca55bd33c37ed47a57445147e0b17e
+      internalID: -704499946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_189
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d1742d4ce3faf48aa1539b85bffb32
+      internalID: 333193688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_190
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2820b554b8c99624eaeb8c5397fb00ba
+      internalID: 1094955182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerrainCorruption(16x16)_191
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5850210b23e69409cd470266e7d904
+      internalID: 1957210741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TerrainCorruption(16x16)_0: 289004662
+      TerrainCorruption(16x16)_1: 1489874141
+      TerrainCorruption(16x16)_10: 850036137
+      TerrainCorruption(16x16)_100: 214230069
+      TerrainCorruption(16x16)_101: 859638906
+      TerrainCorruption(16x16)_102: 464745404
+      TerrainCorruption(16x16)_103: 1802880799
+      TerrainCorruption(16x16)_104: -889437811
+      TerrainCorruption(16x16)_105: -1451422189
+      TerrainCorruption(16x16)_106: -1577014696
+      TerrainCorruption(16x16)_107: -1590656130
+      TerrainCorruption(16x16)_108: -824170838
+      TerrainCorruption(16x16)_109: 807083387
+      TerrainCorruption(16x16)_11: -2041664040
+      TerrainCorruption(16x16)_110: -713385393
+      TerrainCorruption(16x16)_111: 125682771
+      TerrainCorruption(16x16)_112: -1805705335
+      TerrainCorruption(16x16)_113: -888338483
+      TerrainCorruption(16x16)_114: -1361981644
+      TerrainCorruption(16x16)_115: -1379205215
+      TerrainCorruption(16x16)_116: 2106350289
+      TerrainCorruption(16x16)_117: -807970063
+      TerrainCorruption(16x16)_118: -1004751147
+      TerrainCorruption(16x16)_119: 1922101213
+      TerrainCorruption(16x16)_12: 1128589375
+      TerrainCorruption(16x16)_120: -1923605049
+      TerrainCorruption(16x16)_121: -554068624
+      TerrainCorruption(16x16)_122: 1212922769
+      TerrainCorruption(16x16)_123: -549265930
+      TerrainCorruption(16x16)_124: 773996215
+      TerrainCorruption(16x16)_125: 1829737676
+      TerrainCorruption(16x16)_126: -520461960
+      TerrainCorruption(16x16)_127: -692972314
+      TerrainCorruption(16x16)_128: -1777217515
+      TerrainCorruption(16x16)_129: -1405822789
+      TerrainCorruption(16x16)_13: -1297470394
+      TerrainCorruption(16x16)_130: 214064321
+      TerrainCorruption(16x16)_131: 35469126
+      TerrainCorruption(16x16)_132: 1853924135
+      TerrainCorruption(16x16)_133: 1037701323
+      TerrainCorruption(16x16)_134: 924835573
+      TerrainCorruption(16x16)_135: -1756258766
+      TerrainCorruption(16x16)_136: -1181580113
+      TerrainCorruption(16x16)_137: -585347377
+      TerrainCorruption(16x16)_138: 1213207357
+      TerrainCorruption(16x16)_139: -1011399802
+      TerrainCorruption(16x16)_14: 384484906
+      TerrainCorruption(16x16)_140: 1796175578
+      TerrainCorruption(16x16)_141: 357590407
+      TerrainCorruption(16x16)_142: 388010363
+      TerrainCorruption(16x16)_143: 882929131
+      TerrainCorruption(16x16)_144: 307413457
+      TerrainCorruption(16x16)_145: -344182380
+      TerrainCorruption(16x16)_146: -604089833
+      TerrainCorruption(16x16)_147: 872404
+      TerrainCorruption(16x16)_148: -1583850783
+      TerrainCorruption(16x16)_149: 119830735
+      TerrainCorruption(16x16)_15: 2051128269
+      TerrainCorruption(16x16)_150: 1945421544
+      TerrainCorruption(16x16)_151: 1832408293
+      TerrainCorruption(16x16)_152: -1468968346
+      TerrainCorruption(16x16)_153: 432967825
+      TerrainCorruption(16x16)_154: 2042535306
+      TerrainCorruption(16x16)_155: 688179316
+      TerrainCorruption(16x16)_156: -1122206643
+      TerrainCorruption(16x16)_157: -73580625
+      TerrainCorruption(16x16)_158: -1185142381
+      TerrainCorruption(16x16)_159: -766222201
+      TerrainCorruption(16x16)_16: -605875744
+      TerrainCorruption(16x16)_160: -254481060
+      TerrainCorruption(16x16)_161: 1503877282
+      TerrainCorruption(16x16)_162: 1610675346
+      TerrainCorruption(16x16)_163: -1019333783
+      TerrainCorruption(16x16)_164: -1266976142
+      TerrainCorruption(16x16)_165: 1685922160
+      TerrainCorruption(16x16)_166: 2123159947
+      TerrainCorruption(16x16)_167: -1095599586
+      TerrainCorruption(16x16)_168: 726814593
+      TerrainCorruption(16x16)_169: -1785789242
+      TerrainCorruption(16x16)_17: -134331370
+      TerrainCorruption(16x16)_170: 209896114
+      TerrainCorruption(16x16)_171: 774515639
+      TerrainCorruption(16x16)_172: -450631796
+      TerrainCorruption(16x16)_173: -1955349008
+      TerrainCorruption(16x16)_174: -1248337820
+      TerrainCorruption(16x16)_175: -687882306
+      TerrainCorruption(16x16)_176: -1178739305
+      TerrainCorruption(16x16)_177: -122131129
+      TerrainCorruption(16x16)_178: 977684712
+      TerrainCorruption(16x16)_179: 917411600
+      TerrainCorruption(16x16)_18: -1744335743
+      TerrainCorruption(16x16)_180: 662622719
+      TerrainCorruption(16x16)_181: 777698781
+      TerrainCorruption(16x16)_182: -33555903
+      TerrainCorruption(16x16)_183: -1741367827
+      TerrainCorruption(16x16)_184: -1261100166
+      TerrainCorruption(16x16)_185: 1296000394
+      TerrainCorruption(16x16)_186: -907224667
+      TerrainCorruption(16x16)_187: 722683993
+      TerrainCorruption(16x16)_188: -704499946
+      TerrainCorruption(16x16)_189: 333193688
+      TerrainCorruption(16x16)_19: 1155282921
+      TerrainCorruption(16x16)_190: 1094955182
+      TerrainCorruption(16x16)_191: 1957210741
+      TerrainCorruption(16x16)_2: 1358715167
+      TerrainCorruption(16x16)_20: 696818187
+      TerrainCorruption(16x16)_21: -582774399
+      TerrainCorruption(16x16)_22: 471466328
+      TerrainCorruption(16x16)_23: -1137499492
+      TerrainCorruption(16x16)_24: 461238323
+      TerrainCorruption(16x16)_25: 597887783
+      TerrainCorruption(16x16)_26: -284709679
+      TerrainCorruption(16x16)_27: 2002224246
+      TerrainCorruption(16x16)_28: 874145852
+      TerrainCorruption(16x16)_29: 588740781
+      TerrainCorruption(16x16)_3: -1470201927
+      TerrainCorruption(16x16)_30: -186677858
+      TerrainCorruption(16x16)_31: 1619821837
+      TerrainCorruption(16x16)_32: -1139472596
+      TerrainCorruption(16x16)_33: -570057881
+      TerrainCorruption(16x16)_34: 1127610386
+      TerrainCorruption(16x16)_35: -761220727
+      TerrainCorruption(16x16)_36: -754276920
+      TerrainCorruption(16x16)_37: 233725736
+      TerrainCorruption(16x16)_38: -1795281460
+      TerrainCorruption(16x16)_39: -502804991
+      TerrainCorruption(16x16)_4: 672511791
+      TerrainCorruption(16x16)_40: 1403715351
+      TerrainCorruption(16x16)_41: 824376557
+      TerrainCorruption(16x16)_42: 2107492371
+      TerrainCorruption(16x16)_43: 209727845
+      TerrainCorruption(16x16)_44: 1453999455
+      TerrainCorruption(16x16)_45: -81752083
+      TerrainCorruption(16x16)_46: -1890307501
+      TerrainCorruption(16x16)_47: -1176515853
+      TerrainCorruption(16x16)_48: 744415787
+      TerrainCorruption(16x16)_49: -995417798
+      TerrainCorruption(16x16)_5: -656153758
+      TerrainCorruption(16x16)_50: -733611576
+      TerrainCorruption(16x16)_51: -484133132
+      TerrainCorruption(16x16)_52: -466705375
+      TerrainCorruption(16x16)_53: -1797563595
+      TerrainCorruption(16x16)_54: -2139201988
+      TerrainCorruption(16x16)_55: 892901905
+      TerrainCorruption(16x16)_56: 1940183632
+      TerrainCorruption(16x16)_57: -2131075972
+      TerrainCorruption(16x16)_58: 2116782655
+      TerrainCorruption(16x16)_59: 1013738727
+      TerrainCorruption(16x16)_6: 1852155421
+      TerrainCorruption(16x16)_60: 1995996386
+      TerrainCorruption(16x16)_61: 1388032411
+      TerrainCorruption(16x16)_62: -814409752
+      TerrainCorruption(16x16)_63: -654214667
+      TerrainCorruption(16x16)_64: 890293517
+      TerrainCorruption(16x16)_65: -393675535
+      TerrainCorruption(16x16)_66: -1680897573
+      TerrainCorruption(16x16)_67: -558239384
+      TerrainCorruption(16x16)_68: 609628682
+      TerrainCorruption(16x16)_69: 1013459933
+      TerrainCorruption(16x16)_7: -98226823
+      TerrainCorruption(16x16)_70: -959332721
+      TerrainCorruption(16x16)_71: 188999874
+      TerrainCorruption(16x16)_72: -229695864
+      TerrainCorruption(16x16)_73: -1269347614
+      TerrainCorruption(16x16)_74: 1841957797
+      TerrainCorruption(16x16)_75: -1545707228
+      TerrainCorruption(16x16)_76: 650628136
+      TerrainCorruption(16x16)_77: 1113541395
+      TerrainCorruption(16x16)_78: -942962578
+      TerrainCorruption(16x16)_79: -590795006
+      TerrainCorruption(16x16)_8: 1102755578
+      TerrainCorruption(16x16)_80: -457709071
+      TerrainCorruption(16x16)_81: 1437860598
+      TerrainCorruption(16x16)_82: 252734436
+      TerrainCorruption(16x16)_83: 2028197474
+      TerrainCorruption(16x16)_84: 80413578
+      TerrainCorruption(16x16)_85: 876582827
+      TerrainCorruption(16x16)_86: 549859905
+      TerrainCorruption(16x16)_87: 1395311063
+      TerrainCorruption(16x16)_88: -1470206793
+      TerrainCorruption(16x16)_89: 570333282
+      TerrainCorruption(16x16)_9: 791720329
+      TerrainCorruption(16x16)_90: -96827700
+      TerrainCorruption(16x16)_91: 2130013990
+      TerrainCorruption(16x16)_92: -1140684602
+      TerrainCorruption(16x16)_93: 1541286922
+      TerrainCorruption(16x16)_94: -2072474359
+      TerrainCorruption(16x16)_95: 470979597
+      TerrainCorruption(16x16)_96: 491758771
+      TerrainCorruption(16x16)_97: 264304620
+      TerrainCorruption(16x16)_98: -218507739
+      TerrainCorruption(16x16)_99: -612112089
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
