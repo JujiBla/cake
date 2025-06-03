@@ -26,6 +26,9 @@ public class PlayerController : MonoBehaviour
     public PhysicsMaterial2D groundedMaterial;
     public PhysicsMaterial2D airMaterial;
 
+    public float coyoteTime = 0.2f;
+    private float coyoteTimeCounter;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +44,16 @@ public class PlayerController : MonoBehaviour
         {
 
             isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, whatIsGround);
+
+            if (isGrounded)
+            {
+                coyoteTimeCounter = coyoteTime;
+            }
+            else
+            {
+                coyoteTimeCounter -= Time.deltaTime;
+            }
+
             if (isGrounded)
             {
                 canDoubleJump = true;
@@ -69,18 +82,17 @@ public class PlayerController : MonoBehaviour
 
                 if (Input.GetButtonDown("Jump"))
                 {
-                    if (isGrounded == true)
+
+                    if (coyoteTimeCounter > 0f)
                     {
                         Jump();
                         canDoubleJump = true;
-
                         anim.SetBool("doubleJump", false);
                     }
-                    else if (canDoubleJump == true)
+                    else if (canDoubleJump)
                     {
                         Jump();
                         canDoubleJump = false;
-
                         anim.SetTrigger("doDoubleJump");
                     }
                 }
