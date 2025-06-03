@@ -237,8 +237,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00000074168383, y: -0.22169414}
-  m_Size: {x: 2.0207574, y: 1.3815503}
+  m_Offset: {x: 0.04291115, y: -0.22169414}
+  m_Size: {x: 1.4590758, y: 1.3815689}
   m_Direction: 1
 --- !u!114 &6103763273738835862
 MonoBehaviour:
@@ -259,6 +259,8 @@ MonoBehaviour:
   timeAtPoints: 1
   anim: {fileID: 8873485502958177146}
   theEC: {fileID: 8173303382830510075}
+  shouldChasePlayer: 0
+  distanceToChasePlayer: 0
 --- !u!114 &8173303382830510075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,6 +276,9 @@ MonoBehaviour:
   anim: {fileID: 8873485502958177146}
   isDefeated: 0
   waitToDestroy: 0.5
+  amount: 1
+  index: -1
+  hasBouncedPlayer: 0
 --- !u!61 &1457338302838640513
 BoxCollider2D:
   m_ObjectHideFlags: 0

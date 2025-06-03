@@ -130,12 +130,12 @@ public class CamController : MonoBehaviour
 
             transform.position = targetPoint;
             justLoaded = false;
-            print("just loaded, force position " + transform.position);
+            //print("just loaded, force position " + transform.position);
         }
         else
         {
             transform.position = Vector3.Lerp(transform.position, targetPoint, moveSpeed * Time.deltaTime);
-            print("no longer just loaded, force position " + transform.position + ", wanted target " + targetPoint + ", halfwidth " + halfWidth + ", halfheight " + halfHeight);
+            //print("no longer just loaded, force position " + transform.position + ", wanted target " + targetPoint + ", halfwidth " + halfWidth + ", halfheight " + halfHeight);
         }
 
 
