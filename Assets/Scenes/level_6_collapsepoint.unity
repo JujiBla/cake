@@ -9366,16 +9366,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 1046363273346005706}
     m_Modifications:
     - target: {fileID: 664109208272739892, guid: b30063b3cb612394390e7db9ed67a52a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 664109208272739892, guid: b30063b3cb612394390e7db9ed67a52a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -80.19835
+      value: -160.17
       objectReference: {fileID: 0}
     - target: {fileID: 1359424875267248617, guid: b30063b3cb612394390e7db9ed67a52a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 64.58291
+      value: 80.5
       objectReference: {fileID: 0}
     - target: {fileID: 1359424875267248617, guid: b30063b3cb612394390e7db9ed67a52a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.551647
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1828719662976364748, guid: b30063b3cb612394390e7db9ed67a52a, type: 3}
       propertyPath: player
