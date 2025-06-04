@@ -97,6 +97,7 @@ public class PlayerController : MonoBehaviour
                     }
                 }
 
+
                 if (theRB.velocity.x > 0)
                 {
                     transform.localScale = Vector3.one;
