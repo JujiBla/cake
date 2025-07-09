@@ -35,4 +35,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/level_4_puzzleoftheframes.unity
     guid: 6c1b21b11e3a88c4788557016fbce80e
+  - enabled: 1
+    path: Assets/Scenes/level_5_gearsandteeth.unity
+    guid: d494ac1526e114e40b89d280fddac16b
+  - enabled: 1
+    path: Assets/Scenes/level_6_collapsepoint.unity
+    guid: a7b71f7a6eac3204cb2c6a82e5394655
+  - enabled: 1
+    path: Assets/Scenes/level_8_backhome.unity
+    guid: 33341dfaee4264c4ab7a192d6fa0ab55
   m_configObjects: {}
