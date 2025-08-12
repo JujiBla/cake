@@ -40,6 +40,10 @@ public class BossBattleController : MonoBehaviour
 
     public GameObject deathEffect;
 
+    public GameObject[] memories;
+
+    private bool waitingForSkip = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -55,21 +59,23 @@ public class BossBattleController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(bossActive == true)
+        if (waitingForSkip && Input.GetButtonDown("Jump"))
+        {
+            Time.timeScale = 1f;
+            waitingForSkip = false;
+            memories[currentPhase].SetActive(false);
+
+            MoveToNextPhase();
+        }
+
+
+        if (bossActive == true)
         {
             cameraController.transform.position = Vector3.MoveTowards(cameraController.transform.position,
                 camPoint.position,
                 cameraMoveSpeed * Time.deltaTime);
 
-            if(theBoss.localScale != Vector3.one)
-            {
-                theBoss.localScale = Vector3.MoveTowards(
-                    theBoss.localScale,
-                    Vector3.one,
-                    bossGrowSpeed * Time.deltaTime);
-            }
-
-            if(projectileLauncher.transform.localScale != Vector3.one)
+            if (projectileLauncher.transform.localScale != Vector3.one)
             {
                 projectileLauncher.localScale = Vector3.MoveTowards(
                     projectileLauncher.localScale,
@@ -78,33 +84,22 @@ public class BossBattleController : MonoBehaviour
             }
 
             launcherRotation += launcherRotateSpeed * Time.deltaTime;
-            if(launcherRotation > 360f)
+            if (launcherRotation > 360f)
             {
-                launcherRotation -= 360f; 
+                launcherRotation -= 360f;
                 //otherwise it will add on the rotation until the game crashes bc nubers too big
             }
             projectileLauncher.transform.localRotation = Quaternion.Euler(0f, 0f, launcherRotation);
             //.euler converts quaternion into 3 values?
             //"Returns a rotation that rotates z degrees around the z axis, x degrees around the x axis,
             //and y degrees around the y axis; applied in that order."
-        
+
 
             //start shooting
-            if(shootStartCounter > 0f)
+            if (shootStartCounter > 0f)
             {
                 shootStartCounter -= Time.deltaTime;
-                if(shootStartCounter <= 0f)
-                {
-                    shotCounter = timeBetweenShots;
-
-                    FireShot();                
-                }
-            }
-
-            if(shotCounter > 0f) 
-            {
-                shotCounter -= Time.deltaTime;
-                if(shotCounter <= 0f)
+                if (shootStartCounter <= 0f)
                 {
                     shotCounter = timeBetweenShots;
 
@@ -112,25 +107,36 @@ public class BossBattleController : MonoBehaviour
                 }
             }
 
-            if(isWeak == false)
+            if (shotCounter > 0f)
             {
-                
-                    theBoss.transform.position = Vector3.MoveTowards(
-                    theBoss.transform.position,
-                    bossMovePoints[currentMovePoint].position,
-                    bossMoveSpeed * Time.deltaTime);
+                shotCounter -= Time.deltaTime;
+                if (shotCounter <= 0f)
+                {
+                    shotCounter = timeBetweenShots;
 
-                if(theBoss.transform.position == bossMovePoints[currentMovePoint].position)
+                    FireShot();
+                }
+            }
+
+            if (isWeak == false)
+            {
+
+                theBoss.transform.position = Vector3.MoveTowards(
+                theBoss.transform.position,
+                bossMovePoints[currentMovePoint].position,
+                bossMoveSpeed * Time.deltaTime);
+
+                if (theBoss.transform.position == bossMovePoints[currentMovePoint].position)
                 {
                     currentMovePoint++;
 
-                    if(currentMovePoint >= bossMovePoints.Length)
+                    if (currentMovePoint >= bossMovePoints.Length)
                     {
                         currentMovePoint = 0;
                     }
                 }
             }
-                      
+
 
         }
 
@@ -149,14 +155,14 @@ public class BossBattleController : MonoBehaviour
 
     void FireShot()
     {
-        Instantiate(projectileToFire, 
-            projectilePoints[currentShot].position, 
+        Instantiate(projectileToFire,
+            projectilePoints[currentShot].position,
             projectilePoints[currentShot].rotation);
 
         projectilePoints[currentShot].gameObject.SetActive(false);
 
         currentShot++;
-        if(currentShot >= projectilePoints.Length)
+        if (currentShot >= projectilePoints.Length)
         {
             shotCounter = 0f;
 
@@ -173,25 +179,27 @@ public class BossBattleController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            //Debug.Log("Player Hit");
-
-            if(isWeak == false)
+            if (isWeak == false)
             {
                 PlHealthController.instance.DamagePlayer();
-            } else
+            }
+            else
             {
-                if(other.transform.position.y > theBoss.position.y) //remove if boss is supposed to be damaged from all sides
+                if (other.transform.position.y > theBoss.position.y)
                 {
                     bossAnim.SetTrigger("hit");
 
-                    FindFirstObjectByType<PlayerController>().Jump();
-                    //thePlayer.Jump();
+                    StartCoroutine(MoveCameraToPlayer(new Vector3(0f, 1f, -10f), 0.3f));
 
-                    MoveToNextPhase();
+                    FindFirstObjectByType<PlayerController>().Jump();
+
+                    memories[currentPhase].SetActive(true);
+
+                    StartCoroutine(GradualPause(0.5f));
                 }
-                                
+
             }
         }
     }
@@ -200,7 +208,7 @@ public class BossBattleController : MonoBehaviour
     {
         currentPhase++;
 
-        if(currentPhase < 3)
+        if (currentPhase < 3)
         {
             isWeak = false;
 
@@ -212,7 +220,7 @@ public class BossBattleController : MonoBehaviour
 
             projectileLauncher.localScale = Vector3.zero;
 
-            foreach(Transform point in projectilePoints)
+            foreach (Transform point in projectilePoints)
             {
                 point.gameObject.SetActive(true);
             }
@@ -222,7 +230,8 @@ public class BossBattleController : MonoBehaviour
             AudioManager.instance.PlaySFX(1);
 
 
-        } else
+        }
+        else
         {
             //end the battle
 
@@ -238,4 +247,38 @@ public class BossBattleController : MonoBehaviour
             AudioManager.instance.PlayLevelMusic(FindFirstObjectByType<LevelMusicPlayer>().trackToPlay);
         }
     }
+
+    IEnumerator GradualPause(float duration)
+    {
+        float startTime = Time.unscaledTime;
+        float initialTimeScale = Time.timeScale;
+
+        while (Time.unscaledTime < startTime + duration)
+        {
+            float t = (Time.unscaledTime - startTime) / duration;
+            Time.timeScale = Mathf.Lerp(initialTimeScale, 0f, t);
+            yield return null;
+        }
+
+        Time.timeScale = 0f;
+        waitingForSkip = true;
+    }
+
+    IEnumerator MoveCameraToPlayer(Vector3 offset, float duration)
+    {
+        Transform cam = Camera.main.transform;
+        Vector3 startPos = cam.position;
+        Vector3 targetPos = FindFirstObjectByType<PlayerController>().transform.position + offset;
+
+        float time = 0f;
+        while (time < duration)
+        {
+            time += Time.unscaledDeltaTime;
+            cam.position = Vector3.Lerp(startPos, targetPos, time / duration);
+            yield return null;
+        }
+
+        cam.position = targetPos;
+    }
+
 }
