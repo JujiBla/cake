@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: Sparkles5
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 945616382, guid: 69bc7a980f2d1cf42a8095f6fce2d3d3, type: 3}
+  - {fileID: -785120644, guid: 69bc7a980f2d1cf42a8095f6fce2d3d3, type: 3}
+  - {fileID: 1597209254, guid: 69bc7a980f2d1cf42a8095f6fce2d3d3, type: 3}
+  - {fileID: -18945771, guid: 69bc7a980f2d1cf42a8095f6fce2d3d3, type: 3}
+  - {fileID: 1195552933, guid: 69bc7a980f2d1cf42a8095f6fce2d3d3, type: 3}
+  - {fileID: 486961085, guid: 69bc7a980f2d1cf42a8095f6fce2d3d3, type: 3}
+  - {fileID: -651484201, guid: 69bc7a980f2d1cf42a8095f6fce2d3d3, type: 3}
+  - {fileID: -1601288322, guid: 69bc7a980f2d1cf42a8095f6fce2d3d3, type: 3}
+  - {fileID: 126637133, guid: 69bc7a980f2d1cf42a8095f6fce2d3d3, type: 3}
+  - {fileID: -383811669, guid: 69bc7a980f2d1cf42a8095f6fce2d3d3, type: 3}
+  - {fileID: -1268663077, guid: 69bc7a980f2d1cf42a8095f6fce2d3d3, type: 3}
+  - {fileID: -818455951, guid: 69bc7a980f2d1cf42a8095f6fce2d3d3, type: 3}
+  - {fileID: 498281661, guid: 69bc7a980f2d1cf42a8095f6fce2d3d3, type: 3}
+  - {fileID: 1770718164, guid: 69bc7a980f2d1cf42a8095f6fce2d3d3, type: 3}
+  - {fileID: -561242350, guid: 69bc7a980f2d1cf42a8095f6fce2d3d3, type: 3}
+  - {fileID: 497316721, guid: 69bc7a980f2d1cf42a8095f6fce2d3d3, type: 3}
+  m_MinSpeed: 2.5
+  m_MaxSpeed: 2.5
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0
