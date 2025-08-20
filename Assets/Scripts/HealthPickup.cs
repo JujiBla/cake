@@ -22,7 +22,6 @@ public class HealthPickup : MonoBehaviour
                 }
                 else
                 {
-                    
                     PlHealthController.instance.AddHealth(healthToAdd);
                 }
 

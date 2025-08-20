@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CamController : MonoBehaviour
 {
-    public bool freezeVertical, freezeHorizontal;
+    public bool freezeVertical;
+    public bool freezeHorizontal;
     private Vector3 positionStore;
 
     public bool clampPosition;

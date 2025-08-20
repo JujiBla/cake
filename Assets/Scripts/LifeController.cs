@@ -33,7 +33,7 @@ public class LifeController : MonoBehaviour
     public void Respawn()
     {
         thePlayer.gameObject.SetActive(false);
-        thePlayer.theRB.velocity = Vector2.zero; //if player falls from cliff, it can gain a lot of momentum, if they spawn with that momentum the can potentialy go through the ground
+        thePlayer.theRB.velocity = Vector2.zero;  // if player falls from cliff, it can gain a lot of momentum, if they spawn with that momentum the can potentialy go through the ground
 
         StartCoroutine(RespawnCo());
 
@@ -42,9 +42,9 @@ public class LifeController : MonoBehaviour
         AudioManager.instance.PlaySFXPitched(11);
     }
 
-    public IEnumerator RespawnCo()  //coroutine, needs to have a delay, makes player spawn after a certain amount of time
+    public IEnumerator RespawnCo()  // coroutine, needs to have a delay, makes player spawn after a certain amount of time
     {
-        yield return new WaitForSeconds(respawnDelay);      //yield = wait until return information
+        yield return new WaitForSeconds(respawnDelay);  // yield = wait until return information
 
         thePlayer.transform.position = FindFirstObjectByType<CheckpointManager>().respawnPosition;
 
@@ -55,7 +55,7 @@ public class LifeController : MonoBehaviour
         Instantiate(respawnEffect, thePlayer.transform.position, Quaternion.identity);
 
         InfoTracker.instance.currentFruit = PlayerPrefs.GetInt("fruit");
-        if (CollectiblesManager.instance != null)    //checks if collMan is there, can cause problems if not
+        if (CollectiblesManager.instance != null)  // checks if collMan is there, can cause problems if not
         {
             CollectiblesManager.instance.collectibleCount = 0;
             CollectiblesManager.instance.GetCollectible(InfoTracker.instance.currentFruit);
@@ -95,10 +95,6 @@ public class LifeController : MonoBehaviour
         {
             SceneManager.LoadScene(sceneName);
         }
-
     }
-
-
-
-
+    
 }

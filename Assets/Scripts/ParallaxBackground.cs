@@ -20,7 +20,7 @@ public class ParallaxBackground : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        theCam = Camera.main.transform; //back in the day camera.main was bad to use in update, bc it would search everything every frame - uses lot of processing power, today stored in memory after been done once, no prob!
+        theCam = Camera.main.transform;  // back in the day camera.main was bad to use in update, bc it would search everything every frame - uses lot of processing power, today stored in memory after been done once, no prob!
     }
 
     // Update is called once per frame
@@ -34,11 +34,13 @@ public class ParallaxBackground : MonoBehaviour
         sky.position = new Vector3(
             theCam.position.x * parallaxSpeed * .8f, 
             sky.position.y, 
-            sky.position.z);
+            sky.position.z
+        );
 
         treeline.position = new Vector3(
             theCam.position.x * parallaxSpeed,
             treeline.position.y,
-            treeline.position.z);
+            treeline.position.z
+        );
     }
 }

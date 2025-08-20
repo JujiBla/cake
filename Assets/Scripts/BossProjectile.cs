@@ -13,11 +13,11 @@ public class BossProjectile : MonoBehaviour
     void Start()
     {
         direction = (PlHealthController.instance.transform.position - transform.position).normalized;
-        //Makes this vector have a magnitude of 1. When normalized, a vector keeps the same
-        //direction but its length is 1.0.
-        //Instead of going the whole distance from point a to b, it goes in the direction
-        //with a magnitude of one every frame.. so one unity unit per frame instead the whole
-        //thing at once?
+        // Makes this vector have a magnitude of 1. When normalized, a vector keeps the same
+        // direction but its length is 1.0.
+        // Instead of going the whole distance from point a to b, it goes in the direction
+        // with a magnitude of one every frame.. so one unity unit per frame instead the whole
+        // thing at once?
 
         Destroy(gameObject, lifetime);
     }
@@ -30,7 +30,7 @@ public class BossProjectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             PlHealthController.instance.DamagePlayer();
 

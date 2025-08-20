@@ -20,11 +20,9 @@ public class DamgePlayer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-
             //other.gameObject.SetActive(false); //deactivates player in inspector
-
             PlHealthController.instance.DamagePlayer();
         }
     }

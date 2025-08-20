@@ -24,9 +24,9 @@ public class EnemyPatrol : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        foreach(Transform t in patrolPoints)
+        foreach(Transform _transform in patrolPoints)
         {
-            t.SetParent(null);      //removes Points from parent, otherwise they would move with the enemy and he never reaches his destination
+            _transform.SetParent(null);  // removes Points from parent, otherwise they would move with the enemy and he never reaches his destination
         }
 
         waitCounter = timeAtPoints;
@@ -35,9 +35,8 @@ public class EnemyPatrol : MonoBehaviour
         {
             anim = GetComponent<Animator>();
         }
-            
 
-        anim.SetBool("isMoving", true); //"isMoving must be spelled the same as in the editor
+        anim.SetBool("isMoving", true);  // "isMoving must be spelled the same as in the editor
 
         if (shouldChasePlayer == true)
         {
@@ -49,18 +48,18 @@ public class EnemyPatrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(theEC.isDefeated == false)
+        if (theEC.isDefeated == false)
         { 
-
-            if(shouldChasePlayer == true)
+            if (shouldChasePlayer == true)
             {
-                if(isChasing == false)
+                if (isChasing == false)
                 {
                     if(Vector3.Distance(transform.position, thePlayer.transform.position) < distanceToChasePlayer) //gets distance between two points
                     {
                         isChasing = true;
                     }                 
-                } else
+                } 
+                else
                 {
                     if (Vector3.Distance(transform.position, thePlayer.transform.position) > distanceToChasePlayer) 
                     {
@@ -74,17 +73,15 @@ public class EnemyPatrol : MonoBehaviour
                         {
                             transform.localScale = Vector3.one;
                         }
-
-
                     }
                 }
             }
 
-            if(shouldChasePlayer == false || (shouldChasePlayer == true && isChasing == false) ) // || = or
+            if (shouldChasePlayer == false || (shouldChasePlayer == true && isChasing == false) ) // || = or
             {                
                 transform.position = Vector3.MoveTowards(transform.position, patrolPoints[currentPoint].position, moveSpeed * Time.deltaTime);
     
-                if(Vector3.Distance(transform.position, patrolPoints[currentPoint].position) < .001f)
+                if (Vector3.Distance(transform.position, patrolPoints[currentPoint].position) < 0.001f)
                 {
                     waitCounter -= Time.deltaTime;
 
@@ -110,24 +107,22 @@ public class EnemyPatrol : MonoBehaviour
                         {
                             transform.localScale = Vector3.one;
                         }
-
                     }
                 }
-            } else if (isChasing == true)
+            }
+            else if (isChasing == true)
             {
                 transform.position = Vector3.MoveTowards(transform.position, thePlayer.transform.position, moveSpeed * 1.5f * Time.deltaTime);
 
-                if(transform.position.x > thePlayer.transform.position.x)
+                if (transform.position.x > thePlayer.transform.position.x)
                 {
                     transform.localScale = Vector3.one;
-                } else
+                }
+                else
                 {
                     transform.localScale = new Vector3(-1f, 1f, 1f);
                 }
             }
-
-
         }
-        
     }
 }

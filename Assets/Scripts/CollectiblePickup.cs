@@ -11,9 +11,9 @@ public class CollectiblePickup : MonoBehaviour
         
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            if(CollectiblesManager.instance != null)    //checks if collMan is there, can cause problems if not
+            if (CollectiblesManager.instance != null)  // checks if collMan is there, can cause problems if not
             {
                 CollectiblesManager.instance.GetCollectible(amount);
 
@@ -27,7 +27,4 @@ public class CollectiblePickup : MonoBehaviour
             }
         }
     }
-
-
-
 }
