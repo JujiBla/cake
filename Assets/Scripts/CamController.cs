@@ -140,18 +140,15 @@ public class CamController : MonoBehaviour
             {
                 transform.position = Vector3.Lerp(transform.position, targetPoint, moveSpeed * Time.deltaTime);
                 
-                // if mimi gets out of cam while falling force hard following
+                // if mimi gets out of cam while falling force different following
                 if (theCam.WorldToScreenPoint(player.transform.position).y <= 40f)
                 {
                     lerpY = false;
                     lerpFallingOffset = transform.position - targetPoint;
-                    //transform.position = targetPoint + lerpFallingOffset;
-                    //transform.position = Vector3.Lerp(transform.position, targetPoint + lerpFallingOffset, 100 * Time.deltaTime);
                 }
             }
             else
             {
-                //transform.position = targetPoint + lerpFallingOffset + new Vector3(0f, -1f, 0f);
                 transform.position = Vector3.Lerp(transform.position, targetPoint + lerpFallingOffset + new Vector3(0f, -1f, 0f), 40 * Time.deltaTime);
             }
             //print("no longer just loaded, force position " + transform.position + ", wanted target " + targetPoint + ", halfwidth " + halfWidth + ", halfheight " + halfHeight);
