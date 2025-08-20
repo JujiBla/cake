@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class CamController : MonoBehaviour
 {
-    public bool freezeVertical, freezeHorizontal;
+    public bool freezeVertical;
+    public bool freezeHorizontal;
     private Vector3 positionStore;
 
     public bool clampPosition;
-    public Transform clampMin, clampMax;
-    private float halfWidth, halfHeight;
+    public Transform clampMin;
+    public Transform clampMax;
+    private float halfWidth;
+    private float halfHeight;
     public Camera theCam;
 
     private Vector3 targetPoint = Vector3.zero;
@@ -18,19 +21,20 @@ public class CamController : MonoBehaviour
 
     public float moveSpeed;
 
-    public float lookAheadDistance = 5f, lookAheadSpeed = 3f;
+    public float lookAheadDistance = 5f;
+    public float lookAheadSpeed = 3f;
 
     private float lookOffsetX;
     private float lookOffsetY;
 
-    private bool isFalling, isJumping;
+    private bool isFalling;
+    private bool isJumping;
     public float maxVertOffset = 5f;
 
     private bool justLoaded = true;
-
-
-
-
+    private bool lerpY = true;
+    private Vector3 lerpFallingOffset = Vector3.zero;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -43,13 +47,11 @@ public class CamController : MonoBehaviour
 
         halfHeight = theCam.orthographicSize;
         halfWidth = theCam.orthographicSize * theCam.aspect;
-
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
-
         if (transform.position.y - player.transform.position.y < maxVertOffset)
         {
             isJumping = true;
@@ -70,13 +72,14 @@ public class CamController : MonoBehaviour
             isFalling = true;
         }
 
-        if(isFalling)
+        if (isFalling)
         {
             targetPoint.y = player.transform.position.y;
 
-            if(player.isGrounded)
+            if (player.isGrounded)
             {
                 isFalling = false;
+                lerpY = true;
             }
         }
 
@@ -88,8 +91,8 @@ public class CamController : MonoBehaviour
         //{
         //    transform.position = new Vector3(positionStore.x, transform.position.y, transform.position.z);
         //}
-
-
+        
+        // (player.theRB.velocity == Vector2.zero)
         if (player.theRB.velocity.x == 0f && player.theRB.velocity.y == 0f)
         {
             if (Input.GetKey(KeyCode.S))
@@ -119,10 +122,9 @@ public class CamController : MonoBehaviour
             {
                 lookOffsetX = Mathf.Lerp(lookOffsetX, -lookAheadDistance, lookAheadSpeed * Time.deltaTime);
             }
+            
             targetPoint.x = player.transform.position.x + lookOffsetX;
         }
-
-
 
 
         if (justLoaded) //camera stands still after intro cutscene, before it was moving a tiny bit
@@ -130,46 +132,58 @@ public class CamController : MonoBehaviour
 
             transform.position = targetPoint;
             justLoaded = false;
+            lerpY = true;
             //print("just loaded, force position " + transform.position);
         }
         else
         {
-            transform.position = Vector3.Lerp(transform.position, targetPoint, moveSpeed * Time.deltaTime);
+            if (lerpY)
+            {
+                transform.position = Vector3.Lerp(transform.position, targetPoint, moveSpeed * Time.deltaTime);
+                
+                // if mimi gets out of cam while falling force different following
+                if (theCam.WorldToScreenPoint(player.transform.position).y <= 40f)
+                {
+                    lerpY = false;
+                    lerpFallingOffset = transform.position - targetPoint;
+                }
+            }
+            else
+            {
+                transform.position = Vector3.Lerp(transform.position, targetPoint + lerpFallingOffset + new Vector3(0f, -1f, 0f), 40 * Time.deltaTime);
+            }
             //print("no longer just loaded, force position " + transform.position + ", wanted target " + targetPoint + ", halfwidth " + halfWidth + ", halfheight " + halfHeight);
         }
-
-
+        
 
         if (clampPosition == true)
         {
             transform.position = new Vector3(
                 Mathf.Clamp(transform.position.x, clampMin.position.x + halfWidth, clampMax.position.x - halfWidth),
                 Mathf.Clamp(transform.position.y, clampMin.position.y + halfHeight, clampMax.position.y - halfHeight),
-                transform.position.z);
-
+                transform.position.z
+            );
         }
         //print("target " + targetPoint + ", clampmin " + clampMin.position + ", clampmax " + clampMax.position + ", transform" + transform.position);
-
 
 
         if (ParallaxBackground.instance != null)
         {
             ParallaxBackground.instance.MoveBackground();
         }
-
     }
 
     private void OnDrawGizmos() //Gizmos are things drawn in the scene view (grid, camera outline) you cant see in game
     {
-        if (clampPosition == true)
-        {
-            Gizmos.color = Color.cyan;
-            Gizmos.DrawLine(clampMin.position, new Vector3(clampMin.position.x, clampMax.position.y, 0f));
-            Gizmos.DrawLine(clampMin.position, new Vector3(clampMax.position.x, clampMin.position.y, 0f));
+        if (clampPosition == false)
+        { return; }
 
-            Gizmos.DrawLine(clampMax.position, new Vector3(clampMin.position.x, clampMax.position.y, 0f));
-            Gizmos.DrawLine(clampMax.position, new Vector3(clampMax.position.x, clampMin.position.y, 0f));
-        }
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawLine(clampMin.position, new Vector3(clampMin.position.x, clampMax.position.y, 0f));
+        Gizmos.DrawLine(clampMin.position, new Vector3(clampMax.position.x, clampMin.position.y, 0f));
+
+        Gizmos.DrawLine(clampMax.position, new Vector3(clampMin.position.x, clampMax.position.y, 0f));
+        Gizmos.DrawLine(clampMax.position, new Vector3(clampMax.position.x, clampMin.position.y, 0f));
     }
 
 }

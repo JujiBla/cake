@@ -18,10 +18,6 @@ public class ScreenShake : MonoBehaviour
 
         float timePassed = 0.0f;
 
-        
-
-
-
         while (timePassed < duration)
         {
             float x = Random.Range(-1f, 1f) * magnitude;
@@ -32,15 +28,13 @@ public class ScreenShake : MonoBehaviour
             timePassed += Time.deltaTime;
 
             yield return null;
-            //Pause this Coroutine until the next frame, then continue from here
-            //That's what makes the shake feel alive and spread across multiple frames.
-            //If you didn't use yield return null;, everything in the Coroutine would just happen immediately,
-            //in the same frame, making the screen shake so fast the player wouldn't even see it.
+            // Pause this Coroutine until the next frame, then continue from here
+            // That's what makes the shake feel alive and spread across multiple frames.
+            // If you didn't use yield return null;, everything in the Coroutine would just happen immediately,
+            // in the same frame, making the screen shake so fast the player wouldn't even see it.
         }
 
         transform.localPosition = originalPos;
-
-
     }
 
 }

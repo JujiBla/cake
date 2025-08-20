@@ -6,7 +6,7 @@ using UnityEngine;
 public class CollectiblesManager : MonoBehaviour
 {
     public static CollectiblesManager instance;
-        private void Awake()
+    private void Awake()
     {
         instance = this;
     }
@@ -31,8 +31,8 @@ public class CollectiblesManager : MonoBehaviour
 
             pickup.index = i;
         }
-        collectedSinceLastCheckpoint = new List<int>();
         
+        collectedSinceLastCheckpoint = new List<int>();
     }
 
     // Update is called once per frame
@@ -45,7 +45,7 @@ public class CollectiblesManager : MonoBehaviour
     {
         collectibleCount += amount;
         
-        if(UIController.instance != null)
+        if (UIController.instance != null)
         {
             UIController.instance.UpdateCollectibles(collectibleCount);
         }

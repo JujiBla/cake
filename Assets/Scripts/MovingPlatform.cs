@@ -17,13 +17,14 @@ public class MovingPlatform : MonoBehaviour
         thePlatform.position = Vector3.MoveTowards(
             thePlatform.position,
             movePoints[currentPoint].position,
-            moveSpeed * Time.deltaTime);
+            moveSpeed * Time.deltaTime
+        );
 
-        if(thePlatform.position == movePoints[currentPoint].position)
+        if (thePlatform.position == movePoints[currentPoint].position)
         {
             currentPoint++;
 
-            if(currentPoint >= movePoints.Length)
+            if (currentPoint >= movePoints.Length)
             {
                 currentPoint = 0;
             }

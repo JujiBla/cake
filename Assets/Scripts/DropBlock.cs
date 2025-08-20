@@ -7,9 +7,10 @@ public class DropBlock : MonoBehaviour
 {
     private Transform player;
 
-    public float activationRange = .5F; //how close player is horizontally (x)
+    public float activationRange = 0.5F;  // how close player is horizontally (x)
 
-    public float fallSpeed, raiseSpeed;
+    public float fallSpeed;
+    public float raiseSpeed;
 
     public Transform dropPoint;
     public Vector3 dropPosition;
@@ -18,12 +19,15 @@ public class DropBlock : MonoBehaviour
 
     private Vector3 startPoint;
 
-    public float waitToFall, waitToRaise;
-    private float fallCounter, raiseCounter;
+    public float waitToFall;
+    public float waitToRaise;
+    
+    private float fallCounter;
+    private float raiseCounter;
 
     public Animator anim;
 
-    private float t; // interpolation timer;
+    private float interpolationTimer;
 
     public float fallDuration = 0.5f;
     public float raiseDuration = 0.5f;
@@ -48,18 +52,17 @@ public class DropBlock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(activated == false && transform.position == startPoint)
+        if (activated == false && transform.position == startPoint)
         {
             isRaising = false;
             if (Mathf.Abs(transform.position.x - player.position.x) <= activationRange && player.position.y < transform.position.y && player.position.y >= dropPoint.position.y - 1 ) //Mathf.abs removes - when player is to the right of obj
             {
                 activated = true;
-
                 anim.SetTrigger("blink");
             }
         }
 
-        if(activated == true)
+        if (activated == true)
         {
             if (fallCounter > 0)
             {
@@ -70,23 +73,20 @@ public class DropBlock : MonoBehaviour
                 if (!isFalling)
                 {
                     isFalling = true;
-                    t = 0;
+                    interpolationTimer = 0;
                 }
 
-                if (t < 1)
+                if (interpolationTimer < 1)
                 {
-                    
-                    t += Time.deltaTime / fallDuration;
-                    float easedT = Mathf.SmoothStep(0, 1, t);
-                    transform.position = Vector3.Lerp(startPoint, dropPoint.position, easedT);
+                    interpolationTimer += Time.deltaTime / fallDuration;
+                    float easedTime = Mathf.SmoothStep(0, 1, interpolationTimer);
+                    transform.position = Vector3.Lerp(startPoint, dropPoint.position, easedTime);
                 }
                 else
                 {
                     transform.position = dropPoint.position;
                     ActivateHit();
                     isFalling = false;
-
-
                 }
             }
         } 
@@ -95,7 +95,6 @@ public class DropBlock : MonoBehaviour
             if (raiseCounter > 0)
             {
                 raiseCounter -= Time.deltaTime;
-                
             }
             else
             {
@@ -103,17 +102,16 @@ public class DropBlock : MonoBehaviour
                 {
                     
                     if (isRaising == false)
-
                     {
                         isRaising = true;
-                        t = 0;
+                        interpolationTimer = 0;
                     }
 
-                    if (t < 1)
+                    if (interpolationTimer < 1)
                     {
-                        t += Time.deltaTime / raiseDuration;
-                        float easedT = Mathf.SmoothStep(0, 1, t);
-                        transform.position = Vector3.Lerp(dropPosition, startPoint, easedT);
+                        interpolationTimer += Time.deltaTime / raiseDuration;
+                        float easedTime = Mathf.SmoothStep(0, 1, interpolationTimer);
+                        transform.position = Vector3.Lerp(dropPosition, startPoint, easedTime);
                     }
                     else
                     {
@@ -137,7 +135,7 @@ public class DropBlock : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             ActivateHit();
 

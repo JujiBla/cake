@@ -14,19 +14,18 @@ public class CheckpointManager : MonoBehaviour
     {
         allCP = FindObjectsByType<Checkpoint>(FindObjectsSortMode.None);
 
-        foreach (Checkpoint cp in allCP)
+        foreach (Checkpoint checkpoint in allCP)
         {
-            cp.cpMan = this;
+            checkpoint.cpMan = this;
         }
 
         respawnPosition = FindFirstObjectByType<PlayerController>().transform.position;
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             DeactivateAllCheckpoints();
         }
@@ -34,7 +33,7 @@ public class CheckpointManager : MonoBehaviour
 
     public void DeactivateAllCheckpoints()
     {
-        foreach(Checkpoint cp in allCP)
+        foreach (Checkpoint cp in allCP)
         {
             cp.DeactivateCheckpoint();
         }

@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class ChangeSceneOnTimer : MonoBehaviour
 {
-
     public float changeTime;
     public string sceneName;
 
@@ -13,11 +12,9 @@ public class ChangeSceneOnTimer : MonoBehaviour
     void Update()
     {
         changeTime -= Time.deltaTime;
-        if(changeTime <= 0)
+        if (changeTime <= 0)
         {
             SceneManager.LoadScene(sceneName);
         }
-
-        
     }
 }

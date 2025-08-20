@@ -26,13 +26,13 @@ public class MainMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.M))
         {
             AudioManager.instance.PlayLevelMusic(1);
         }
 
 #if UNITY_EDITOR
-        if(Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             PlayerPrefs.DeleteAll();
         }
@@ -51,7 +51,7 @@ public class MainMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit(); //doesnt work in editor
+        Application.Quit();  // doesnt work in editor
 
         Debug.Log("I Quit");
     }

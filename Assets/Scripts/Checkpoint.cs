@@ -22,23 +22,27 @@ public class Checkpoint : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && isActive == false) 
-        {
-            cpMan.SetActiveCheckpoint(this);
+        if (!other.CompareTag("Player"))
+        { return; }
+        
+        if (isActive) 
+        { return; }
+        
+        cpMan.SetActiveCheckpoint(this);
 
-            anim.SetBool("flagActive", true);
-            lightObject.SetActive(true);
+        anim.SetBool("flagActive", true);
+        lightObject.SetActive(true);
 
-            isActive = true;
+        isActive = true;
 
-            AudioManager.instance.PlaySFX(3);
+        AudioManager.instance.PlaySFX(3);
 
-            InfoTracker.instance.GetInfo();
-            InfoTracker.instance.SaveInfo();
+        InfoTracker.instance.GetInfo();
+        InfoTracker.instance.SaveInfo();
 
-            CollectiblesManager.instance.collectedSinceLastCheckpoint.Clear();
-            SaveStateManager.instance.killedSinceLastCheckpoint.Clear();
-        }
+        CollectiblesManager.instance.collectedSinceLastCheckpoint.Clear();
+        SaveStateManager.instance.killedSinceLastCheckpoint.Clear();
+        
     }
 
     public void DeactivateCheckpoint()

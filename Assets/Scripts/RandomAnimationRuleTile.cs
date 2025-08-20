@@ -54,6 +54,7 @@ namespace Map
             /// Id for this Rule.
             /// </summary>
             public int m_Id;
+            
             /// <summary>
             /// The output Sprites for this Rule.
             /// </summary>
@@ -63,18 +64,22 @@ namespace Map
                     m_Sprites = new Sprite[1]
                 }
             };
+            
             /// <summary>
             /// The output GameObject for this Rule.
             /// </summary>
             public GameObject m_GameObject;
+            
             /// <summary>
             /// The perlin scale factor for this Rule.
             /// </summary>
             public float m_PerlinScale = 0.5f;
+            
             /// <summary>
             /// The output Collider Type for this Rule.
             /// </summary>
             public Tile.ColliderType m_ColliderType = Tile.ColliderType.Sprite;
+            
             /// <summary>
             /// The randomized transform output for this Rule.
             /// </summary>
@@ -136,6 +141,7 @@ namespace Map
                 /// If not, the rule will fail.
                 /// </summary>
                 public const int This = 1;
+                
                 /// <summary>
                 /// The Rule Tile will check if the contents of the cell in that direction is not an instance of this Rule Tile.
                 /// If it is, the rule will fail.

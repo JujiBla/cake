@@ -5,10 +5,10 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
-
+    
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             SetupAudioManager();
         }
@@ -21,8 +21,8 @@ public class AudioManager : MonoBehaviour
     public void SetupAudioManager()
     {
         instance = this;
-        DontDestroyOnLoad(gameObject); //when new scene is loaded all gameobj are destroyed, this
-                                       //prevents that, so we can have the Audioman everywhere
+        DontDestroyOnLoad(gameObject); // when new scene is loaded all gameobj are destroyed, this
+                                       // prevents that, so we can have the Audioman everywhere
     }
 
     public AudioSource menuMusic, bossMusic, levelCompleteMusic;
@@ -72,11 +72,11 @@ public class AudioManager : MonoBehaviour
         allSFX[sfxToPlay].Play();
     }
 
-    public void PlaySFXPitched(int sfxToPlay)
+    public void PlaySFXPitched(int sfxToPlay, float pitchMin = 0.75f, float pitchMax = 1.25f)
     {
         allSFX[sfxToPlay].Stop();
 
-        allSFX[sfxToPlay].pitch = Random.Range(.75f, 1.25f);
+        allSFX[sfxToPlay].pitch = Random.Range(pitchMin, pitchMax);
 
         allSFX[sfxToPlay].Play();
     }

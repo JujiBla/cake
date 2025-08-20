@@ -36,18 +36,17 @@ public class PlHealthController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(invincibilityCounter > 0)
+        if (invincibilityCounter > 0)
         {
             invincibilityCounter -= Time.deltaTime; 
-            if(invincibilityCounter <= 0)
+            if (invincibilityCounter <= 0)
             {
                 theSR.color = normalColor;
             }
         }
 
-#if UNITY_EDITOR  //only works in editor,  not in built game
-
-        if(Input.GetKeyDown(KeyCode.H))
+#if UNITY_EDITOR  // only works in editor,  not in built game
+        if (Input.GetKeyDown(KeyCode.H))
         {
             AddHealth(1);
         }
@@ -61,17 +60,18 @@ public class PlHealthController : MonoBehaviour
 
     public void DamagePlayer()
     {
-        if(invincibilityCounter <= 0)
+        if (invincibilityCounter <= 0)
         {
-            currentHealth--; // -- takes one away
+            currentHealth--;  // -- takes one away
         
-            if(currentHealth <= 0)
+            if (currentHealth <= 0)
             {
                 currentHealth = 0;
                                 
                 LifeController.instance.Respawn();
                                
-            } else
+            }
+            else
             {
                 invincibilityCounter = invincibilityLength;
 
@@ -81,8 +81,8 @@ public class PlHealthController : MonoBehaviour
 
                 AudioManager.instance.PlaySFXPitched(13);
             }
-
-                UIController.instance.UpdateHealthDisplay(currentHealth, maxHealth);
+            
+            UIController.instance.UpdateHealthDisplay(currentHealth, maxHealth);
         }
         
     }
@@ -91,7 +91,7 @@ public class PlHealthController : MonoBehaviour
     {
         currentHealth += amountToAdd;
 
-        if(currentHealth > maxHealth)
+        if (currentHealth > maxHealth)
         {
             currentHealth = maxHealth;
         }

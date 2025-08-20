@@ -52,7 +52,8 @@ public class UIController : MonoBehaviour
                 fadeScreen.color.r,
                 fadeScreen.color.g,
                 fadeScreen.color.b,
-                Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
+                Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime)
+            );
         }
 
         if (fadingToBlack)
@@ -61,25 +62,28 @@ public class UIController : MonoBehaviour
                 fadeScreen.color.r,
                 fadeScreen.color.g,
                 fadeScreen.color.b,
-                Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
+                Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime)
+            );
         }
     }
 
     public void UpdateHealthDisplay(int health, int maxHealth)
     {
-        for(int i = 0; i < heartIcons.Length; i++)      //create i, set to 0, is i smaller thant number of hearts? yes (bc its 0), jumps to loop, than does add one to i, goes back to check if i < length
-                                                        //loops throu array and looks at each point in the list
+        // create i, set to 0, is i smaller thant number of hearts? yes (bc its 0), jumps to loop, than does add one to i, goes back to check if i < length
+        // loops throu array and looks at each point in the list
+        for(int i = 0; i < heartIcons.Length; i++)                                             
         {
-            heartIcons[i].enabled = true; //.enabled turnes images on/off in unity inspector
+            heartIcons[i].enabled = true;  // .enabled turns images on/off in unity inspector
 
-            if(health > i)
+            if (health > i)
             {
                 heartIcons[i].sprite = heartFull;
-            } else
+            }
+            else
             {
                 heartIcons[i].sprite = heartEmpty;
 
-                if(maxHealth <= i)
+                if (maxHealth <= i)
                 {
                     heartIcons[i].enabled = false;
                 }

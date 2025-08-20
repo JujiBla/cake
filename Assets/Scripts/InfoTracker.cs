@@ -7,33 +7,33 @@ public class InfoTracker : MonoBehaviour
     public static InfoTracker instance;
 
     public int levelStartFruit;
-
+    public int currentFruit;
+    
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
 
-            transform.SetParent(null);      //"dont destroy on load" doesnt work on childs
+            transform.SetParent(null);  // "dont destroy on load" doesnt work on childs
             DontDestroyOnLoad(gameObject);
 
-            if(PlayerPrefs.HasKey("fruit")) //checks if anything is in the player prefs, gives out zero when nothing is there
+            if (PlayerPrefs.HasKey("fruit"))  // checks if anything is in the player prefs, gives out zero when nothing is there
             { 
                 currentFruit = PlayerPrefs.GetInt("fruit");
             }
 
-        } else
+        }
+        else
         {
             Destroy(gameObject);
         }
     }
 
-    public int currentFruit;
-
     public void GetInfo()
     {
 
-        if(CollectiblesManager.instance != null)
+        if (CollectiblesManager.instance != null)
         {
             currentFruit = CollectiblesManager.instance.collectibleCount;
         }

@@ -19,26 +19,25 @@ public class LevelExit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(isEnding == false)
-        { 
-            if(other.CompareTag("Player"))
-            {
-                isEnding = true;
+        if (isEnding)
+        { return; }
 
-                anim.SetTrigger("ended");
+        if (!other.CompareTag("Player"))
+        { return; }
 
-                AudioManager.instance.PlayLevelCompleteMusic();
-
-                blocker.SetActive(true);
-
-                StartCoroutine(EndLevelCo());
-            }
-        }
+        isEnding = true;
+ 
+        anim.SetTrigger("ended");
+        
+        AudioManager.instance.PlayLevelCompleteMusic();
+        
+        blocker.SetActive(true);
+        
+        StartCoroutine(EndLevelCo());
     }
 
     IEnumerator EndLevelCo()
     {
-             
         yield return new WaitForSeconds(waitToEndLevel - fadeTime);
 
         UIController.instance.FadeToBlack();

@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
 
     public float coyoteTime = 0.2f;
     private float coyoteTimeCounter;
+    private bool inputLocked = false;
 
     // Start is called before the first frame update
     void Start()
@@ -70,7 +71,6 @@ public class PlayerController : MonoBehaviour
 
             if (knockbackCounter <= 0)
             {
-
                 activeSpeed = moveSpeed;
                 if (Input.GetKey(KeyCode.LeftShift))
                 {
@@ -82,7 +82,6 @@ public class PlayerController : MonoBehaviour
 
                 if (Input.GetButtonDown("Jump"))
                 {
-
                     if (coyoteTimeCounter > 0f)
                     {
                         Jump();
@@ -114,7 +113,7 @@ public class PlayerController : MonoBehaviour
                 theRB.velocity = new Vector2(knockbackSpeed * -transform.localScale.x, theRB.velocity.y);
             }
 
-            //handles animation
+            // handles animation
             anim.SetFloat("speed", Mathf.Abs(theRB.velocity.x));
             anim.SetBool("isGrounded", isGrounded);
             anim.SetFloat("ySpeed", theRB.velocity.y);
@@ -130,7 +129,7 @@ public class PlayerController : MonoBehaviour
 
     public void KnockBack()
     {
-        theRB.velocity = new Vector2(0f, jumpForce * .5f);
+        theRB.velocity = new Vector2(0f, jumpForce * 0.5f);
         anim.SetTrigger("isKnockingBack");
 
         knockbackCounter = knockbackLength;
@@ -144,13 +143,12 @@ public class PlayerController : MonoBehaviour
 
         anim.SetBool("isGrounded", true);
     }
-
-    private bool inputLocked = false;
+    
 
     public void LockInput()
     {
         inputLocked = true;
-        theRB.velocity = Vector2.zero; // Optional: stop movement immediately
+        theRB.velocity = Vector2.zero;  // Optional: stop movement immediately
         anim.SetFloat("speed", 0);
     }
 

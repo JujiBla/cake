@@ -47,9 +47,9 @@ public class EnemyController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            if(isDefeated == false)
+            if (isDefeated == false)
             { 
                 PlHealthController.instance.DamagePlayer();
             }
@@ -58,7 +58,7 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player") && !hasBouncedPlayer)
+        if (other.CompareTag("Player") && !hasBouncedPlayer)
         {
             FindFirstObjectByType<PlayerController>().Jump();
             hasBouncedPlayer = true;
@@ -70,7 +70,6 @@ public class EnemyController : MonoBehaviour
             currentWaitToDestroy = waitToDestroy;
 
             AudioManager.instance.PlaySFX(6);
-
         }
     }
 }

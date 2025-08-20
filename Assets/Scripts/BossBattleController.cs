@@ -53,7 +53,6 @@ public class BossBattleController : MonoBehaviour
         shootStartCounter = waitToStartShooting;
 
         blockers.transform.SetParent(null);
-
     }
 
     // Update is called once per frame
@@ -67,79 +66,81 @@ public class BossBattleController : MonoBehaviour
 
             MoveToNextPhase();
         }
+        
+        MoveBoss();
+    }
 
+    private void MoveBoss()
+    {
+        if (bossActive == false)
+        { return; } 
+        
+        cameraController.transform.position = Vector3.MoveTowards(cameraController.transform.position,
+            camPoint.position,
+            cameraMoveSpeed * Time.deltaTime
+        );
 
-        if (bossActive == true)
+        if (projectileLauncher.transform.localScale != Vector3.one)
         {
-            cameraController.transform.position = Vector3.MoveTowards(cameraController.transform.position,
-                camPoint.position,
-                cameraMoveSpeed * Time.deltaTime);
-
-            if (projectileLauncher.transform.localScale != Vector3.one)
-            {
-                projectileLauncher.localScale = Vector3.MoveTowards(
-                    projectileLauncher.localScale,
-                    Vector3.one,
-                    bossGrowSpeed * Time.deltaTime);
-            }
-
-            launcherRotation += launcherRotateSpeed * Time.deltaTime;
-            if (launcherRotation > 360f)
-            {
-                launcherRotation -= 360f;
-                //otherwise it will add on the rotation until the game crashes bc nubers too big
-            }
-            projectileLauncher.transform.localRotation = Quaternion.Euler(0f, 0f, launcherRotation);
-            //.euler converts quaternion into 3 values?
-            //"Returns a rotation that rotates z degrees around the z axis, x degrees around the x axis,
-            //and y degrees around the y axis; applied in that order."
-
-
-            //start shooting
-            if (shootStartCounter > 0f)
-            {
-                shootStartCounter -= Time.deltaTime;
-                if (shootStartCounter <= 0f)
-                {
-                    shotCounter = timeBetweenShots;
-
-                    FireShot();
-                }
-            }
-
-            if (shotCounter > 0f)
-            {
-                shotCounter -= Time.deltaTime;
-                if (shotCounter <= 0f)
-                {
-                    shotCounter = timeBetweenShots;
-
-                    FireShot();
-                }
-            }
-
-            if (isWeak == false)
-            {
-
-                theBoss.transform.position = Vector3.MoveTowards(
-                theBoss.transform.position,
-                bossMovePoints[currentMovePoint].position,
-                bossMoveSpeed * Time.deltaTime);
-
-                if (theBoss.transform.position == bossMovePoints[currentMovePoint].position)
-                {
-                    currentMovePoint++;
-
-                    if (currentMovePoint >= bossMovePoints.Length)
-                    {
-                        currentMovePoint = 0;
-                    }
-                }
-            }
-
-
+            projectileLauncher.localScale = Vector3.MoveTowards(
+                projectileLauncher.localScale,
+                Vector3.one,
+                bossGrowSpeed * Time.deltaTime);
         }
 
+        launcherRotation += launcherRotateSpeed * Time.deltaTime;
+        if (launcherRotation > 360f)
+        {
+            launcherRotation -= 360f;
+            //otherwise it will add on the rotation until the game crashes bc nubers too big
+        }
+        projectileLauncher.transform.localRotation = Quaternion.Euler(0f, 0f, launcherRotation);
+        //.euler converts quaternion into 3 values?
+        //"Returns a rotation that rotates z degrees around the z axis, x degrees around the x axis,
+        //and y degrees around the y axis; applied in that order."
+
+
+        //start shooting
+        if (shootStartCounter > 0f)
+        {
+            shootStartCounter -= Time.deltaTime;
+            if (shootStartCounter <= 0f)
+            {
+                shotCounter = timeBetweenShots;
+
+                FireShot();
+            }
+        }
+
+        if (shotCounter > 0f)
+        {
+            shotCounter -= Time.deltaTime;
+            if (shotCounter <= 0f)
+            {
+                shotCounter = timeBetweenShots;
+
+                FireShot();
+            }
+        }
+
+        if (isWeak == false)
+        {
+            theBoss.transform.position = Vector3.MoveTowards(
+                theBoss.transform.position,
+                bossMovePoints[currentMovePoint].position,
+                bossMoveSpeed * Time.deltaTime
+            );
+
+            if (theBoss.transform.position == bossMovePoints[currentMovePoint].position)
+            {
+                currentMovePoint++;
+
+                if (currentMovePoint >= bossMovePoints.Length)
+                {
+                    currentMovePoint = 0;
+                }
+            }
+        }
     }
 
     public void ActivateBattle()
@@ -155,9 +156,11 @@ public class BossBattleController : MonoBehaviour
 
     void FireShot()
     {
-        Instantiate(projectileToFire,
+        Instantiate(
+            projectileToFire,
             projectilePoints[currentShot].position,
-            projectilePoints[currentShot].rotation);
+            projectilePoints[currentShot].rotation
+        );
 
         projectilePoints[currentShot].gameObject.SetActive(false);
 
@@ -229,23 +232,22 @@ public class BossBattleController : MonoBehaviour
 
             AudioManager.instance.PlaySFX(1);
 
-
+            return;
         }
-        else
-        {
-            //end the battle
 
-            gameObject.SetActive(false);
-            blockers.SetActive(false);
+        
+        // end the battle
 
-            cameraController.enabled = true;
+        gameObject.SetActive(false);
+        blockers.SetActive(false);
 
-            Instantiate(deathEffect, theBoss.position, Quaternion.identity);
+        cameraController.enabled = true;
 
-            AudioManager.instance.PlaySFX(0);
+        Instantiate(deathEffect, theBoss.position, Quaternion.identity);
 
-            AudioManager.instance.PlayLevelMusic(FindFirstObjectByType<LevelMusicPlayer>().trackToPlay);
-        }
+        AudioManager.instance.PlaySFX(0);
+
+        AudioManager.instance.PlayLevelMusic(FindFirstObjectByType<LevelMusicPlayer>().trackToPlay);
     }
 
     IEnumerator GradualPause(float duration)
@@ -255,8 +257,8 @@ public class BossBattleController : MonoBehaviour
 
         while (Time.unscaledTime < startTime + duration)
         {
-            float t = (Time.unscaledTime - startTime) / duration;
-            Time.timeScale = Mathf.Lerp(initialTimeScale, 0f, t);
+            float time = (Time.unscaledTime - startTime) / duration;
+            Time.timeScale = Mathf.Lerp(initialTimeScale, 0f, time);
             yield return null;
         }
 
