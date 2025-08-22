@@ -17,6 +17,12 @@
         },
         {
             "m_Id": "cffd21b03b9644c4aa5c262154c2dcda"
+        },
+        {
+            "m_Id": "3c5255a3dd174ccaaa7635a8e9d5cc0f"
+        },
+        {
+            "m_Id": "2bdab457cb0541b78eb78d5477e548cb"
         }
     ],
     "m_Keywords": [],
@@ -451,10 +457,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 191.00006103515626,
-            "y": 342.0,
-            "width": 208.0,
-            "height": 302.0
+            "x": 453.9999694824219,
+            "y": 378.0000305175781,
+            "width": 208.00009155273438,
+            "height": 302.0000305175781
         }
     },
     "m_Slots": [
@@ -734,9 +740,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -855.9999389648438,
-            "y": 1193.0,
-            "width": 208.0,
+            "x": -883.9999389648438,
+            "y": 1201.0,
+            "width": 208.0001220703125,
             "height": 302.0
         }
     },
@@ -801,10 +807,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1212.0,
-            "y": -36.0,
+            "x": -2064.0,
+            "y": -157.99998474121095,
             "width": 129.0,
-            "height": 33.99999237060547
+            "height": 34.00000762939453
         }
     },
     "m_Slots": [
@@ -836,6 +842,34 @@
     "m_ShaderOutputName": "Sampler",
     "m_StageCapability": 3,
     "m_BareResource": false
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "2bdab457cb0541b78eb78d5477e548cb",
+    "m_Guid": {
+        "m_GuidSerialized": "6de06796-d31f-431c-a61b-0da9cf3d9200"
+    },
+    "m_Name": "Pixelsize",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Pixelsize",
+    "m_DefaultReferenceName": "_Pixelsize",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 0.05000000074505806,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
 }
 
 {
@@ -951,6 +985,36 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty",
+    "m_ObjectId": "3c5255a3dd174ccaaa7635a8e9d5cc0f",
+    "m_Guid": {
+        "m_GuidSerialized": "6487f448-1817-41d8-a298-b2fbae40476f"
+    },
+    "m_Name": "Bayer",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Bayer",
+    "m_DefaultReferenceName": "_Bayer",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": {
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"0ed9165493271944498ae63764aec358\",\"type\":3}}",
+        "m_Guid": ""
+    },
+    "isMainTexture": false,
+    "useTilingAndOffset": false,
+    "m_Modifiable": true,
+    "m_DefaultType": 0
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicValueMaterialSlot",
     "m_ObjectId": "42b7e79207df4b3dba0a00b8d7147d87",
     "m_Id": 0,
@@ -1009,9 +1073,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1423.0,
-            "y": 767.0000610351563,
-            "width": 148.0001220703125,
+            "x": -2529.0,
+            "y": 823.5,
+            "width": 147.5,
             "height": 34.0
         }
     },
@@ -1145,10 +1209,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 274.00006103515627,
-            "y": 1056.9998779296875,
-            "width": 141.99993896484376,
-            "height": 34.0001220703125
+            "x": -9.99999713897705,
+            "y": 1262.0,
+            "width": 142.00003051757813,
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -1204,9 +1268,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1708.0,
-            "y": 601.0,
-            "width": 208.0,
+            "x": -2887.999755859375,
+            "y": 580.0,
+            "width": 207.999755859375,
             "height": 314.0
         }
     },
@@ -1441,8 +1505,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -960.0,
-            "y": -2.0000104904174806,
+            "x": -1812.0,
+            "y": -123.9999771118164,
             "width": 208.0,
             "height": 433.0
         }
@@ -2083,10 +2147,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 169.99993896484376,
-            "y": 1167.0,
-            "width": 208.00015258789063,
-            "height": 301.9998779296875
+            "x": 286.0000305175781,
+            "y": 1190.0,
+            "width": 207.99993896484376,
+            "height": 302.0001220703125
         }
     },
     "m_Slots": [
@@ -2220,6 +2284,12 @@
         },
         {
             "m_Id": "cffd21b03b9644c4aa5c262154c2dcda"
+        },
+        {
+            "m_Id": "3c5255a3dd174ccaaa7635a8e9d5cc0f"
+        },
+        {
+            "m_Id": "2bdab457cb0541b78eb78d5477e548cb"
         }
     ]
 }
@@ -2297,10 +2367,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1233.0,
-            "y": 664.0,
+            "x": -2172.0,
+            "y": 708.0000610351563,
             "width": 208.0,
-            "height": 336.0
+            "height": 335.99993896484377
         }
     },
     "m_Slots": [
