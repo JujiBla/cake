@@ -20,7 +20,7 @@ public class DamgePlayer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Damage Player Triggered" + gameObject);
+        // Debug.Log("Damage Player Triggered" + gameObject);
         if (other.CompareTag("Player"))
         {
             // other.gameObject.SetActive(false); //deactivates player in inspector

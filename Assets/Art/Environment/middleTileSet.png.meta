@@ -2858,7 +2858,7 @@ TextureImporter:
         serializedVersion: 2
         x: 530
         y: 1
-        width: 36
+        width: 38
         height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2966,7 +2966,7 @@ TextureImporter:
         width: 74
         height: 94
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2987,7 +2987,7 @@ TextureImporter:
         width: 22
         height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3008,7 +3008,7 @@ TextureImporter:
         width: 64
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3016,6 +3016,1434 @@ TextureImporter:
       bones: []
       spriteID: 84d44a306e0245747a69848062095ce2
       internalID: -273032261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_138
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 206
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8948542ca7dcf8d42b1b1410c6c33e89
+      internalID: -387850204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_139
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 206
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955101ce9387c6547835c2158cb543d6
+      internalID: 1282865479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_140
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 206
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b20cbc4e4920e0488083fc17d5632be
+      internalID: -531168536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_141
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 96
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a25de3f85c96146a637e07f4175f2f
+      internalID: -468462668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_142
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 90
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86beb992e90d5048ac3da8d27679184
+      internalID: -555157281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_143
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 224
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1ce2a602d2fa14282d0ed192e2ba30
+      internalID: -524298999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_144
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 208
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfda66ecfc2227c4385c97611035786b
+      internalID: 229576184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_145
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 99
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef2afa377fa2044a8271f09b174a96a
+      internalID: 1509210678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_146
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 2, z: 2, w: 2}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc157fe6571bed43a4fc616d2bc6427
+      internalID: 161135104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_147
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f09fcce78a240429b5352ff3939815
+      internalID: -641275161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_148
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 0
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07b69f9735091c4db9b777ea9c0cf7b
+      internalID: -158361029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_149
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 0
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0af6fd1263dead43b16f2f10a4d790f
+      internalID: -1844719721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_150
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 0
+        width: 46
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dda5a27e53332748a59db768f280ece
+      internalID: -274277955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_151
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 31
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12522eb08f9fbc249b4070681f91aa64
+      internalID: 1470319417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_152
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 64
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae47d414a9476b4eb00ed456f639648
+      internalID: -1714549818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_153
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 91
+        width: 6
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57869f1e5deb3e4b88e8743f662e609
+      internalID: 978791711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_154
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 52
+        width: 26
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d12b4738a3f7c5049ac93276c9f4363d
+      internalID: -2050032150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_155
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 88
+        width: 51
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee9a9cf534cb60429c37918a4fc996f
+      internalID: 1661014189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_156
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 100
+        width: 22
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883976033f7d37e43b1198ce0606a521
+      internalID: -407622372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_157
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 176
+        width: 36
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6096bc7bcf3970f44967230688195dc7
+      internalID: -111962738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_158
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 128
+        width: 53
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1937d38830e9b4996a35532158e639
+      internalID: 1133363389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_159
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 139
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e81c27ddb12fe3419bf9fc188811dbc
+      internalID: -170228352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_160
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 138
+        width: 42
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9c634fb3151134885c1e87fa096656
+      internalID: 160626967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_161
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 176
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e21dd6afd6a45b4683c36fe6216c6ce
+      internalID: -38847341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_162
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 176
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42584d122a1fba74cb76b4ff3ce07230
+      internalID: -946582375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_163
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 185
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9282f0dbf8ca0f408f41b1e7c4fbe42
+      internalID: 1925669103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_164
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 182
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc924bf72be1c746b52309ae46684fc
+      internalID: 1173893041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_165
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 182
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79ccc07221729c4abcfbb202771b7ab
+      internalID: 1000647987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_166
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 190
+        width: 39
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae31d616c18d024baeeaf2c959552ba
+      internalID: 1852441243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_167
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 185
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb629d5be1ef1994588b5b181e9dce4d
+      internalID: 1191815256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_168
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 224
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c10618d36a24b4a9d904d4e6dca978
+      internalID: 1239293868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_169
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 224
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fad856e03bcc47469cab1d9f8730ff3
+      internalID: -2108175653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_170
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 256
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88fec2f538002b4f9d7f7bb62a918f0
+      internalID: 755729918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_171
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 140
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 361652342a3adc842b90b1f4143f89ed
+      internalID: -606581386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_172
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 211
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1be42c08a2e7e644b107db6e19a2a17
+      internalID: -80905811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_173
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 179
+        width: 48
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171ee729a30825e46acdd943dbbe158a
+      internalID: 1900578916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_174
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 174
+        width: 45
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09d412d48b190242ad75a5572fc29de
+      internalID: -687704529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_175
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 214
+        width: 35
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abde361bec71cad448bf5513d1541d4a
+      internalID: -568994955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_176
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 328
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a805c1bbf5198a4418e41a35bad52996
+      internalID: 1131328499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_177
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 325
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6097c3982e4954d42bea7c9c28e1bf66
+      internalID: 107815220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_178
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 331
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b0a2a10ae0475488052fd638d86986
+      internalID: 1954889220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_179
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 316
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f091869fcbec9347a02e643caabfe6b
+      internalID: -441750416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_180
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 320
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2284a550c3658b9428e97762c2d6fb67
+      internalID: -613837328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_181
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 297
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9d411d1d6f4ba44a28e349ebf81de1
+      internalID: -2104208856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_182
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 299
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e87104928f63944933afac8de8b940
+      internalID: -1295397058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_183
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 300
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858a846dbb508904e81beb52f48d3db4
+      internalID: 2093008666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_184
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 276
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5a628b9525f544bb6b54618e532b89
+      internalID: 1046538205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_185
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 267
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3cf2004dc5bc5e48a6b94c19e2b80d0
+      internalID: 1822462419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_186
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 256
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841882a53883c1d4ba7318a2dd799864
+      internalID: -1145731863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_187
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 240
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2817be7cff44b439ddefa99e5b9cbe
+      internalID: 1298020369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_188
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 224
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e46df309ececb4b925e689cb2a00a3
+      internalID: 1095746460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_189
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 217
+        width: 9
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0361e138bb7ce449fc159790d66504
+      internalID: -717242400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_190
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 165
+        width: 71
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb8193bef4093a4eae96c3bbc65fc85
+      internalID: -1416338553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_191
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 157
+        width: 63
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f278ad4e2b7b54abb080c902fd66f5
+      internalID: 2043503619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_192
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 346
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e533ac79369e93c49bd06463df010a94
+      internalID: -1241856635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_193
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 352
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1e4f8699509cf4a961be693dcf6a79
+      internalID: 2083571942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_194
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fd1efd50737364ca1d6e98edd871eb
+      internalID: 139960614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_195
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 352
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f23567df1117c46a67ca738e4a7fa2
+      internalID: 451619014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_196
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 347
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29bfc664c573076479d34e5187f1d875
+      internalID: -212663059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_197
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 352
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d562a92e32e98d45be3efc93dc61de5
+      internalID: 1227585324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_198
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 375
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e941cded8b52747b78433ab5d7cd39
+      internalID: 1000868748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_199
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 379
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2605b119d113714dbb042be743e5203
+      internalID: 2105046561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_200
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 373
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1fb844fdb2e6a54c88c3a8fca17ea93
+      internalID: 569656382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_201
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 374
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07f52e76b70a924e962cd398ca08f98
+      internalID: -1775536582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_202
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 374
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c42ab8888c7db4438526a7a036c63b2
+      internalID: -339944923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_203
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 374
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d0ab5431e4c1740aa8a3ed01ca179c
+      internalID: 1668400355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_204
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 200
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9cd3181ef5e334ab85bb398380d396
+      internalID: -1442348541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: middleTileSet_205
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 65
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6016566d1097b774da29a2bf5ad8304a
+      internalID: 651012083
       vertices: []
       indices: 
       edges: []
@@ -3075,14 +4503,82 @@ TextureImporter:
       middleTileSet_135: 1633521202
       middleTileSet_136: -2001696661
       middleTileSet_137: -273032261
+      middleTileSet_138: -387850204
+      middleTileSet_139: 1282865479
       middleTileSet_14: -906679770
+      middleTileSet_140: -531168536
+      middleTileSet_141: -468462668
+      middleTileSet_142: -555157281
+      middleTileSet_143: -524298999
+      middleTileSet_144: 229576184
+      middleTileSet_145: 1509210678
+      middleTileSet_146: 161135104
+      middleTileSet_147: -641275161
+      middleTileSet_148: -158361029
+      middleTileSet_149: -1844719721
       middleTileSet_15: -1192949103
+      middleTileSet_150: -274277955
+      middleTileSet_151: 1470319417
+      middleTileSet_152: -1714549818
+      middleTileSet_153: 978791711
+      middleTileSet_154: -2050032150
+      middleTileSet_155: 1661014189
+      middleTileSet_156: -407622372
+      middleTileSet_157: -111962738
+      middleTileSet_158: 1133363389
+      middleTileSet_159: -170228352
       middleTileSet_16: 1691327821
+      middleTileSet_160: 160626967
+      middleTileSet_161: -38847341
+      middleTileSet_162: -946582375
+      middleTileSet_163: 1925669103
+      middleTileSet_164: 1173893041
+      middleTileSet_165: 1000647987
+      middleTileSet_166: 1852441243
+      middleTileSet_167: 1191815256
+      middleTileSet_168: 1239293868
+      middleTileSet_169: -2108175653
       middleTileSet_17: -775472160
+      middleTileSet_170: 755729918
+      middleTileSet_171: -606581386
+      middleTileSet_172: -80905811
+      middleTileSet_173: 1900578916
+      middleTileSet_174: -687704529
+      middleTileSet_175: -568994955
+      middleTileSet_176: 1131328499
+      middleTileSet_177: 107815220
+      middleTileSet_178: 1954889220
+      middleTileSet_179: -441750416
       middleTileSet_18: -961948266
+      middleTileSet_180: -613837328
+      middleTileSet_181: -2104208856
+      middleTileSet_182: -1295397058
+      middleTileSet_183: 2093008666
+      middleTileSet_184: 1046538205
+      middleTileSet_185: 1822462419
+      middleTileSet_186: -1145731863
+      middleTileSet_187: 1298020369
+      middleTileSet_188: 1095746460
+      middleTileSet_189: -717242400
       middleTileSet_19: -1633952857
+      middleTileSet_190: -1416338553
+      middleTileSet_191: 2043503619
+      middleTileSet_192: -1241856635
+      middleTileSet_193: 2083571942
+      middleTileSet_194: 139960614
+      middleTileSet_195: 451619014
+      middleTileSet_196: -212663059
+      middleTileSet_197: 1227585324
+      middleTileSet_198: 1000868748
+      middleTileSet_199: 2105046561
       middleTileSet_2: -1538757824
       middleTileSet_20: -46629626
+      middleTileSet_200: 569656382
+      middleTileSet_201: -1775536582
+      middleTileSet_202: -339944923
+      middleTileSet_203: 1668400355
+      middleTileSet_204: -1442348541
+      middleTileSet_205: 651012083
       middleTileSet_21: -864106972
       middleTileSet_22: 1381700660
       middleTileSet_23: 1757484981

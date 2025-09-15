@@ -5,6 +5,8 @@ using UnityEngine.Tilemaps;
 
 public class Dissolve : MonoBehaviour
 {
+    public static Dissolve instance;
+
     Material material;
 
     bool isDissolving = true;
@@ -46,4 +48,14 @@ public class Dissolve : MonoBehaviour
             material.SetFloat("_DissolveAmount", dissolveAmount);
         }
     }
+
+    public void DissolveTiles()
+    {
+        isDissolving = true;
+        dissolveAmount -= Time.deltaTime * dissolveTime;
+
+        material.SetFloat("_DissolveAmount", dissolveAmount);
+
+    }
+
 }

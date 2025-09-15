@@ -60,5 +60,5 @@ Material:
     m_Floats:
     - _Outline: 24.2
     m_Colors:
-    - _GlowColor: {r: 0.13141353, g: 0.6603774, b: 0.009344946, a: 0}
+    - _GlowColor: {r: 0.038190473, g: 0.1981132, b: 0, a: 0}
   m_BuildTextureStacks: []
