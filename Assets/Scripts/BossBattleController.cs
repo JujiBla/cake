@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -44,6 +45,14 @@ public class BossBattleController : MonoBehaviour
 
     private bool waitingForSkip = false;
 
+    public float waitToEndLevel = 4f;
+
+    public float fadeTime = 1f;
+
+    public string nextLevel;
+
+    public Collider2D bossCollider;
+
 
     // Start is called before the first frame update
     void Start()
@@ -62,7 +71,11 @@ public class BossBattleController : MonoBehaviour
         {
             Time.timeScale = 1f;
             waitingForSkip = false;
-            memories[currentPhase].SetActive(false);
+
+            for (int i = 0; i <= currentPhase; i++)
+            {
+                memories[i].SetActive(false);
+            }
 
             MoveToNextPhase();
         }
@@ -198,7 +211,10 @@ public class BossBattleController : MonoBehaviour
 
                     FindFirstObjectByType<PlayerController>().Jump();
 
-                    memories[currentPhase].SetActive(true);
+                    for (int i = 0; i <= currentPhase; i++)
+                    {
+                        memories[i].SetActive(true);
+                    }
 
                     StartCoroutine(GradualPause(0.5f));
                 }
@@ -238,16 +254,23 @@ public class BossBattleController : MonoBehaviour
         
         // end the battle
 
-        gameObject.SetActive(false);
+        StartCoroutine(EndLevelBoss());
+        //gameObject.SetActive(false);
         blockers.SetActive(false);
 
         cameraController.enabled = true;
 
-        Instantiate(deathEffect, theBoss.position, Quaternion.identity);
+        //Instantiate(deathEffect, theBoss.position, Quaternion.identity);
+        //change animation to healthy lumo
+   
+        bossCollider.enabled = false;
 
         AudioManager.instance.PlaySFX(0);
 
         AudioManager.instance.PlayLevelMusic(FindFirstObjectByType<LevelMusicPlayer>().trackToPlay);
+
+
+
     }
 
     IEnumerator GradualPause(float duration)
@@ -281,6 +304,17 @@ public class BossBattleController : MonoBehaviour
         }
 
         cam.position = targetPos;
+    }
+
+    IEnumerator EndLevelBoss()
+    {
+        yield return new WaitForSeconds(waitToEndLevel - fadeTime);
+
+        UIController.instance.FadeToBlack();
+
+        yield return new WaitForSeconds(fadeTime);
+
+        SceneManager.LoadScene(nextLevel);
     }
 
 }
