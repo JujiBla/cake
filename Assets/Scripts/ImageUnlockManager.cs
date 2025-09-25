@@ -26,8 +26,7 @@ public class ImageUnlockManager : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene();
         
         int count = InfoTracker.instance.currentFruit;
-        Debug.Log("current count " + count);
-
+        //Debug.Log("current count " + count);
 
         image1.SetActive(scene.name == "level_8_backhome");
         image2.SetActive(scene.name == "level_8_backhome");
