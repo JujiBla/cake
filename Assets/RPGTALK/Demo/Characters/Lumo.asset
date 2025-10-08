@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Lumo
   m_EditorClassIdentifier: 
   dialoger: Lumo
-  photo: {fileID: -9070499791870808695, guid: 9d70be98c03c4d2478062cb9afa83cc6, type: 3}
+  photo: {fileID: 21300000, guid: 7e3b90e148cc2ae458451aa25e2a7cd0, type: 3}
   expressions: []

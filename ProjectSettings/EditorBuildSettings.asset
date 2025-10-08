@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/level_1_wakingdust.unity
     guid: 1088b2559f4950c4ab814971afd66ce4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/victory.unity
     guid: e887009d5ab9ce74b883098949cd0921
   - enabled: 1
@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/cutscene_lvl7.unity
     guid: e6b17195d09d8c741b7cc0a6748e736a
+  - enabled: 1
+    path: Assets/Scenes/credits.unity
+    guid: 0b385380a2c83f84fb087bf51c434191
   m_configObjects: {}

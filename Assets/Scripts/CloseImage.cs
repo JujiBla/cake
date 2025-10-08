@@ -6,7 +6,7 @@ public class CloseImage : MonoBehaviour
 {
     void Update()
     {        
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetMouseButtonDown(1))
         {
             gameObject.SetActive(false); 
         }

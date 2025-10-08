@@ -67,7 +67,7 @@ public class BossBattleController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (waitingForSkip && Input.GetButtonDown("Jump"))
+        if (waitingForSkip && Input.GetMouseButtonDown(1))
         {
             Time.timeScale = 1f;
             waitingForSkip = false;

@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public string firstLevel;
-    
+    public string credits;
+
     public int startingFruit = 0;
 
     public GameObject continueButton;
@@ -60,5 +61,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(PlayerPrefs.GetString("currentLevel"));
         InfoTracker.instance.currentFruit = InfoTracker.instance.levelStartFruit;
+    }
+
+    public void Credits()
+    {
+        SceneManager.LoadScene(credits);
     }
 }

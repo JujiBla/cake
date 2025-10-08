@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Mimi
   m_EditorClassIdentifier: 
   dialoger: Mimi
-  photo: {fileID: -995182932, guid: d174282d5437d3042a9bd2f1c6a35c40, type: 3}
+  photo: {fileID: 21300000, guid: 1e47934307a77224c846717e0e613b31, type: 3}
   expressions: []
