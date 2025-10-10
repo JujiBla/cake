@@ -287,6 +287,7 @@ public class BossBattleController : MonoBehaviour
 
         Time.timeScale = 0f;
         waitingForSkip = true;
+        yield return null;
     }
 
     IEnumerator MoveCameraToPlayer(Vector3 offset, float duration)
@@ -311,9 +312,9 @@ public class BossBattleController : MonoBehaviour
         yield return new WaitForSeconds(waitToEndLevel - fadeTime);
 
         UIController.instance.FadeToBlack();
-
+      
         yield return new WaitForSeconds(fadeTime);
-
+        
         SceneManager.LoadScene(nextLevel);
     }
 

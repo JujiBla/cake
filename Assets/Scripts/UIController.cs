@@ -31,11 +31,15 @@ public class UIController : MonoBehaviour
     public Image fadeScreen;
     public float fadeSpeed;
     public bool fadingToBlack, fadingFromBlack;
+    public bool noFadeOnLevelstart;
 
     // Start is called before the first frame update
     void Start()
     {
-        FadeFromBlack();
+        if (!noFadeOnLevelstart)
+        {
+            FadeFromBlack();
+        }        
     }
 
     // Update is called once per frame
@@ -55,9 +59,9 @@ public class UIController : MonoBehaviour
                 Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime)
             );
         }
-
+        
         if (fadingToBlack)
-        {
+        {            
             fadeScreen.color = new Color(
                 fadeScreen.color.r,
                 fadeScreen.color.g,

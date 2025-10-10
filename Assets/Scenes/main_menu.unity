@@ -1157,7 +1157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5bec29d919b0e44ead53088a2182eeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstLevel: level_1_wakingdust
+  firstLevel: cutscene_lvl1
   credits: credits
   startingFruit: 0
   continueButton: {fileID: 954897532}

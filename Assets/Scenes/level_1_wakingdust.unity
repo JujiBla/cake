@@ -30257,7 +30257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2330430936418702595, guid: a95495af34d753642b31dd6c538b40f2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2572488804645782438, guid: a95495af34d753642b31dd6c538b40f2, type: 3}
       propertyPath: m_Pivot.x
@@ -30379,6 +30379,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 104
       objectReference: {fileID: 0}
+    - target: {fileID: 4764319965058488408, guid: a95495af34d753642b31dd6c538b40f2, type: 3}
+      propertyPath: noFadeOnLevelstart
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6252127221931277244, guid: a95495af34d753642b31dd6c538b40f2, type: 3}
       propertyPath: m_SizeDelta.x
       value: 58.9437
@@ -30461,6 +30465,10 @@ PrefabInstance:
       objectReference: {fileID: 4848348607457250157, guid: 032898e41032b864387dbc868b424762, type: 2}
     - target: {fileID: 8288588128374289638, guid: a95495af34d753642b31dd6c538b40f2, type: 3}
       propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381183595255345341, guid: a95495af34d753642b31dd6c538b40f2, type: 3}
+      propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -32,15 +32,26 @@ public class PlayerController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
+    { 
         Scene scene = SceneManager.GetActiveScene();
 
         PlayerPrefs.SetString("currentLevel", scene.name);
+     
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (theRB.velocity.x != 0)
+        {
+            Cursor.visible = false;
+        }
+        else
+        { 
+            Cursor.visible = true; 
+        }
+
+
         if (Time.timeScale > 0f && !inputLocked)
         {
 
