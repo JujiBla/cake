@@ -30,26 +30,58 @@ public class PlayerController : MonoBehaviour
     private float coyoteTimeCounter;
     private bool inputLocked = false;
 
+
+    Vector3 lastMousePosition;
+    float mouseIdleTime = 0f;
+    public float mouseIdleDelay = 2f;
+
+
+
     // Start is called before the first frame update
     void Start()
     { 
         Scene scene = SceneManager.GetActiveScene();
 
         PlayerPrefs.SetString("currentLevel", scene.name);
-     
+
+        lastMousePosition = Input.mousePosition;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (theRB.velocity.x != 0)
+        //if (Mathf.Abs(theRB.velocity.x) > 0.01f)
+        //{
+        //    Cursor.visible = false;
+        //    idleTime = 0f; 
+        //}
+        //else
+        //{
+        //    idleTime += Time.deltaTime;
+        //    if (idleTime >= cursorShowDelay)
+        //    {
+        //        Cursor.visible = true;
+        //    }
+        //}
+
+
+        Vector3 currentMousePosition = Input.mousePosition;
+
+        if (currentMousePosition != lastMousePosition)
         {
-            Cursor.visible = false;
+            Cursor.visible = true;
+            mouseIdleTime = 0f;
         }
         else
-        { 
-            Cursor.visible = true; 
+        {
+            mouseIdleTime += Time.deltaTime;
+            if (mouseIdleTime >= mouseIdleDelay)
+            {
+                Cursor.visible = false;
+            }
         }
+
+        lastMousePosition = currentMousePosition;
 
 
         if (Time.timeScale > 0f && !inputLocked)

@@ -32,6 +32,7 @@ public class BossBattleController : MonoBehaviour
 
     public Animator bossAnim;
     private bool isWeak;
+    private bool nice;
 
     public Transform[] bossMovePoints;
     private int currentMovePoint;
@@ -52,6 +53,8 @@ public class BossBattleController : MonoBehaviour
     public string nextLevel;
 
     public Collider2D bossCollider;
+
+    public GameObject ashTrail;
 
 
     // Start is called before the first frame update
@@ -254,7 +257,11 @@ public class BossBattleController : MonoBehaviour
         
         // end the battle
 
+        bossAnim.SetTrigger("nice");
+        ashTrail.SetActive(false);
+
         StartCoroutine(EndLevelBoss());
+        
         //gameObject.SetActive(false);
         blockers.SetActive(false);
 
