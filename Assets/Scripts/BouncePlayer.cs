@@ -13,6 +13,8 @@ public class BouncePlayer : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             anim.SetTrigger("bounce");
+            
+            AudioManager.instance.PlaySFXPitched(15);
 
             other.GetComponent<PlayerController>().BouncePlayer(bounceAmount);
         }

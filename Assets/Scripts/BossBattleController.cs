@@ -167,7 +167,6 @@ public class BossBattleController : MonoBehaviour
 
         cameraController.enabled = false;
 
-        AudioManager.instance.PlayBossMusic();
     }
 
     void FireShot()

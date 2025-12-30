@@ -31840,6 +31840,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Music Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8168353654109090790, guid: b9728844ed67c2b4dba3bce590273f2d, type: 3}
+      propertyPath: trackToPlay
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -117,7 +117,7 @@ public class PlayerController : MonoBehaviour
                 activeSpeed = moveSpeed;
                 if (Input.GetKey(KeyCode.LeftShift))
                 {
-                    activeSpeed = runSpeed;
+                    activeSpeed = runSpeed;                    
                 }
 
                 theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * activeSpeed, theRB.velocity.y);
