@@ -35,8 +35,8 @@ public class PlayerController : MonoBehaviour
     float mouseIdleTime = 0f;
     public float mouseIdleDelay = 2f;
 
-
-
+    AudioSource audioSource;
+    
     // Start is called before the first frame update
     void Start()
     { 
@@ -45,6 +45,8 @@ public class PlayerController : MonoBehaviour
         PlayerPrefs.SetString("currentLevel", scene.name);
 
         lastMousePosition = Input.mousePosition;
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -85,8 +87,7 @@ public class PlayerController : MonoBehaviour
 
 
         if (Time.timeScale > 0f && !inputLocked)
-        {
-
+        {            
             isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, whatIsGround);
 
             if (isGrounded)
@@ -121,8 +122,7 @@ public class PlayerController : MonoBehaviour
                 }
 
                 theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * activeSpeed, theRB.velocity.y);
-
-
+                
                 if (Input.GetButtonDown("Jump"))
                 {
                     if (coyoteTimeCounter > 0f)
@@ -141,8 +141,8 @@ public class PlayerController : MonoBehaviour
 
 
                 if (theRB.velocity.x > 0)
-                {
-                    transform.localScale = Vector3.one;
+                {                    
+                    transform.localScale = Vector3.one;                    
                 }
                 if (theRB.velocity.x < 0)
                 {
@@ -160,6 +160,18 @@ public class PlayerController : MonoBehaviour
             anim.SetFloat("speed", Mathf.Abs(theRB.velocity.x));
             anim.SetBool("isGrounded", isGrounded);
             anim.SetFloat("ySpeed", theRB.velocity.y);
+        }
+
+        if (theRB.velocity.x != 0)
+        {
+            if(!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            audioSource.Stop();
         }
     }
 
@@ -204,4 +216,6 @@ public class PlayerController : MonoBehaviour
     {
         return inputLocked;
     }
+
+    
 }
